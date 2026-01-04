@@ -1,0 +1,379 @@
+* Events
+** DONE Macroeconomics
+CLOSED: [2025-09-25 Thu 23:00]
+
+Basic economic concepts
+Economic indicator and business cycles
+National price and price determination
+Financial sector
+Long-term consequences of stabilization policy
+open-economy
+Keynesian approach and IS-LM
+Contemporary economic issues
+
+** TODO HS graduation
+*** NEXT summer school
+** TODO differential calculus
+
+Limits & continuity
+> limits intro √
+> estimating limits from graphs √
+> estimating limits from tables √
+> Quiz 1 √
+> Formal definition of limits
+> Properties of limits
+> Limots by direct subsitution
+> Quiz 2
+> Limits using algebric manipulation
+> strategies of finding limits
+> squeeze theorem
+> Quiz 3
+> types of discontinuites
+> continuity at a point
+> continuity over a interval
+> removing discontinuities
+> Quiz 4
+> infinite limits
+> Limits of infinity
+> Quiz 5
+> intermediate value theorem
+> Quiz 6
+> Unit Test
+Derivatives - definition and basic rules
+chain rule and other advance topics
+application of derivatives
+analysing functions
+parametric equations, polar cordination, and vector valued function
+
+
+** NEXT statistics
+
+Analyzing categorical data
+Displaying and comparing quantitative data
+Summarizing quantitative data
+Modeling data distrubution
+Exploring bivariate numerical data
+study design
+probability
+counting, permutations, and combinations
+Random variables
+Sampling distrubution
+Confidence interval
+Significant tests
+2-sample inference for the difference between groups
+inference for catagorical data
+advance regression
+Analysis of varience
+
+
+
+** NEXT integral calculus
+
+integrals
+differential equations
+application of integrals
+parametric equations, polar coordination, and vector value functions
+series
+
+* progress
+** modern
+*** To use1 statistics
+*** To use1 mi-econ
+*** To use1 algebra
+*** To use1 geometry
+** past
+*** Algebra 1
+*** Algebra 2
+*** Geometry
+*** DONE meet Mr. G
+CLOSED: [2025-06-03 Tue 20:34] SCHEDULED: <2025-06-03 Tue>
+
+*** DONE School 12g
+CLOSED: [2025-06-03 Tue 20:36]
+
+**** TODO Class 12g
+***** AP chem
+***** Psychology
+***** English
+** future goals
+*** small goals
+**** TODO To make/use notes
+**** TODO To make/use calender
+**** TODO stress management
+**** TODO manage school/classes
+
+music
+sleeping
+
+*** big goals
+**** To achieve whatever I want
+***** To learn very fast
+***** To learn forever
+***** To live a great life
+**** To appreciate what I have
+***** To love the world
+***** To explore the world
+*** 2nd events/goals
+**** math
+***** calculus 1
+***** calculus 2
+***** rAlgebra 1
+***** rAlgebra 2
+***** rGeometry
+***** linear algebra
+**** science
+***** physics 1
+***** physics 2
+***** psychology
+***** organic chem 1
+***** organic chem 2
+***** organic chem 3
+***** physical chem 1
+***** physical chem 2
+***** physical chem 3
+***** inorganic chemistry 1
+***** inorganic chemistry 2
+***** inorganic chemistry 3
+**** carrer
+***** getting a job
+***** volunteering
+***** macro-economics
+***** College graduation
+***** college
+**** micro-economics
+* Agenda
+* statistics time
+
+date: Nov 1
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+* calculus time
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+* history time
+
+date:
+total: 
+
+3:30
+progress: greece L1
+in: 15:26
+out: 18:56
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+* governance time
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+date:
+total: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+in: 
+out: 
+
+
+* sleep
+
+2:55=>8:56 || 9:04=>
+

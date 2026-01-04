@@ -1,0 +1,2080 @@
+* US Government
+** branches
+*** presients (executive)
+**** individuals
+
+1. George Washington *Liberation war*
+
+2. John Adams
+
+3. Thomas Jefferson
+
+4. James Madison
+
+5. James Monroe
+
+6. John Quincy Adam
+
+7. Andrew Jackson
+
+8. Martin Van Buren
+
+9. William Henry Wilson
+
+10. John Tyler
+
+11. James K. Polk
+
+12. Zachary Tyaler
+
+13. Millard Fillmore
+
+14. Franlin Pierce
+
+15. James Buchanan
+
+16. Abraham Lincoin *American Civil War*
+
+17. Andrew Jackson
+
+18. Ulysses S. Grant
+
+19. Rutherford B. Hayes
+
+20. James A. Garfield
+
+21. Chester A. Author
+
+22. Grover Cleveland
+
+23. Benjamen Harrison
+
+24. Grover Cleveland
+
+25. Theodore Mckeleny
+
+26. Theodore Roosebelt
+
+27. William Haward Tuff
+
+28. Woodrow Wilson *WW1*
+
+29. Warren G. Harding
+
+30. Calvin Collage
+
+31. Herbert Hoover
+
+32. Franklin D. Roosevelt *WW2*
+
+33. Harry S. Truman *creation of CIA*
+
+34. Dwight D. Eisenhower
+
+35. John F. Kennedy *American-Vietnamese war*
+
+36. Lyndon B. Johnson
+
+37. Richard Nixon
+
+38. Gerald Ford
+
+39. Jimmy Carter *US-Egypt deal*
+
+40. Ronld Regean
+
+41. George H. W. Bush
+
+42. Bill Clinton
+
+43. George W. Bush
+
+44. Barack Obama
+
+45. Donald Trump
+
+46. Joe Biden
+
+47. Donald Trump
+
+https://en.m.wikipedia.org/wiki/List_of_presidents_of_the_United_States
+
+
+**** executive removal
+
+Article II, Section 4 of the US Constitution states that the President, Vice President, and all civil officers of the United States shall be removed from office if impeached and convicted for "Treason, Bribery, or other high Crimes and Misdemeanors." The Constitution does not include incompetence as grounds for removal.
+
+The 25th Amendment provides a mechanism for removing a president unable to perform duties due to physical or mental incapacity. Section 4 allows the Vice President, along with the majority of the Cabinet or a body designated by Congress, to declare the president unfit.
+
+Neither impeachment nor the 25th Amendment explicitly covers incompetence. Additionally, political interests often hinder consensus among lawmakers and officials, making removal for incompetence difficult.
+
+*** congress (legislative)
+**** Congressional Budget and Impoundment Control Act of 1974
+***** Congressional Budget Act of 1974
+
+Title 1-10
+Title 2 - creation of congressional budget office
+Title 3 - provide procedure for congress create a budget 
+> process independent from the president
+> focus fiscal policy for congress
+> budget should be limited by revenue and spendimg
+   > congress has the power to reject called "points of order"
+> need a budget reconciliation bill to be existed
+
+****** amendments
+
+Balanced Budget and Emergency Deficit Control Act of 1985
+Budget Enforcement Act of 1990
+Balanced Budget Act of 1997
+
+
+**** special parliamentary procedure
+***** Reconciliation (US Congress)
+
+procedure to start/simplify fiscal legislation for the senate
+> mandatory spending
+> revenue
+> federal debt limit
+
+****** history
+
+how - the growing concern over deficit and the power president has over the budget 
+
+1970s Charles Schultze - to set up spending goals though final budget reconciliation bill - pass by Congressional Budget Act of 1974
+> reconciliation was originally understood - neither to reduce deficits or increase surpluses
+
+In 1980, Congress amended the reconciliation process - allowing it to be used at the start of the budget process.
+> President Jimmy Carter signed the first budget bill spent using the reconciliation process - about $8 billion in budget cuts.
+
+Reconciliation emerged as an important legislative tool during the Reagan administration - used the to pass the Omnibus Budget Reconciliation Act of 1981 - various spending cuts
+> allowed Congress to pass these spending cuts through a budget resolution and a single reconciliation bill - simplify budget process - disabled senate filibuster and skip the traditional method
+
+in response, Senator Robert Byrd - led ability to remove "extraneous" amendments from reconciliation bills -adopting the Byrd Rule in 1990
+
+****** properties
+
+> overrides senate's filibuster rules - +60% supermajority
+> simply pass - +51% or 50% with vice president (simple majority)
+> effect the house - simple majority
+> optional to annual congressional budgetary process
+
+****** limits/out-of-bounds
+
+limit
+> 1 bill per year set by the senate
+> 3 bills per year max by congress (senate & the house)
+> no introduction to the government deficit in the span of 10 years (Byrd's rule)
+> no amendments in social security (Byrd's rule)
+
+out of bounds
+> effect on discretionary spending - annual appropriations process
+
+******* Byrd's rule
+
+named by Senator Robert Byrd, was adopted in 1985 and amended in 1990
+> defines the term "extraneous" - eligibility for reconciliation in cases
+
+6 cases of eligibility (byrdable)
+/***
+if it does not produce a change in outlays or revenues
+> doesn't change overlays or revenues
+ ***
+if it produces an outlay increase or revenue decrease when the instructed committee is not in compliance with its instructions
+> bills from rogue committees that increase overlays and decrease revenues
+ ***
+if it is outside the jurisdiction of the committee that submitted the title or provision for inclusion in the reconciliation measures
+> outside the jurisdiction of the committee or provision in the reciliation measure
+ ***
+if it produces a change in outlays or revenues which is merely incidental to the nonbudgetary components of the provision
+> non existent changes as only ties to non-budgetary components of the provision
+ ***
+if it would increase the deficit for a fiscal year beyond those covered by the reconciliation measure (usually a period of 10 years)
+> increase the deficit beyond the reconciliation measures
+ ***
+if it recommends changes in Social Security
+> changes on social security
+***\
+
+properties
+> doesn't prevent introduction extraneous provisions
+> relies on the senator removing provision through procedural objections
+
+other limitations
+> 2007-2011, Congress adopted the prevention for reconciliation being used to increase deficits
+
+****** bills
+
+Congressional Budget Act of 1974 - creation (used by 1980)
+
+uses the act to pass
+> Consolidated Omnibus Budget Reconciliation Act of 1985
+> Personal Responsibility and Work Opportunity Act of 1996 
+> Economic Growth and Tax Relief Reconciliation Act of 2001
+> Health Care and Education Reconciliation Act of 2010 
+> Tax Cuts and Jobs Act of 2017
+> American Rescue Plan Act of 2021
+> Inflation Reduction Act of 2022 
+
+****** process
+
+US president creating a budget for congress (early calendar year)
+ **
+congress process budget in a "parallel budget process"
+> senate+ & house+ budget committee to setup spending targets for the fiscal year
+> senate & the house create the reconciliation instructions though parallel resolutions
+ **
+committee+ && budget committee approve/make bills
+> process tied by the reconciliation budget
+> the bills go into a single ominous bill
+ **
+congress approve/make bills
+> process tied by respective rules on debate
+ **
+the bill pass to the president
+> pass
+> veto // it can be cancelled with 2/3 senate && 2/3 the house
+
+requirements for the passage of a bill, which are laid out in the Constitution's Presentment Clause.
+
+****** Ideas
+
+make reconcilation mandatory
+to pass needs supermajority
+to block senator filibuster simple majority
+disabling Omnibus Budget Reconciliation Act of 1981 for fiscal difficulty
+
+**** Trade expansion act 1962
+
+grants the president to impose tariffs by the U.S.secretary of commerce
+> if the trade threatens or harms national security
+
+ ***
+an article is being imported into the United States in such quantities or under such circumstances as to threaten or impair the national security.
+***
+
+***** history
+
+cases of use
+1962 - congress grant president to decrease taxes up to 80% in negotiations
+> Kennedy rounds for 'general agreement on trade and tariffs' (GATT)
+> ends at June 30 1967
+>1979
+>1982
+**stopped since the creation of the world trade organization of 1995**
+
+> 2018 - against aluminum and steel by trump - section 232 investigate imports of automobiles and parts 
+> mid-february 2019 - Commerce Department secretary Wilbur Ross delivered a confidential report to President Trump - the import of foreign automobiles, as these imports posed a threat to U.S. national security. - need to impose high tariffs as high as 25% stated by politico
+
+
+**** united states code
+
+codified federal statues/law
+> permeant
+> general used
+
+***** title 1 - functions of the government
+****** chapter 1 - indviduals
+
+§ 1 - dictionary act // word usage
+singular == plural
+femine == muscular
+present = present/future
+
+officer - anyone working under the law
+person/whoever - company/corporation/groups-of-people
+insane - a person who is stupid/crazy/in-compose 
+
+signature/subscription - mark of intent
+sworn/oath - promise
+writing - producing a visual image
+
+§ 2 - defining country
+> parish/subdivisions
+
+§ 3 - vessel
+> a thing that transports on water
+
+§ 4 - vehical
+> a thing that transports on land
+
+§ 5 - naming of countries
+> they can use the last name of their owner in the title
+
+§ 6
+§ 7
+§ 8
+
+https://www.law.cornell.edu/uscode/text/1/chapter-1
+
+****** chapter 2
+****** chapter 3
+***** title 18
+****** crime (§§ 1 - 2725)
+******* currrency management
+
+prevent people burning up money
+
+******** section 333
+
+permitted anyone from destroying or modifying
+> bank bill
+> drafts
+> notes
+> any other signs of debt by a government
+
+includes
+> any currency
+
+provided by
+> federal reserve && it's system
+> national banking association 
+
+punishment
+> fine
+> | ≥ 6 months imprisonment
+
+
+
+******** § 331
+
+permits the destruction or multiplication of any coin
+
+provided by
+United States
+
+punishment
+fined
+imprison > 5 years
+
+****** criminal prosecution (§§ 3301 - 3772)
+****** prisons & prisoners (§§ 4001 - 5043)
+****** correction for the youth (§§ 5001 - 5043)
+****** immunity of witness (§§ 6001 - 6005)
+*** Supreme Court (Judicial)
+** Consitution
+*** consitution change
+
+https://www.thoughtco.com/how-to-amend-the-constitution-3368310
+
+**** article 5
+
+Article V of the Constitution itself establishes the two ways in which it may be amended:
+
+***** method 1
+
+method 1: Congress Proposes an Amendment
+congress -> 3/4 govenors(38/50) -> consitution
+2/3 house   "ratification"
+2/3 senate
+
+
+***** method 2
+
+Method 2: The States Demand a Constitutional Convention
+2/3 governors(38/50) -> consitution
+
+in the Constitutional Convention of 1787, delegates from every state would attend this so-called “Article V Convention” for the purpose of proposing one or more amendments.
+
+Though this more momentous method has never been used, 
+congress // method 2 -> method 1
+
+
+***** source/understanding
+
+(call of admendment)
+congress -> ratification
+2/3 house
+2/3 senate
+states ->
+2/3 govenors
+
+"The Congress, whenever two thirds of both Houses shall deem it necessary, shall propose Amendments to this Constitution,
+ or, 
+on the Application of the Legislatures of two thirds of the several States, shall call a Convention for proposing Amendments, 
+
+which, in either Case, shall be valid to all Intents and Purposes, as Part of this Constitution,
+
+
+(ratification)
+3/4 states -> amend to consitution
+3/4 convention ->
+
+when ratified by the Legislatures of three fourths of the several States, or by Conventions in three fourths thereof, 
+
+as the one or the other Mode of Ratification may be proposed by the Congress;
+
+
+(exemption)
+year > 1808
+1st clause 9th section 1st artical
+4th
+
+Provided that no Amendment which may be made prior to the Year One thousand eight hundred and eight shall in any Manner affect the first and fourth Clauses in the Ninth Section of the first Article; 
+that no State, without its Consent, shall be deprived of its equal Suffrage in the Senate."
+
+
+**** unofficial methods
+
+5 unofficial methods:
+> legislation
+> presidential actions
+> federal court rulings
+> actions of the political parties
+> simple custom
+
+these methods used more often—and sometimes even more controversially—than the Article V amendment process.
+
+**** canceling amendments
+
+Repealing Amendments
+amendment -> cancel amendment
+(m1&2)
+
+In the history of the United States, only one constitutional amendment has been repealed. In 1933, the 21st Amendment repealed the 18th Amendment—better known as “prohibition”—banning the manufacture and sale of alcohol in the United States.
+
+
+** history
+*** Eisenhower 2nd presidency radio
+
+histoyradio.org
+
+**** Eisenhower doctorine
+**** Eisenhower state of the union address
+**** national for little rock highschool
+
+national guard employment
+
+**** russia sputnik 1
+**** US attempt for nuclear bases in nato countries
+**** Lebanon allow entering of US troops
+
+egypt// weak leabonon government
+# troops: 15,000
+Eiswnhower refuse gurilla warefare
+US troops left
+
+**** fire on the white house
+
+fault: sherman adams
+
+**** spy pilot held captive by the soviets
+
+Eisenhowered lied
+spy pilot -> weather mission
+
+name: christ crustove
+
+**** leftist demostration in japan
+* Yale ancient greece
+** lecture 1
+*** part 1
+**** importance of study
+
+Importance of study
+^ founding point of western cicilization
+^ powerfully impacts the world today
+
+//impact
+[
++ providing government and insitutions that provide freedom
++ providing a body of sciencific and technological achievements
+]
+...
+effect
+- gives health and material prosparity
+- upper edge of competition
+...
+
+
+
+in the study by nobel laureate - V.S. Naipual
+^ born Trinidad
+^ from indian parents
+
+//the present
+[
++ world deeply affected by the west
++ great achievements of western science and technological
++ strong impact of poltical freedom
+  |= weak countries => western political partipation
+]
+...
+- due to the west strong commitment of reason and objectivity
+...
+qimportance => greece history and ideas
+- countries must learn ancient greece to get benefits of the west
+- countries must learn history and philosophy
+  of greece and western governance
+- the west to continue learning from ancient greece
+  to preserve its benefits
+...
+
+
+**** difference of governance
+
+older vs new governece
+
+older governments
+//based
+[
++ cultural unity
++ stability
++ reason
+  |= for pratical & intellectual purposes
+]
+...
+flaw 
+- religious independence
+- to challenge basic and old ideas
+...
+
+forms of governments
+[
++ monarchy | common
+]
+...
+key idea of leadership
+- divinity
+- appointed spokemen of devinity
+...
+
+//governance
+[
++ connected to religious belif and insitutions
+  |= in a mutually supportive structure
++ key ideas:
+  religious authority,
+  tradition,
+  power
+]
+...
+affect
+- government cannot do secular resononed analysis
+- idea skipped:
+  individual freedom
+...
+
+
+
+
+new governance
+^ ancient greece
+^ western governance
+
+//concepts
+[
++ first government to break out the old government system
++ bring massive changes in governance
+]
+...
+formation of republics
+- in the form of great cities states called poleis
+...
+difference
+- wealth of citizenry is relativily small
+...
+
+//the governance
+[
++ contain no kings
+  |= no state military
+  |= citizens => responsible for fighting
++ citizens can take role in most powerful roles in decision making
+  |= from being indepedent defenders
+...
++ no bureaucracy 
+  |= no state or royal holdings
++ there little economic support for bureaucratic class
+  |= due to the lack of economic surplus
+...
++ no seperate class of preist
+  |= there was very little concern of life after death
+]
+...
+affects common representation
+- poltical life is invented
+  |= shared between large portion of people
+  |= highly valued
+  |= new terminology "political" <=> "poleis/polis"
+...
+change in governance
+- new form of governance
+  |= being dynamic, secular, and free/unrestricted
+  |= independent from relgious & traditional ideas
+...
+
+//unlock technology
+[
++ the first formation of a speculative natural philosophy
+  |= based on observation & reason
++ new found supporting science/philosophy
+  |= the support seperation of governance & religion
+  |= exploration and ignorance of devinity
++ formation of a new world view
+  |= great notice of government disfunction
+  |= key issues within society
+]
+knowledge
+- complexity of knowledge
+  |= faith/poetry/intuition => reason
+- great focus on reality 
+  |= mystical insight => scientific theory
+- meditation => logical reasoning/observation
+  |= common critism/analyze/modification/correction
+- exposure to the great truth
+  |= from the natural/human/divine
+...
+
+**** new ideas
+
+impact of greek ideas
+
+greek progressiveneas
+[
++ rejection of old ideas
+  |= monarchy/divine-rule
+  |= laws produce by a god/man
++ valuing of new ideas
+  |= human being to be in a "autonmous poleis"
+  |= poltical communities to forms legislation
+]
+...
+results
+- new found justice and laws that is found
+  only in similar system of governance
+  |= Western countries
+  |= countries that effect Western countries
+...
+
+//ideology
+[
++ picture mankind within natural order
+  |= emphasis of possibities and limitations of man
+  | mortality
+  |= emphasis where man is belong to
+  |= emphasis man correlation to his history
+]
+...
+result
+- tragic vision of humankind's condition
+  |= that characterize in greek civilization
+- the demand to restraint towards human ambition
+  |= inscripted apollo's temple in Delphi
+  | the navel of the universe => the center of the greek world
+  |= in the words "know thyself"/"nothing in excess
+  | symbolically => to knowing man's condition
+...
+
+exortation
+[
+poltically
++ greek rely on political regime
+  |= to make people to take a role
+]
+...
+poltical
+- emphasis on virtue
+- restriction on vice
+...
+key political figures
+aristotle: 
+""as man is the best of animals when perfected,
+  so he is the worst when seperated by law and justice
+""injustice is most danger when it is armed,
+  man armed by nature with good sense and virtue
+  may use for entirely opposite ends
+""therefore man without virtue
+  is the most unscrupulous and savage
+  of the animals
+//advicates justice to control negative spects of human nature
+for well order society of free people that have man to govern themselves
+//his fellowship towards poleis of greece
+
+
+**** chronical progress
+
+time: 38 min => +28 min
+3-nov:
+17:10 => 17:48 => 18:10
+
+*** part 2
+
+Part 2
+
+ 
+
+RELIGIOUS IMPORTANCE
+
+Judeo Christians
+
+^ the second great strand of history of the west
+
+ 
+
+//traditions
+
+[
+
++ contains christianity's main roots
+
+  |= Judaism
+
++ the worshipping of a single all powerful deity
+
+  |= who sharply different from human beings
+
+  |= who make great moral demands
+
+  |= who make judgement
+
+]
+
+...
+
+the cause of christianity
+
+- started as a persecuted religion
+
+- capture rome
+
+  |= after centuries of hostility from
+
+   | rome
+
+   | secular governance
+
+- orginal characteristics *still exist*
+
+  |= being insurgent movement
+
+  |= indepdent and hostile to the state
+
+  |= challenge against secular authority
+
+...
+
+christanity result
+
+- the first orginizations fighting against secular authority
+
+- the counter movement against greek philosophy
+
+- creation of union by christanity (universalist religon)
+
+...
+
+ 
+
+ 
+
+ 
+
+//why chriatanity is successful
+
+[
+
++ Rome not putting the end religious freedom
+
+  |= christanity adapting greek philosophy
+
+   | nature of god
+
+   | theological questions
+
+  |= christanity adapting greek debating styles
+
++ rational disputations
+
+  |= in the nature of god
+
+  |= theological reasoning
+
+]
+
+...
+
+importance
+
++ christanity depend on greek culture
+
++ importance of greek culture in modern tradition
+
++ the power of greek culture
+
+...
+
+importance
+- the great impact of greek culture on christanity
+
+  |= main source of power
+
+...
+
+ 
+
+ 
+
+ 
+
+the power of greek culture
+
+ 
+
+//Empire Of Rome
+
+[
+
++ callapse of the enpire
+
+  |= the work of bar bar bar barbarians
+
++ the removal of secular governance
+
+  |= due to religous and political conformity 
+
+   | set by entire roman empire
+
++ brutal imperial rule to take away freedom
+
+]
+
+...
+
+results
+
+- leading the great disparity from the west and east
+
+...
+
+cause
+
++ collapse of western roman empire
+
+...
+
+ 
+
+ 
+
+ 
+
+after the collapse
+
+[
+
+west (germanic tribes)
+
++ failure to do conformity
+
+  |= the empire destroyed
+
+  |= no one is in charge
+
++ traits
+
+  |= weak
+
+  |= divided
+
++ protective barriers of unification
+  |= european geography
+  |= limitation of technology
+
+...
+
+east
+
++ success to do conformity
+
+  |= the empire exist
+
+  |= emperor continue his rule
+
+]
+
+...
+
+results
+
+- west and east never reunify
+
+- continuation of disparity from both sides
+
+...
+
+following impacts
+
+- rogue west
+
+- non-secular east
+
+...
+
+ 
+
+ 
+
+the developements *16:59
+
+[
+
+the west/europe
+
++ continue to develope insitutions and habits for freedom
+
++ developememt of technology
+
+= later on vunerable to conquest and extinction
+
+: great conquests
+
+: great extinctions
+
++ involvement of christian church
+
+= impose obedience 
+
+= uniformity
+
+= christanization of west
+
+ 
+
+...
+
+]
+
+...
+
+the placement of christian church in Eruope
+
+> christan church never have the power over the states
+= the power to interfer the ambitions of emperors & kings
+= Wasn't able to set dominance on statws
+
+...
+
+> cause of this role
+
+= growing power and supoort of christan church
+
+: growing support by the public
+
+ 
+
+: weak resistance
+
+: no room freedom
+
+= indepedence of the west <++> time
+
+: conflicts between secular rulers and the church
+
+: there's room for freedom
+
+ 
+
+...
+
+the cause of freedom
+
+> accidential
+
+= church ¤ govenment || power
+
+: prevent usual methods of governance
+
+...
+
+impact of freedom
+
+> reappeance of towns & cities
+
+= new support for freedom appear
+
+: taking rivalrys || secular ruler & christian church
+
+: obtaining charters || city <> local powers
+
+= cities exstablish their power
+
+: personal affairs
+
+: self governance
+
+...
+
+effects
+
+> formation of city states (italy)
+
+: cities > state || power
+
+: church ¤ states || power
+
+ 
+
+formation of modern world
+
+: most people are christian
+
+: people's lives become secular
+
+cities in italy & north of the alps
+
+> celebrate degnity & greatness of mankind
+
+= turn away from midieval western traditon
+
+: prortize god & afterlife
+
+ 
+
+Pico Della Mirandola
+
+: Floratine writer
+
+: who support humanism
+
+...
+
+"God told man that we, 
+
+meaning god, 
+
+have made neither of heaven nor of earth,
+
+neither mortal or immortal,
+
+so that the freedom of choice and with honor,
+
+as through the maker and molder of thyself,
+
+thou mayest fashion thyself in whatever shape that thou prefer."
+
+...
+
+"Generosity of God the father,
+
+Oh highest and the most great falicity of man,
+
+to him it is granted to have whatever he choose 
+
+whatever he choose to be he wills."
+
+...
+
+displays
+
+> societal progress on humanism
+
+= display humanism better than greeks
+
+progress
+
+> refusal of man being a measure of all things (greek)
+
+: by greek philospher - Protagoras (400s CE)
+
+...
+
+He is more than mortal
+
+He is unlimited by nature
+
+He is entirely free to shape himself and 
+
+ to acquire whatever he wants
+
+ 
+
+please observe too
+
+ that it is not his reason 
+
+ that will determine human action
+
+ but his will alone
+
+free of moderating control of reason
+
+...
+
+ 
+
+Machiavelli 
+
+: floratine writter
+
+: who supports humanism
+
+...
+
+fortune is a woman and it is nessasary 
+
+ to hold her down and beat her, and fight with her
+
+...
+
+Greek ideals
+
+> arrogant
+
+> dangerous
+
+relating greek term
+
+> Hubris
+
+^ A dangerous arrogance 
+
+  when man see themselves more than human and
+
+  see themselves as devine
+
+ 
+
+Frances Bacon
+
+: inspired by Machiavelli
+
+...
+
+human beings
+
+reason => nature to give up it's secrets
+
+nature => woman 
+
+º To improve man's material wellbeing
+
+º The path => progress/human-health
+
+...
+
+impact
+
+> laid foundation scientific revolution
+
+> faith of science and technology
+
+ 
+
+English political philosophers
+
+> Hobbes
+
+> Lock
+
+poltical poltics
+
++ intro novelty and modernity
+
+^ common passions of man
+
+ ^ self preservation
+
++ new humanism ideas
+
+...
+
+natural rights belong to man
+
+either part of nature or
+
+gift of benevolence and reasonable god
+
+...
+
+‌º man was scene as a solotary creature, (non greek)
+
+º man not inherently part of society. (non greek)
+
+...
+
+man basic rights seem to be absolute.
+
+ for nothing must interfere with the right of each indvidual 
+
+ to defend his life, liberty, and property
+
+...
+
+ 
+
+counter movement against freedom
+
+: early modern times
+
+> emergence monarchies
+
+^ by crushing freedom
+
+...
+
+protestant reformation
+
+: enhance freedom
+
+: upheaval within christanity
+
+> movement focus
+
+^ individual salvation
+
+^ reason based on faith
+
+^ church vs state
+
+...
+
+english revolution
+
+: against King Charles'
+
+who
+
+> impose religious conformity
+
+> form political monopoly
+
+against
+
+> England tradition of freedom
+
+> government law
+
+form
+
+> effective resistance
+
+^ form limited representive government
+
+^ form modern democracy
+
+form
+
+> encourage & inform
+
+ = french revolution
+
+ = american revolution
+
+> tradition
+
+ = using consitutions
+
+ 
+
+impact
+
+> foundation of modern liberal thinking
+
+^ poltics
+
+^ individual & society
+
+^ technology & science
+
+ = progressive thinking
+
+ > improve humanity
+
+ > To understand & control of universe
+
+ > improve reason
+
+ 
+
+ 
+
+11/03: 01:20
+19:30 => 19:37 () 00:07
+21:12 => 21:24 () 00:12
+21:30 => 21:50 () 00:20
+22:13 => 22:54 () 00:41
+11/04: 00:10 => 01:30
+06:02 => 06:12 () 00:10
+11/21: 00:33 => 02:03
+16:45 => 17:18 () 00:33
+11/28: 02:06 => 04:09
+20:54 => 23:00 () 02:06
+11/29: 00:26 => 04:35
+18:14 => 18:40 () 00:26
+12/03: 01:20 => 05:55
+17:15 => 18:35 () 01:20
+12/04: 00:26 => 06:21
+16:44 => 17:00 () 00:16
+22:06 => 22:16 () 00:10 00:26
+
+06:21
+
+
+
+* plans
+** foreign relations
+*** befriend
+
+() befriend
+india
+ indepdence from 
+  russia -o 
+   agreement on trade
+  US politics -o 
+   india influence
+ use for
+  china -o fight against china
+
+*** destroy
+
+() war/destroy
+iran 
+^ supportimg insurgence
+ > secret arms trade
+^ government control
+ > full-scale war
+ > proxy colony
+
+china 
+^ destablize global influence
+ > increase arms trade
+ > destroying chinese allies
+ > 
+^ removing chinese allined governments
+ > To support local rebliion
+ > To form city states
+
+^ economic isolation 
+ > strengthen US trade
+ > cutting off chinese trade partners
+^ threaten chinese trade / coperation
+ > replacing it witb us trade
+ > supporting anti chinese orgizations
+ > regulations on businesses to work with china
+
+^ making chinese government illegimate
+ > using us protection
+ > military support
+^ To form (multiple governments)
+ > city states
+ > independent trade centers
+
+^ support taiwan
+ > to maintain strong military
+ > to replace the government in china
+
+venezuela
+^ removing enermy influence
+ > threatening the government
+ > theatening weaker allies
+^ To weaken the government
+ > controlling small section land
+ > increase public accessbity guns/weapons
++++++
+^ replace the government by forming
+ > city states
+ > independent organizations
+ > supporting rebellions
+
+^ targeting trade 
+ > military force
+ > 
+
+ 
+russia 
+^ supporting ukraine
+  > fighting rusdis
+
+north korea 
+ o- supporting insurgence 
+
+  o- funding south korea 
+     providing operational service
+     military aid
+
+  o- spreading unloyalty
+     protecting group of citizens
+     restrict north korea enforcement
+     humanitrian aid
+  
+syria
+
+ o- forming anarship 
+  labeling the leader a terroist
+ o- spreading democratic belifs
+  o- supporting YDF 
+   strengthen all syrian ties
+   indepdence from syria
+   accept refugees
+  proxy colony
+
+
+** city planning
+*** functions
+**** acts by the city
+
+functional
+communial
+treasual
+
+**** voting
+
+
+voting
+> partipation
+> identification
+> notifed
+---------------------------------------------
+participation
+
+voting is system how people choose a decision
+a person choosing a option 
+represent a groups of a population
+
+the decision with the biggest group
+is choosen
+
+voting needs people
+- to make a decision => represent a population
+- to represent that decision
+
+modern ways to vote
+- in person
+- remote
+- hybrid
+
+() in person
+- go to a ballots
+- government office
+
+() remote
+- online
+- mail
+
+() hybrid
+- vr
+- remote control systems
+
+the key problems
+- how to make sure people have resources 
+to make/represent their decision
+- how those decisions is represented
+
+flaws
+- there always groups of people that don't vote
+- there 
+
+() how to make people vote
+for people
+- punshing people not to voting
+- rewarding people for voting
+
+for government
+
+
+() for the government
+if more than 33% of population don't vote 
+the election is canceled
+and new election need to form
+
+--------------------------------------------
+identificatoon
+
+a way to tell group people to be 
+in a certain population
+
+key examples
+people in a country
+
+restriction (none)
+identification
+
+no identification (>2yrs)
+3x taxes (2 yrs)
+force identification
+
+=============================================
+voting process
+
+picking options 
+something
+nothing
+---------------------------------------------
+ways to vote
+remote (online & mail)
+in-person (going to ballot)
+---------------------------------------------
+types of votes
+> inital vote
+> change vote
+
+initial - initate process
+change - change process
+---------------------------------------------
+to see votes (info)
+mainstream
+side line
+
+mainstream
+regional news
+advertisements
+public education
+
+side line
+offical/unoffical websites
+databases
+
+no info punishment (3%=>12% corperate taxes)
+=============================================
+
+
+*** funding
+**** land value tax
+
+Tax on value of the land
+
+force 
+- businesees to used land wisely
+- preventing the hording of economic resources
+- legal leverage by the government
+
+give
+- free economic resource => public
+- easy way to tax citizens
+- remove the eseentive to give other taxes
+
+**** taxes on spectulation
+
+for
+- investing market
+- bet/auctions
+- stocks/cryptocurrency
+- bonds
+
+forces
+- investors => business owners
+- limit instability in the market
+- protizing small investments
+
+run by indepdent governance
+- group of people that don't have investments
+- proirity manage #money in investments
+
+**** target tax
+
+taxes for taget individials/group of people
+
+gives
+- a way the government to puninsh people equally
+- a strong punishment for large businessed
+
+force
+- people to abide to the government
+
+used
+- people try to skip taxes
+- people doing fraud
+- businesses don't follow regulation
+
+potential used target
+- minorities
+- protestors
+- poltical groups
+
+types of taxes
+- spontaneous
+- continuous
+- mix
+
+apply
+- judges
+- internal revenue service (IRS)
+
+*** social services
+**** military economic supplement
+
+soldiers -> free labor to small businesses
+
+extention
+jobless people -> do the same (dts)
+
+including future restrictions
+> certain businesses
+> abuse on free labour
+
+goal
+to make effective economy
+equalizing the power || small == big businesses
+
+**** free entry to college/med-school act
+
+combines idea
+free college
+college <> economy
+
+HS students offer 2 free major/studies into any college/med-school for
+passing 12 grade students
+
+same for med-school for passing college students for 2 studies
+
+
+
+**** free guns act
+
+program -> provide free guns
+
+centalize power -> public
+organization -> work for public interest
+
+protected
+14th amendment
+
+goal
+europe <- act
+china
+russia
+middle east
+
+**** gun education into schools
+**** (social security for parent) parential benefits
+
+what do I want with this law?
+To provide a healthy reason to support aging population
+To provide a reason for people to have
+
+what does this do?
+decrease cost of kids
+increase demand
+
+**** government security of jobs
+
+what do I want to make this law
+increase the wealth of common people
+increase the # jobs
+
+what does this do
+To make things affordible for common person
+expand economic resource of labor
+
+history
+F.D.R. job security
+
+**** changing ports in bus stops
+
+problems
+maintainace
+technolgy
+reasoning
+
+reasoning
+almost everyone have electronic device
+people travel a long time on buses
+peopke today uses devices to navigate their lives
+
+technology
+free energy > solar panels / wind turbines
+provide energy to devices > power plugs
+cheaper > price of batteries
+effective > technology of free energy
+
+maintance
+electrican > maintain electrical parts
+reporting system > to report problems
+
+other
+power plugs in buses
+
+**** short public transport
+
+why
+people in cities walk alot
+due to 
+heavy traffic in the roads
+prices of personal vehericals
+
+walking needs 
+energy
+physical tolerace
+
+people today
+unhealthy
+getting old
+
+other transports like buses/trains
+
+buses 
+little maintance (lots buses)
+inconsistant
+high operation cost
+*incapable
+*multi path
+
+trains
+heavy maintance (few trains)
+inconsistant
+little operation cost
+*capable (multi purpose)
+*singular path
+
+trans (buses || trains)
+medium maintance (mediun buses)
+consistant
+little operation cost
+*incapable
+*singular path
+
+
+
+** government structure
+*** poltics
+**** eliminating properganist
+
+apply legislation
+radio -> TV -> Social media
+
+*applying poltical lncenses
+*
+
+**** shortening election campigns
+
+To 2 weeks
+To 2 months
+
+due
+the cost of to continue elections 
+
+Gives
+poor people a chance to participate
+
+
+**** single party positions
+
+1 party owns 1 position
+
+low numbet jobs
+ * senators
+ * presidents
+ * supreme court justices
+
+*** function
+**** 1/3 population removal
+
+To the president
+To the congress
+To the supreme court
+
+To everyone in government
+To elections that is happening
+
+due
+To removal or have a say to candiates after given position
+The validity of electons to represent the public
+
+gives
+the idea of candiates to continue support the public after
+given a positiom
+
+happens
+once per 3 months
+
+give citizens to punishing government
+- To cause government shutdown (congress & president)
+- To make unpopular decisions (all)
+
+give citizens to punishing poltical parties
+- To pick bad candiates
+- To support bi partianism
+
+
+
+
+**** supermajority/consitutional removal
+
+Emergency supermajority/consitutional removal
+president
+the supreme court judge
+
+*1/3 of congress => remove the president
+*1/2 of congress
+
+
+**** remove reelection for all gov offical after shutdown
+**** To ilegalize loitering
+*** executive
+**** Prime-Minister/President USA
+
+prime minister -> focus domestic/internal problems
+president -> focus global/external problems
+
+congress <- elected by people
+president <- elected by congress
+prime minister <- congress/people/president&SC
+
+process prime minister
+ **
+30 candidates // pick by president&SC (appointed)
+
+president collect candidates
+supreme court select candidates
+ **
+//////
+ **
+5 candidates // pick by people (single voting)                
+
+people select the most fitting candidate
+ **
+//////
+ **
+1 elected // pick by congress (poly voting)
+
+congress choose the candidate
+ **
+
+What is the outcome
+ * separating external/internal problems
+ * prioritizing politics
+ * faster resolution of the US GOV
+
+Prime minister <= branches
+congress => select actions
+supreme court => limits actions
+president => suggest/recommends actions
+
+prime minister => branch
+congress => limits actions
+supreme court => select action
+president => suggest/recommends actions
+
+prime minister = president
+veto
+
+
+
+**** President/executive
+
+be anonymous 
+- without people voting the president
+
+be appointed by a super majority
+- more 60% vote by congress to agree
+
+executing legislation
+- task set by congress
+- never be above congress
+
+**** government  structure
+
+^           Legislative // top
+l           Executive
+l           Judicial // lowest
+authority
+
+**** 2 president of USA
+
+simply split role of president between 2 people
+ * president will keep his 4 year term
+
+2->3
+ * president need a 6 year term
+
+all
+ * preventing any party from having more than 1 president
+
+*** legislation
+**** seperate congress/governors Artical 5
+
+Artical 5 will be split
+part1(intro) || part2(ratification)
+
+
+congress can intervene after/during part1
+for governors
+
+gives 
+governor -direct-change-on> the consitution
+
+
+
+congress need 3/4 senator -> ratification
+
+gives
+congress -direct-change-on> the consitution
+
+**** Equal Rights Amendment
+
+Resurrecting ERA?
+Beginning with the 18th Amendment granting women the right to vote, it has been customary for Congress to set a maximum time period for ratification.
+
+This is why many have felt the Equal Rights Amendment (ERA) is dead, even though it now needs only one more state to ratify it to achieve the required 38 states.
+
+The ERA was passed by Congress in 1972, and 35 states had ratified it by its extended deadline of 1985. However, in 2017 and 2018, two more states ratified it, concerned about the constitutionality of setting those deadlines.
+
+An effort in Virginia to become the 38th state to ratify the ERA failed by a single vote in February 2019. Pundits expected a battle to ensue in Congress over whether to accept the "late" ratifications had Virginia succeeded
+
+**** anti trust businesses/ examples
+
+() tech
+microsoft
+google
+
+() news
+fox
+cnn
+
+() tranport
+union pacific
+
+() investment
+black rock
+black stone
+
+() 
+
+
+*** judicial
+**** moving pardons/concilment || executive -> judical
+
+all court will
+to have the right to pardon those
+who have proven to do no wrong doings
+
+idea
+courts => provide punishments
+courts => remove punishments
+
+**** judicial selective process
+
+types of courts
+civil
+criminal
+circuit
+supreme
+
+---------------------------------------------
+transition of power
+this is within electoral process to 
+select/remove of judges
+
+every judge postion passing civil afterwards 
+is selected by judges of previous level
+
+civil => crimival => circuit => supreme court
+
+supreme court will have term limit of 5yrs
+where the judge back to civil court.
+
+---------------------------------------------
+To join and exit position 
+
+this is manage coucil of law
+a group of experts within legal system
+this includes lawyers, judges, & attoneys.
+
+within electoral process remove/elect a judges
+1/2 vote select judical position (only civil court)
+1/3 vote remove judical position
+
+---------------------------------------------
+the power of courts
+all be equal to each other
+
+criminal courts - handle moral/dangerous cases
+civil court     - handle poltical/ideal cases
+circuit court   - handle cases to the standard of district
+supreme court   - handle cases to thr standard of state
+
+---------------------------------------------
+end goal
+to seperate judical from executive branch
+to improve effectiveness/consistancy of supreme court
+to have legal experts to have a say within judical branch
+
+
+
+** self governance
+*** legislation/decision making
+**** the process to the after life
+
+ideas
+excepting death is enevitable
+
+variable
+Likelyhood
+Randomness
+
+plan
+to the best way to express each phase of life
+to find a way decrease likelyhood of death
+
+problem
+accept randomness of death
+
+
+
+*** executive/doing-tasks
+*** judicial/limitations
+**** preventing cases that cause psychological harmo
+
+any act of this disciption will 
+be ignored and subjugated confidential
+
+**** confidiaility
+
+when options were left unpick due to treat 
+neither legilative/executive want to pick a option
+
+**** inability
+
+things that excutive can't do within 
+today stardards
+
+legislative
+executive => judicial
+
+
+* planned positions
+
+in the field
+- government
+- medical field
+- science
+- engineering
+
+the steps
+- to find personal interest
+- to volunteer
+- to work
+- to establish
+
+key interest
+- technology
+- science
+- mathmatics
+- philosophy
+
+
+
+
+
+
+
+* my goals
+
+algebra *
+calculus
+linear algebra
+multi variable algebra
+
+statistics *
+economics
+
+chemisty (*)
+biology */
+biochemistry
+
+psychology *
+philosophy
+
+
+
+* To create my own world

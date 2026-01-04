@@ -1,0 +1,1237 @@
+* terminalogy
+
+() self notation
+MS = MISSILE SYSTEM
+GTA=GROUND-TO-AIR
+STA=SEA-TO-AIR
+AAG=ANTI-AIR-GUN
+ASMS = ANTI-SHIP-MISSILE-SYSTEM
+DM-C = DRONE-MISSILE-TYPE-CRUISE
+DM-B = DRONE-MISSILE-TYPE-BALLISTIC
+CEW = COUNTER-ELECTRONIC-WARFARE
+
+
+() military standard
+> SHRADS = SHort Range Air Defense System
+> EW = ELECTRONIC-WARFARE
+> 
+
+* Weapon Developments
+** prototypes
+
+Smash 3000 compact sight module 8/8/2025
+
+Barracuda Unmanned Boat 9/8/2025
+
+Dzhankoi
+> info: september 19, 2025 by Militarnyi
+> developer: Vyriy // CEO Oleksii Babenko.
+> display: the Defense Tech Valley 2025 exhibition
+> specifications
+> Role
+ * drone carrier (junior)
+ * engineering drone => digging positions
+ * combat
+ * comms
+  => Starlink satellite communications 
+  => ExpressLRS remote control system
+  * Types of communication: 
+  => satellite, 
+  => cellular (LTE), 
+  => wireless (ELRS)
+  * Navigation: GPS
+ * Maximum load: 500+ kg
+ * Range: 30-50 km
+ * Maximum travel speed: 20+ km/h
+ * Power plant type: electric motors 2×2800 W
+ * Operating temperature: -20 °C to +55 °C
+ * Overcomes obstacles: up to 32° incline
+ * combatable: artificial intelligence
+ * Cameras: 2 twilight or 2 thermal cameras
+ * Video type: digital/analog with infrared illumination
+ * Dimensions: 124 × 210 × 80 cm, crawler
+
+** fielded products
+*** Chuyka 3.0 drone detector
+
+September 21, 2025
+Defense express
+https://en.defence-ua.com/weapon_and_tech/ukraine_unveils_bluebirds_chuyka_30_advanced_fpv_drone_video_signal_detector_for_frontline_defense-15890.html
+
+Role: drone detector
+developer: Bluebird, Ukraine
+range: 4km
+scan-time: 4-8 sec
+frequency range: (1080–1800, 3000–4100, and 4900–6100 MHz)
+success-range: 95% of drones
+info-display: histogram
+info: target's proxity
+warning: audio
+
+service-time: March 2025 -> present
+codification: Nato
+image:>https://en.defence-ua.com/media/contentimages/83a68cf05bfc1437.jpg
+
+weighs: 450g
+battery-life: 8hrs/battery
+firmware-updates: online
+
+production: 3,000/mts
+waiting-time: 6wks
+provider: brave1
+cost: 24,700 UAH
+
+...
+alt version: 
+veherical 
+dugouts
+
+alt
+screen: indepdent
+antenna: remote
+ex-range: additional frequency bands
+
+*** Virtus recon drone
+
+Militarnyi
+september 20, 2025 https://militarnyi.com/en/news/german-company-stark-defence-presented-virtus-attack-drone-already-operating-at-front/
+
+role: Reconnisense drone
+German company Stark Defence
+display: the Defense Tech Valley 2025 exhibition
+
+range: 100 km
+payload: 5 kg
+munition type: multiple
+
+guidence: visual navigation
+sensor module
+frontal camera
+
+...
+EW protection: improve
+sensor unit: modernize
+AI recongition libraries: expanded
+production: increase
+
+*** UB60D FPV drone
+
+defense express
+September 18, 2025 
+
+role: high-precision FPV drone
+dev: Ukrainian armor
+codification: In July 2025
+
+ammunition type: 60 mm fragmentation mine
+design: mine -> drone's guidence systen
+
+*** Veresen mothership drone
+
+Militarnyi
+september 19, 2025
+
+developed: K-2 Battalion
+leader: Krrylo  Veres
+manufacturer: Vyriy Drone
+CEO: Oleksii Babenko
+displays: Defense Tech Valley 2025 exhibition
+
+motor: twin engine
+Travel distance: 10skm
+Payload: 1.5kg
+avg speed: 70 km/h
+max speed: 130 km/h
+
+Launcher: catapult
+comms: frequency modulated radio frequency (RF) module
+navSys: spatial ground beacon navigation system
+
+role: bomber drone
+payload type:
+fragmentation warhead 
+PG-7V series anti-tank grenade.
+
+role: reconnaissance drone
+payload type: batteries 
+range: 50 kilometers
+flight time: 3hrs
+
+*** Cargo UAV
+
+Militarnyi
+september 19, 2025 by 
+
+role: heavy payload drone
+developer: by Brave1
+displays: the Defense Tech Valley 2025 
+
+alt role: Kamakazi drone
+
+alt role: Bomber drone
+payload type:
+3# 8.5kg bombs
+1# 25kg bomb
+
+return systen: remotely selected
+manual
+automatical
+parachute
+
+Range: >500km
+
+launcher:
+asphalt road
+field
+catapult
+
+*** Mercury reconnaissance drone
+
+Militarnyi
+september 19, 2025  https://militarnyi.com/en/news/ukrainian-mercury-drone-presented-at-defense-tech-valley-exhibition/
+
+Aviation New Technologies
+role: reconnaissance drone
+
+launch: vertical takeoff and landing 
+// deploys without full-fledged launch pad with a catapult
+===
+setup: complex
+setup time: within 15 minutes 
+min setup area:  5×5 meters.
+===
+setup equipment:
+two drones,
+communication antenna
+ground control station, 
+can be deployed by two operators
+===
+autonomous landing accuracy: 100 meters 
+landing system: mix ()
+autonomous
+manual
+===
+res take-off/land: within wind speeds of up to 15 m/s
+
+comms
+navigation system: satellite 
+CEW system: redundant inertial system
+===
+survallience system: dual-band optical module
+surveillence range: 
+daytime
+thermal imaging 
+===
+max recon distance: 
+20 kilometers for vehicles 
+15 kilometers for infantrymen.
+===
+navigate: 
+satellite
+ground-based beacons networks
+
+** testing weapons
+
+tested products
+
+CZ Bren 2 assault rifle
+> tested by internation legion 
+September 18, 2025
+> both single-shots/short-bursts high rate of fire while on the move. the weapon has a strong accuracy and precision
+> it reliably hit a chest-sized target at 70–100 meters
+
+⌀ International Legions operate as a special-purpose formation directly subordinate to the Command of the Land Forces of the Armed Forces of Ukraine. Volunteers from more than 75 countries
+
+FV-014 Stealth UAV
+> developed by Rheinmetall
+> website: https://www.rheinmetall.com/en/media/news-watch/news/2025/09/2025-09-09-rheinmetall-dsei-uavs-combat-proven-and-certified
+> capabilities: 100 km range, swarm capabile
+> "certified": battle-tested, scalable and fully certified
+> notification: 
+ * FV-014's fuselage is rather unusual. Besides a distinctive fin, it features sharp faceted shapes. Those could indicate design choices aimed at radar cross-section reduction, or they might simply be driven by the fuselage manufacturing technology.
+ * claim does not square perfectly with the company's wording that its UAVs are battle-tested. Given that contradiction, the cautious inference is that FV-014 prototypes may indeed have been trialed in real combat conditions and the only realistic test range for that would be the russia–Ukraine war.
+ * Rheinmetall developing its own loitering munition in a agreement with Uvision
+
+* intel
+** Individuals
+*** Defense companies
+
+Europe
+Aviation
+> Airbus 
+: https://www.airbus.com/en
+
+Regional
+Aviation
+> SHARK.AERO Czechia/Slovakia 
+: https://www.shark.aero/
+
+National
+Aviation
+⌀ 
+> Boeing USA
+: https://www.boeing.com/
+> Lockheed-Martin USA
+: https://lockheedmartin.com/Tech
+> anduril USA 
+: https://www.anduril.com/
+> RTX/raytheon // USA 
+: https://www.rtx.com/
+⌀
+> Dassault Aviation // French
+: https://www.dassault-aviation.com/en/
+
+Tech/Intel
+> anduril drones USA 
+: https://www.anduril.com/
+> Altair Technologies UKR
+: https://altair.com/
+> JSC Ukrainian Defense Industry UKR
+: https://ukroboronprom.com.ua/en/
+
+Guns/Arms
+> SMARTSHOOTER Dev fire control systems UKR
+: https://www.smart-shooter.com/
+: info@smart-shooter.com
+: 972 72 3202120
+: https://www.youtube.com/@smartshooter_ltd
+
+CHI
+aviation
+> Diamond-Aircraft-Industries CHI 
+: https://www.diamondaircraft.com/en/
+> Wanfeng-Aviation CHI
+: http://www.wfjt.com/en/sy-hk.php
+
+international 
+systems supplier
+> Rheinmetall AG, Düsseldorf https://www.rheinmetall.com/en/
+Global Military Products
+> website: https://globalmilitaryproducts.com/about-global-military-products/
+> phone: 813.286.0400
+> email: Info@global-ordnance.com
+> youtube: Global Ordnance 
+https://m.youtube.com/watch?v=py6OqgSbvCc&t=146s&pp=2AGSAZACAdIHCQkeAaO1ajebQw%3D%3D
+> address: Address: 2701 North Rocky Point Dr., Suite 600 Tampa, FL 33607
+
+*** Big Organizations
+
+investigators of CyberBoroshno
+
+*** Armed groups
+
+Delta force - SMU(special mission unit) - JSOC (Joint special operations command)
+Seal team 6 - SMU - JSOC
+
+Tier 1 units
+seal team 6
+delta force
+air force 24th special tactical squadron
+CIA intelligence support activity team
+
+UGV
+> Ukrainian National Guard Omega
+> 
+
+**** Corps/2nd&3rd Formations
+
+C Arms Army
+58th RU
+
+**** Regiments/Groups
+
+UAV Regiment
+Achilles UA
+
+**** special military operations
+
+Partisans
+Atesh movement UA
+
+*** Global Military Products
+
+Website:
+https://globalmilitaryproducts.com/about-global-military-products/
+
+phone:
+813.286.0400
+
+Email:
+Info@global-ordnance.com
+
+Address:
+2701 North Rocky Point Dr., Suite 600
+Tampa, FL 33607
+
+Youtube:
+https://m.youtube.com/watch?v=py6OqgSbvCc&t=146s&pp=2AGSAZACAdIHCQkeAaO1ajebQw%3D%3D
+Global Ordnance
+
+** Agreements
+*** Partnerships
+**** projects
+
+Joint Development
+US-UK Project-VANAHEIM/FLYTRAP Anti-Drone
+
+**** Ties
+
+Turkiye +> Iraq -=- Pakistan // share Artillery technology
+RU <+ Togolese -=- N-KO -=- China // Military support
+
+**** Treaties/Alliences
+
+Bilateral Military Alliance:
+treaty between 2 states
+
+***** NATO
+
+Belgium
+Canada
+Denmark
+Finland // April 4, 2023
+France
+Iceland
+Italy
+Luxembourg
+Netherlands
+Norway
+Portugal
+United Kingdom
+United States
+Greece
+Turkey
+Germany
+Spain
+Sweden // March 7, 2024
+Czech Republic
+Hungary
+Poland
+Bulgaria
+Estonia
+Latvia
+Lithuania
+Romania
+Slovakia
+Slovenia
+Albania
+Croatia
+Montenegro
+Finland
+
+**** Relationship
+***** USA
+
+<O> CHINA
+<-O IRAN
+<-O RUSSIA
+<-0 NORTH KOREA
+O-> UKRAINE
+0-> NATO Allience
+O-> INDIA
+O-> DENMARK/GREENLAND
+
+x-> Japan
+x-> South Korea
+x-> Philipines
+x-> Taiwan
+
+***** UKRAINE
+
+<-> RUSSIA
+<-O CHINA
+<-O IRAN
+<-O NORTH KOREA
+<-O laos
+<-0 africa
+<-O USA
+<-O HUNGRY
+
+<-X EUROPE 
+{ SLOVAKIA
+{ FRANCE
+{ UK 
+{ GERMANY 
+{ POLAND
+{ ESTONIA
+{ latvia
+{ lithuania
+<-x NATO
+<-¤ india
+
+*** bilateral military alliences
+**** what it is
+
+Bilateralism is the conduct of political, economic, or cultural relations between two sovereign states
+
+common examples
+2 state Economic agreements ->
+free trade agreements (FTAs) 
+foreign direct investment (FDI)
+
+**** examples
+
+Australia and Canada
+⌀ In 1895 the Government of Canada sent John Larke to Sydney to establish a trade commission
+⌀ in 1935 Canada sent Charles Burchell (Australia's first Canadian High Commissioner) to formalise ties between the two countries.
+
+India and Nepal
+⌀ had a bilateral relationship since ancient times even before the birth of the Buddha in 563 BC.
+⌀ The India-Nepal treaty of friendship was signed in July 1950 and provides economically and politically important effects for both countries. 
+⌀ In 2011, the two countries signed a new Bilateral Investment Promotion and Protection Agreement. These bilateral treaties have played a significant role in the evolution of international investment law. 
+
+U.S. with South Korea, Japan, and Taiwan
+⌀ The United States formed a bilateral alliance with Japan during the Security Treaty between the United States and Japan.
+⌀ The U.S. also formed a bilateral alliance with Korea during the 1953 U.S.–South Korea Status of Forces Agreement
+⌀ The U.S. also formed a bilateral alliance with the Republic of China during the 1954 Sino-American Mutual Defense Treaty.
+
+**** active
+***** Anglo-Portuguese Treaty of 1373
+
+Kingdom of Portugal
+Kingdom of England
+
+***** Treaty of Windsor 1386
+
+Kingdom of Portugal
+Kingdom of England
+
+***** Entente Cordiale 1904
+
+France
+United Kingdom
+
+***** Ogdensburg Agreement 1940
+
+Canada
+United States
+
+***** Mutual Defense Treaty between the Republic of the Philippines and the United States of America 1951
+
+Philippines
+United States
+
+***** U.S.–Japan Alliance 1951
+
+Japan
+United States
+
+***** Mutual Defense Treaty between the United States and the Republic of Korea 1953
+
+South Korea
+United States
+
+***** (Sino-North Korean Mutual Aid and Cooperation Friendship Treaty 1961)
+
+China
+North Korea
+
+full name:
+Mutual Aid and Cooperation Friendship Treaty between The People's Republic of China and The Democratic People's Republic of Korea
+
+***** Major Non-NATO Ally (MNNA) 1987 Islamic Republic of
+
+ Afghanistan (2012–2022)
+ Argentina (1998)
+ Australia
+ Bahrain (2002)
+ Brazil (2019)
+ Colombia (2022)
+ Egypt
+ Israel
+ Japan
+ Jordan (1996)
+ Kenya (2024)
+ Kuwait (2004)
+ Morocco (2004)
+ New Zealand (1996)
+ Pakistan (2004)
+ Philippines (2003)
+ Qatar (2022)
+ South Korea
+ Taiwan (2003)
+ Thailand (2003)
+ Tunisia (2015)
+
+***** Agreement on Strategic Partnership and Mutual Support 2010
+
+Azerbaijan
+Turkey
+
+***** Lancaster House Treaties 2010
+
+France
+Germany
+
+***** Aachen Treaty 2019
+
+France
+Germany
+
+full name:
+Treaty on Franco-German Cooperation and Integration 
+
+***** Franco-Greek defence agreement 2021
+
+France
+Greece
+
+***** RU-NK strategic partnership 2024
+
+North Korea
+Russia
+
+full name:
+Treaty on Comprehensive Strategic Partnership between the Russian Federation and the Democratic People's Republic of Korea
+
+***** Kensington Treaty 2025
+
+Germany
+United Kingdom
+
+full name: 
+Treaty between the United Kingdom of Great Britain and Northern Ireland and the Federal Republic of Germany on Friendship and Bilateral Cooperation
+
+**** benefits and uses
+
+Benefit and Use
+Unlike its relationship with European nations which takes multilateral alliances centered in NATO, the U.S. prefers a direct relationship with each of the East Asian countries.
+
+Reason
+> To avoid conflict, as might have been the case with multilateral treaties (e.g. risk of multilateral treaty defects)
+
+factors
+> (difference)
+⌀ countries in the East Asian region can be an opponent or a target to any other. Therefore, it is comparatively difficult to construct multilateral alliances, which depend upon mutual reliance
+
+> (relationship) comparing East Asia to Europe.
+⌀ the United States had existing and longer relations with countries in Europe
+⌀ where in East Asia relationships are just forming
+
+leading difficulty making bonds and connections
+
+
+> (geography) comparing East Asia to Europe. 
+⌀ Because Europe is "connected", it is better for the security and economy. Whereas in East Asia it doesn't exist.
+⌀ states are divided over a large space and is separated by large amounts of water and distance, 
+
+making it a less admirable condition to form multilateral bonds
+
+
+> (governance) comparing East Asia to Europe
+⌀ there is variety of regimes: communist, authoritarian regimes as well as democratic regimes. 
+⌀ In comparison to the states in NATO, who consist of democracies,
+
+causing a level of difficulty in creating multilateral relations
+
+
+> (Alignment) comparing East Asia to Europe
+⌀ the states in NATO recognised the same source of threat, which was USSR. This allowed for an agreement amongst these NATO states to form this multilateral relation. 
+⌀ However, in the case with East Asia, there was no unified threat.
+  For the ROC (Republic of China/Taiwan), China was seen as the threat. 
+  For the ROK (Republic of Korea/South Korea), DPRK (Democratic People's Republic of Korea/North Korea) was the threat.
+
+Thus there was a great level of difficulty in the United States forming an alliance with East Asia as the threats were different.
+
+
+> (Beliefs) comparing East Asia to Europe
+⌀ social historians added that the U.S. decision makers firmly believed that unlike "superior" Europe who possess sophistication and responsibility that was required for the complex organization of the multilateral security arrangements.
+⌀ the "inferior" Asians presumably did not this sophistication and responsibility that was required for the complex organization of the multilateral security arrangements.
+
+no search of making multilateral agreements in East Asia
+
+
+(Powerplay theory by Victor Cha)
+Powerplay is commonly used in any political or social situation when one uses its knowledge or information against others in order to gain benefits using situational advantages the one has.
+it explains the reasons behind the United States' decision in creating a series of bilateral alliances with East Asian countries.
+
+⌀ the alliances were created to both contain and constrain potential rogue allies (rogue state) from performing aggressive behavior that would trigger larger military conflict and involvement.
+  The rogue allies (rogue states) include Taiwan's Kai Shek Chiang, who was publicly planning and looking forward to take back mainland China
+  Korea's Syngman Rhee, who wanted to unify the Korean peninsula. 
+  The United States was also worried that Japan would recover its regional power in Asia. 
+
+Cha concludes that the postwar United States planners had selected such a type of security architecture as an attempt to prevent aggression by the East Asian pro-west dictators and to increase leverage and states' dependency on the U.S. economy.
+
+
+(US history of Bilateral agreements)
+⌀ US set up a bilateral agreements with Panama, beginning with the Hay–Bunau-Varilla Treaty (1903) which established the United States' right to build a canal and own it and adjacent property across the otherwise-sovereign nation of Panama.
+
+the US willing to set up bilateral agreements rather than creating a new method of agreements
+
+
+Benefits
+> separate allies
+> being very simple
+
+Cons
+> Limited (only 2 states)
+> extraneous (formation of multiple treaties, when doing multiple countries)
+
+*** multilateral agreement
+**** Warsaw-Pact/CSTO
+
+Warsaw Pact -> The Collective Security Treaty Organization (CSTO)
+
+Warsaw pact
+
+CSTO
+
+**** Shanghai Cooperation Organization (SCO)
+
+China, 
+Russia, 
+India,
+several Central Asian nations,
+
+** Events
+*** Strikes
+
+UA - RU  war
+UA
+airfields 1
+Electronics Plant 1
+RU
+
+*** displays
+
+MSPO 2025 https://www.targikielce.pl/en/mspo
+DSEI 2025 Sept 9-12
+
+*** close history
+**** Cold War KGB spies
+
+Soviet shift to cyber warfarw
+
+  cause
+  CIA Implanted Software Program
+    + Siberian gas pipeline explosion
+  spread western informants 
+    + East Germany
+  the monitoring 
+    + west societies
+    + soviet societies
+  
+  individual
+
+  Nikolai Tigonov "one of the highest soviet statesmen"
+  => building KGB ability for telecommunication warefare
+
+    - establishing digital defense division 
+    + within KGB's 8th directorate
+  
+    - creation of specialize school
+    + teach digital spies within KGB's 1st directorate
+    + progamming skills
+    + espionage tactics
+    + networking skills
+
+fist generation of cyber hackers
+  + Karl Koch "Hargbard Celine" KIC
+  + Markus Hess "Umerell"
+  + Hans H. Hübner "Pengu"
+
+inspiration
+Choas Hacker Club - German hacker association
+  - Hacking 135000marks/100000$ from Sparkassa bank
+  
+  - BTX site - pre-internet online service
+  + operates on telephone lines
+
+what the group did
+Hacking -
+  + german universities "universität breman"
+  + us military facilites "Los Alamos Nationales Labovatoviam"
+  + the european organizer for nuclear research "CERN"
+
+new members
+Dirk Otto Brzezinski "D.O.B."
+  - opposing government surveillence
+  - Digital Rebel
+  - 
+Peter Carl
+  - recently fired by the biggest casino
+    + casino going into financial issues
+    + owner is gambling profits
+    + casino involve in scandals
+  - interested in hacking
+    + friendship with D.O.B.
+  - connection to the East
+    + businessman
+    + seller private info to the East
+
+Key KGB Operative
+  + Sergey
+
+opposing groups
+  + german intellegence service "BND Headquarters" =>
+    - choas computer club
+    - popularity of hacking
+
+key subjects
+  + ARPANET || US => World
+    - fragile authoritiztion (research & military)
+  + 
+
+* operation
+** independent systems
+*** drones
+
+UGV
+Tactical
+> Droid TW 12.7
+> RAM-2X
+Mining/clearing drones
+> DODGER
+Kamakazi Drones
+> Frog
+> ARK-1
+
+UMV
+Operational
+> Magura UKR
+> Sea Baby UKR
+
+UAV
+Reconnaissance Drone
+> FlyEye POLAND Small
+> Raybird UAS URK
+> Hara strike-reconnaissance UAV
+
+LONG RANGE DRONES
+> UAS-SETH LRD URK
+
+FPV DRONE
+> WINFLY FPVD URK
+FPV Mother drone
+> TOR Altair Technologies
+> Thor Altair Technologies
+
+*** satalites
+
+Satalite
+> Hunter US
+
+** Equipable
+*** Radar
+
+Radar
+> ORB-31-X-band radar
+
+RADAR STATIONS
+> 9S36-radar-station RUS
+
+COUNTER-BATTERY RADAR
+> ARTHUR UK
+
+*** FIREARMS
+
+Assault Rifile
+AK-47 RU
+AK-74 RU
+SCAR RU
+M-14 USA
+BREN-2
+HK 433
+
+Sniper Rifile
+Dragonov RU
+SVD RU
+Mosin-Naguant RU
+Buret USA
+SCAR
+5.56x45mm DD AR-15/M16
+
+Rifles
+M1-Grant USA
+6.5mm Creedmoor
+
+designated marksman rifles
+7.62x51mm M110
+
+Machine gun
+PKM RU
+SAW USA
+Thomson USA
+Dillon MG6 GERMANY
+
+Pistol
+Makorov RU
+
+grenades
+DM51 GERMANY
+
+* support
+** Logistic
+*** Limiters
+
+BOMBERS
+Tu-22M3 RU
+Tu-95MS RU
+Tu-160 RU
+B-52 USA
+B-1B USA
+TU-142 RU
+TU-95MS-6 RU
+C-130 USA
+C-140 USA
+
+Tanks
+T-72 RUS
+T-64 RUS
+T-80 RUS
+T-90 RUS
+T-84 UKR
+PUMA FRA
+
+*** Restriction
+
+Jets
+F-35 USA
+F-22 USA
+F-18 USA
+F-16 USA
+F-15 USA
+F-4 USA
+GRIPEN SWEDEN
+Typhoon
+Mig-29 RU
+Mig-31 RU
+Mig-21 RU
+Mig-23 RU
+Su-24 RU
+Su-25 RU
+Su-27 RU
+Su-34 RU
+Su-35 RU
+
+submarine
+HMS Dreadnought UK 2025
+
+*** tools
+
+Maritime
+*Aircraft Carrier
+> Giuseppe-Garibaldi
+
+Boat
+BL-680 type patrol boat RU
+
+
+Aerial
+*Helicopters
+IAR-330L ROMANIA
+SA-330-PUMA FRENCH
+AW101-Merlin INDONESIA
+NH90-helicopters—12 INDONESIA
+
+
+Earth
+*ARMOUR CARRIER
+BTR-4 UKR
+BTR-1/BTR-2/BTR-3 RUS
+
+Armored combat support veherical
+G5 
+⌀ type: PMMC (protected mission module carrier)
+⌀ origin German
+⌀ manufactuer: FFG 
+⌀ Dates
+  > developed: 2012
+  > mass production: 2022
+⌀ Roles
+  > recovery vehicles, 
+  > radar carriers
+  > air defense systems
+
+*** products
+
+missiles
+Ground-to-air
+Aster 15 FRENCH
+Aster 30 FRENCH
+MIM-72A/M48 Chaparral USA 1969
+
+air-to-ground
+KH-55MS RUS
+KH-15 RUS cruise missile
+
+Air-to-air missiles
+Vympel R-73 Soviet 1982
+Molniya R-60 Soviet 1973
+AIM-9 Sidewinder USA 1956
+R-60M RU 1982
+R-60MK RU
+
+Sea-to-Air missiles
+Trident II D5 ICBM UK
+
+Training missiles
+R-60MU RU
+UZ-62 RU
+UZR-60 RU
+
+DRONE MISSILES  
+PEKLO DM-C UA
+TREMBIT DM-C UA
+PALIANYTSIA DM-C UA
+¤
+
+
+bombs
+Air-to-ground bombs
+FAB-500 RU gravity
+FAB-1500 RU gravity
+¤
+
+
+Shell types
+155mm Shell NATO
+
+high-explosive shells
+53-F-864 Soviet
+53-F-865 Soviet
+3F2 MG Soviet
+¤
+
+
+mortar rounds types
+81mm rounds NATO
+120mm rounds NATO
+¤
+
+
+Bullets
+5.45×39 Soviet
+7.62×39 Soviet
+5.56×45 Western
+UDD-Heavy GERMANY
+UDD-Light GERMANY
+6.5mm Creedmoor
+¤
+
+** 2nd hand operations
+*** Internal systems
+
+INFO
+Radar System
+Utyos-TM RU
+
+*air defense info system
+CAPTOR-E
+
+*Reconnaissance Drone
+FlyEye POLAND Small
+
+*electro-optical system
+GS4 dual-sensor
+
+*satalite
+SAR ICEYE-COMPANY
+STARLINK SPACE-X-COMPANY
+
+*Aerial Jammers
+SPS-160-Geran RU
+
+ARMOR/Equipment
+*GV Armor
+T113/T117/T113E1/T113E2 M113 USA
+
+*bomb kit
+> UMPK glide bomb converter by RUS grassroots inventors
+
+*** operational control
+
+LOGISTICAL
+
+LAND
+
+Armored truck
+T-815
+MAZ truck BELIRUS
+
+Demining Drone
+Germina URCM-3000
+
+MARITIME
+pontoon systems
+PPS-84
+
+
+AERIAL
+
+
+OPERATIONAL
+
+Vehrical rolls types
+CASEVACs
+MEDEVACs
+
+armored personnel carrier (APC)
+M113 USA 1961
+M59 USA
+M2/M3 Bradley USA
+FV432 MEDEVAC UK
+
+*** Logistical Denial
+:PROPERTIES:
+:name:     
+:type:     
+:owner&&creator: 
+:END:
+
+AIR
+*Anti-Air-Gun
+> 70 OTOMAT INDONESIA
+> Breda 40 mm INDONESIA
+
+*Machine guns
+> SMASH 3000 Automated UKR
+> M2 Browning USA
+
+*Aerial cannons
+> Gryazev-shipunov 25mm Automatic RU
+
+*SURFACE-To-Air-Missile-System
+> IRIS-T Germany
+> Buk-M2 RU
+> 9K33 Osa RU
+> SAMP/T FRANCE
+> PATRIOT USA
+> David's Sling ISRAEL
+> S-400 RU
+> S-300 RU
+> S-500 RU
+> Strela-10 RU
+
+*Sea-To-Air-Missile-System
+> ASPIDE INDONESIA 
+
+*laser anti-drone system
+> GÖKBERK
+
+
+
+
+NAVAL
+*Anti-Ship-Missile-System
+> 8-MISSILE OTOMAT INDONESSIA
+
+
+
+GROUND
+*ROCKET ARTILLERY
+> TOS-2 TFS RU
+> M142 HIMARS USA
+> M270 MLRS USA 
+
+*small flamethrower system
+> Sivalka-VM8
+
+*SELF PROPELLED ARTILLERY
+> Archer SPAH UK
+> Bohdana UKR
+
+*Heavy Mortar
+> 2S4-Tyulpan RU
+> 240mm M-240 mortar Soviet 1951
+
+self-propelled mortar
+> MWS120 Ragnarok 120 mm
+
+*anti-tank guided missile
+
+*anti-tank mines
+> TM-62
+> PTM-4 
+
+*HOWITZERS
+> 2A36 RU
+> D-30 RU
+
+
+
+Multi
+*anti-aircraft artillery system
+> Yugoslav M55A3B1 GA-AA RU
+
+*Intel
+> Harpoon-B radar
+
+*Electronic warefare systems
+> Lima
+> Groza EW station
+
+** Formations
+*** Dictorial Strates
+
+OP DENIAL
+TERRAIN
+traps
+pits
+mines
+ditches
+
+natural barriers
+Mountains
+Swamps
+Rivers
+
+manmade barriers
+snipers
+patrol
+towers
+camera
+drones
+
+STRATEGIC
+limits
+loses
+
+OPERATIONAL
+direct attacks
+aerial strikes
+artillery
+
+logistical attacks
+sabatoge
+errors
+
+
+OP SECURITY
+TERRAIN
+Encampments
+Bases
+Bunchers
+Trenches
+Tunnels
+
+STRATEGIC
+Radar
+Satalites
+Drones
+Recon Personal
+
+
+OPERATIONAL
+Patrol personal
+Camera
+
+*** PROGRAMS
+
+Development Programs
+IAR-330 RESTORATION AND MODERNIZATION PROGRAM ROMANIA
+F-35 program USA
+Artemis program USA
+Dreadnought and SSN-AUKUS programs UK
+Future Combat Surface System GERMANY
+
+exhibition
+Enforce Tac 2025 GERMANY
+
+common programs
+Signal
+
+* ProDChem2.jpg
+
+[[file:/storage/emulated/0/Pictures/Screenshots/ProDChem2.jpg]]
+

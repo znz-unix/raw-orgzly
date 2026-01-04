@@ -1,0 +1,1120 @@
+* historical
+** banking crisis 19th centurary
+
+Banking Panics of the Gilded Age
+https://www.federalreservehistory.org/essays/banking-panics-of-the-gilded-age
+...
+Symbols/Terms
+*{} - start of something
+{}* - end   of something
+
+
+Guilded age
+> lasting: American Civil War* - *1900s
+> orginal term: the novel "The Gilded Age: A Tale of Today"
+...
+The Gilded Age: A Tale of Today
+> author: Mark Twain & Charles Dudley Warner
+> subject: economic progress => hides social and economic problems
+> key effects: lureration of sensible people into financial foolishness
+...
+In financial history:
+> An Era: National Banking Acts in 1863-64
+  = formation of the Federal Reserve in 1913
+> connection: the U.S. monetary and banking system 
+: expanded swiftly and seemed set on solid foundations 
+  = repeatedly beset by banking crises
+...
+US HISTORY
+> Financial center: New York City
+...
+1863-1913 (8 banking panics in manhattan)
+: statewide banking panics: 
+  1884, 1890, 1899, 1901, 1908
+: nationwide banking panics:
+  1873, 1893, 1907
+...
+other banking panics
+: regional backing panics
+  1896 (Illinois, Minnesota, and Wisconsin)
+  1903 (Pennsylvania and Maryland)
+  1905 (Chicago)
+
+
+banking crises 1873
+> cause: investments in railroad
+: Railroads mass expanded 1800s
+: investors high earnings in early projects
+> affects: investment in railroads continued
+: new projects outpaced demand for new capacity
+: returns on railroad investments declined
+...
+> Key event: stock market crashes in Vienna, Austria in May September 1873
+: European investors to divest on American securities
+  [] particularly railroad bonds
+> effects
+: depressed the US market
+: lowered prices on US stocks and bonds
+: impeded financing for US railroad firms
+...
+many railroad firms failed.
+> runout cash to finance operations 
+> refinance debts that came due, 
+> defaulted on payments due to banks
+...
+banks failures
+> banckruptcy Jay Cooke and Co. (merchant bank) [sept. 18 1873]
+: heavily invested in railroads, particularly Northern Pacific Railway
+> effects banks in the Midwest including
+: Indiana, Illinois, Ohio
+> failures: ~100 banks nationwide
+
+
+> stock market crash 1873
+  = Creditors lost confidence in railroads and in the banks
+: railroad and bank firm lost ability to financed themselves
+...
+> financial insitutions
+: first New York Stock Exchange closure [September 24, 1873]
+: effects financial institutions in 
+  Washington DC, Pennsylvania, New York, 
+  Virginia, Georgia
+...
+Attempt for recovery
+supply cash to country banks:
+> the New York Clearing House (supsension)
+> New York's money center banks (active)
+...
+center banks
+> fulfilled withdrawal requests 
+: drawing down reserves at banks in New York and in other reserve cities
+> deposits the legally required cash reserves of banks in other locations
+: municipalities
+...
+the end
+: The crisis subsided in mid-October 1873.
+
+
+banking crisis 1884
+: more limited impact than 1873
+> start: financial firms in New York City [May 1884]
+...
+finacial sector
+> loses in investments (bank run)
+: the Marine National Bank <= owners
+: Grant and Ward brokerage firm <= owners
+> scandals
+: the Second National Bank (bank run)
+  = the president had embezzled $3 million 
+    and fled to Canada
+: the Metropolitan National Bank (bank run and force closure)
+  = untrue rumors that its president 
+    speculating on railroad securities 
+    with money borrowed from the bank
+...
+fall financial sector
+> general lack of trust with business in Metropolitn network
+: banks in surrounding states
+...
+prevent spread of panic
+> The New York Clearing House 
+: audited Metropolitan National Bank
+: loaned Metropolitan $3 million => bank runs
+
+
+banking crises 1890
+: limited
+...
+financial sector
+> failure securities to keep security prices up
+: Decker, Howell and Co. brokerage firm 
+...
+> massive losses
+: the Bank of North America
+...
+effect: the loss of trust of banks and market
+> depositers withdrawl their money
+  = fear the Bank of North America will fail
+...
+spread: regional crisis
+> effect brockerage firma in Philadelphia and Richmond
+...
+ended: Help with JP Morgan (Financier)
+> convice 9 banks to aid the Bank of North America
+> restores trust in banks and market
+
+
+banking crises 1893
+> one of the most severe financial crises 
+  in the history of the United States
+> The crisis started with banks in the US country
+...
+Treasuries
+> decrease gold reserves by U.S. Treasury 
+  $190 million to $100 million [1890-1893]
+...
+the United States was on the gold standard
+> Treasury notes => fixed amount of gold
+> decrease gold reserve => threatens covertabilty of notes
+...
+panic: worldwide
+> gold reserve continue to decrease
+> it forces the United States to suspend the convertibility of
+  notes => gold
+
+Economic stability
+> economic activity slowed (banking crisis 1890 - present(1893))
+
+General Recession:
+> distrust of lending/investment
+: raised rates of defaults on loans
+: decrease $ of banks
+...
+> decrese of banks
+: depositers withdraw funds
+...
+> spread: nationwide
+: bank runs swept through midwestern and western cities 
+  such as Chicago and Los Angeles,
+  >100 banks suspended operations
+: 340 banks suspending operations [*July* - *August* 1893]
+
+banking system weakens
+> many of banks withdrew funds that in banks in New York City
+  = remove money from NY banks
+  = NY banks runout of money
+> center banks need money
+  = selling assets
+  = decrease/demands for assets
+  = threatened the solvency of the banking system
+
+resolvelution
+> New York banks || force to slowing the outflow of currency 
+  to the rest of the USA
+  = The result local banks in USA get money need:
+    many of those banks failed
+> customers || began to use temporary expediencies
+: scrip or clearing-house certificates
+
+End
+> decrease of interest rates
+: inflow of gold (Europe => USA)
+> Banks resumed operations
+: usage Cash and credit (commerce & industry)
+...
+> the economy recession continue till summer 1894
+: industrial production fell by 15.3% [1892-1894]
+: unemployment rose to 17-19%
+: recession expanded [1895*-*1897*]
+
+
+Comparison
+...
+similarities
+> common causes
+> similar sequences
+> usually happen at fall
+: increase demand money & credit
+  = farmers & holiday season
+: National Banking System the supplier of currency
+  = struggle to handle increase in demand
+  0 the price of currency rose due to inaction
+    (interest rates)
+
+interest rates
+> increase
+: lowered the value of banks' assets
+= bank </> pay depositora
+= banks => insolvent
+...
+: depositors <= money banks || fear
+= banks => sell asset || unfinanciall
+= price of assets <-+> banks sell assets / fear
+...
+: despositors (<=) money || (fear)
+= weakening banking system
+= weakening financial syatem
+...
+> solution
+: New York Clearing House (1884-1890)
+= pooling the reserves of its member banks
+= providing credit to institutions beset by runs
+: New York Clearing house <> central bank
+= scholar Elmus Wicker: "a central bank with reserve power greater 
+  than that of any European central bank"
+
+overall impact
+> disruption of industry & commerce
+: economic depression [1873-1879] <> panic of 1873
+  (the first great depression in the USA)
+> downfall of economy
+: economic depression [1893-1930]
+  (the second great depression)
+...
+public support for financial reformation
+> progressive poltics
+: Rumination last 20yrs of old guilded age
+> reform legislation
+: the American Bankers Association,
+: secretary of Treasury
+: comptroller of currency
+...
+
+government
+> congress
+: Congressional hearings
+= lead to nothing [14yrs]
+...
+push back
+> support of additional reforms
+: politicians
+: bureaucrats, 
+: bankers
+: businessmen
+= (see Wicker, 2005, for a summary)
+...
+
+the term "guilded age"
+> original term
+: covered with a thin gold veneer on the outside
+: not golden on the inside
+
+connections
+> The standard financial systems
+: The gold standard 
+: other institutions of that system 
+= they promised efficiency and stability
+...
+change
+> The American economy grew rapidly
+: world's fastest growth rates of income per capita
+> social and financial problems obscured
+: periodic panics and depressions
+...
+pathfoward
+> supported
+: academics
+: businessmen
+: policymakers
+: politicians 
+= debated the benefits 
+  and costs of our banking system 
+  and how it contributed to national prosperity and instability. 
+...
+actions
+> culminated in the Aldrich-Vreeland Act of 1908
+: established the National Monetary Commission
+= tasked to study these issues and recommend reforms
+= led to the creation of the Federal Reserve System in 1913
+
+end notes
+
+1 Andrew Jalil, "A New History of Banking Panics in the United States, 1825-1929: Construction and Implications," 323.
+2 Charles Hoffman, The Depression of the Nineties, 109. Elmus Wicker, Banking Panics of the Gilded Age, 16.
+
+Bibliography
+
+Calomiris, Charles W., and Gary Gorton. "The Origins of Banking Panics: Models, Facts, and Bank Regulation." In Financial Markets and Financial Crises, 109-74. ed. R. Glenn Hubbard, Chicago: University of Chicago Press, 1991.
+
+Carlson, Mark, "Causes of Bank Suspensions in the Panic of 1893," Federal Reserve Board of Governors, 2011. http://www.federalreserve.gov/pubs/feds/2002/200211/200211pap.pdf.
+
+Grossman, Richard S. "The Macroeconomic Consequences of Bank Failures under the National Banking System." Explorations in Economic History 30, no. 3 (1993): 294-320.
+
+Jalil, Andrew J. "A New History of Banking Panics in the United States, 1825-1929: Construction and Implications." American Economic Journal: Macroeconomics 7, no. 3 (July 2015): 295-330.
+
+Kemmerer, E. W. "Seasonal Variations in the Relative Demand for Money and Capital in the United States." National Monetary Commission Doc. 588, 1910. https://fraser.stlouisfed.org/title/633 
+
+Sprague, O. M. W. "History of Crises under the National Banking System." National Monetary Commission Doc. 538, 1910. https://fraser.stlouisfed.org/title/653
+
+Twain, Mark, and Charles Dudley Warner. The Gilded Age: A Tale of Today. Hartford, Conn.: American Publishing Company, 1873. [Online at Project Gutenberg: https://www.gutenberg.org/files/3178/3178-h/3178-h.htm]
+
+Wicker, Elmus. Banking Panics of the Gilded Age. New York: Cambridge University Press, 2000.
+
+Wicker, Elmus. The Great Debate on Banking Reform: Nelson Aldrich and the Origins of the Fed. Columbus, Ohio: Ohio State University Press, 2005.
+
+
+
+
+11/23: 0:37
+21:17 => 21:54 () 0:37
+
+11/24: 02:27
+07:15 => 07:54 () 00:39
+09:42 => 09:52 () 00:10
+14:53 => 15:08 () 00:15
+15:17 => 15:56 () 00:39
+20:20 => 21:04 () 00:44
+
+11/28: 1:00
+14:47 => 15:47 () 1:00
+
+14:25 => 14:52 () 0:27
+
+2025
+time: 04:31
+time: 04:04
+
+
+
+** panics_gilded_age_2.jpg
+
+file:/storage/emulated/0/Download/panics_gilded_age_2.jpg
+
+* statisitics
+** statisitics khan academy
+* Mathematics (All Of It)
+
+[[https://m.youtube.com/playlist?list=PLybg94GvOJ9FoGQeUMFZ4SWZsr30jlUYK][video]] 193 videos
+
+* economics
+** economic khan academy
+
+[[https://www.khanacademy.org/economics-finance-domain/macroeconomics][macroeconomics]]
+
+*** basic economic concepts
+
+[[https://www.khanacademy.org/economics-finance-domain/macroeconomics/macro-basic-economics-concepts][list]]
+
+**** intro
+***** introduction macronomics
+
+> https://www.khanacademy.org/economics-finance-domain/macroeconomics/macro-basic-economics-concepts/macro-scarcity/v/introduction-to-economics
+-------------------------------------------
+He generally,
+indeed,
+neither to promote public interest,
+nor he knows how much he is promoting it
+
+//a person cannot know how much he promoting society
+
+by... directing industry in such a manner
+as it produce may be of its greatest value,
+he intend only his own gain,
+and he is in this,
+as in many cases,
+led by invisible hand to promote an end
+that is no part of his intention
+
+// people follow their intention
+// they led outcomes that they don't control
+
+nor it is society that it is not part of it.
+
+// these outcomes can be beneficial or negative
+
+by pursuing his own interest he promotes a
+society more effienctly than he intend to promote.
+
+// the effective method to effect society
+// is to follow your interest
+-------------------------------------------------
+video
+history
+
+adam smith
+> he is considered the modern economist
+> he wrote the wealth of nations (1776)
+
+wealth nation
+economic actors
+> running industry effienctly <= his interest
+> he => outcomes that he doesn't control
+
+outcomes
+> neither -/+
+
+action
+> promotes society effiently
+> impact is uncontrollably
+
+outcomes
+> innovation
+> investments
+> productivity
+> wealth
+
+micro
+> economic actors act in their interest
+
+macro
+> it might be economy or the nation
+
+economics
+schools
+> microeconomics
+> macroeconomics
+-------------------------------------------------------
+microeconomics - the study of individual actors
+subject: firms, people, household
+study: how actors make decisions/allocation
+       on scarce resources
+
+scarce resources - a resorce is limitedly destributed
+includes: food, water, time, labor
+
+model
+people store/use resources
+=> effect on prices/markets
+------------------------------------------------------
+macroeconomics - the study of the economy in aggregates
+subject: every actor within the economy
+
+model
+aggragate => effect on ecoomy
+
+topics - top=>down questions
+
+() economic policy
+> taxes
+> regulation
+------------------------------------------------------
+logical complexity
+logical ideas => mathmatics
+
+micro
+() philosophy of decision making 
+=> simpify
+flaws
+> over-simpification
+> wrong assumptions
+
+macro
+() every interaction
+=> assumption
+
+flaws
+> more simpified > microeconomics
+-------------------------------------
+Alfraid A. Kenolf - publisher 1900s
+An economist is a man who states the obvious
+in terms of the incomprehensible.
+
+subject
+> math in economics
+> economics should be obvious
+
+Laurence J. Peter - USC professor
+An economist is an expert know will
+know tomorrow why the things
+he predicted yesterday didn't happen today."
+
+subject
+> notify on oversimpification
+& wrong assumptions
+
+***** scarcity
+
+https://www.khanacademy.org/economics-finance-domain/macroeconomics/macro-basic-economics-concepts/macro-scarcity/v/scarcity
+---------------------------------------
+scarcity - a resources limitly avalible
+> foundation of economics
+
+types
+> goods
+> services
+> resources
+
+impact
+> To limit used of resources
+---------------------------------------
+scarce vs free resource
+
+scarce - limited avalible
+free - freely avaliable
+-------------------------------------
+connection
+economics - allocation of scarce resources
+
+topics
+> who get it
+> how much they recieve
+> what is given up
+-------------------------------------------
+caviar/fish-eggs (scare)
+> hard to get
+> labor
+> huge cost
+
+labor (scarce)
+> cost
+> time
+
+house (scarce)
+> scenery/view
+> limit of people to live within
+
+water primitive village (free resource)
+> free avalibility
+> free access
+
+normal village (slightly scarce)
+> preservation
+> labor
+> services
+
+air (free resources)
+> freely destibuted
+
+air (in space || no plants)
+> limit avalibity
+
+***** Economic Models
+
+https://www.khanacademy.org/economics-finance-domain/macroeconomics/macro-basic-economics-concepts/macro-scarcity/v/economic-models
+=========================================
+Economics
++ economy <= billions/millions actors
++ complex organization
+
+includes
++ decision of person/people
+=========================================
+other models
+> chemistry
+> biology
+-----------------------------------------
+() chemistry
++ objects <= trillion/billions molecules
++ explains behavior of those molecules
+
+making simpifying assumptions
+> the actions does molecules have/not
+
+forms models
+complex => simple
+PV=nRT | *the ideal gas law
+
+/////////////////////////////////////////
+() Biology
++ study on living things
+(people/animals/...)
+
+problem
++ Limits of experimentation on people
+
+making simplifying assumptions
+by simpifying the problem
+mice => people  
+flies
+cells
+
+forming models
++ mouse model
++ fly model
++ cell model
+=========================================
+Economic Models
+
+making simplifying assumptions
++ all economic actors are rational
++ actors have access info
+
+forming models
++ possibilty production frontier
+  c only trading 2 things
+  c everthing else is equal 
+    *ceteris pariabus
++ price equalibrium (supply & demand)
+  c rational actors
+  c perfect info
+
+importance
+all models contain over simpification
+all models are hard to impliement
+
+=========================================
+12/15
+06:00 06:34 + 00:34
+
+12/17
+23:57 24:00 + 00:03 00:37
+12/18
+00:00 00:14 + 00:14 00:51
+
+
+***** Command  & Market economies
+
+https://www.khanacademy.org/economics-finance-domain/macroeconomics/macro-basic-economics-concepts/macro-scarcity/v/command-and-market-economies
+=============================================
+Command  & Market economies
+different way to structure a economy
+
+key answers
+>who owns what
+>what to produce
+>who get output of production
+=============================================
+() Command economy
+the government
+ * controls the factors of production
+ > factories
+ > farms
+ * removal of private ownership
+------------------------------
+the control
+> # things to produce
+> how things distrobuted
+------------------------
+the process needs
+> lots of planning
+> micro managing
+
+() Market economy
+--------------------
+the factor production
+> run by themselves
+> controlled societal demand/supply
+-----------------------------------
+the control
+> success of selling a product
+> rivals who compete for the same role
+--------------------------------------
+key role: the market
+> the factors production <∞> society
+> price <∞> competion/demand
+
+=============================================
+market economy
+> it dependent on society (more effecient)
+> very hard to control
+> values the person in economic worth
+
+commands economy
+> it dependent on government (more capable)
+> easy and simple to control
+>
+
+=============================================
+12/18
+11:56 13:02 + 01:06
+12/25
+22:00 
+
+***** normative & positive statements
+
+https://www.khanacademy.org/economics-finance-domain/macroeconomics/macro-basic-economics-concepts/macro-scarcity/v/normative-and-positive-statements
+============================
+type of statements
+> normative
+> positive
+
+used
+> economics
+> philosophy
+----------------------
+normative statement
++ non testable
++ cannot true/false
+include
++ opinions
++ ethics
++ morals
+
+positive statments
++ true/false/unknown
++ testiable
+include
++ logic
++ mathmatics
+
+=============================
+
+** economics professor dave
+
+[[https://www.youtube.com/playlist?list=PLybg94GvOJ9HEzpCcK6AywSowO7BvvZD_][playlist]] 40 videos
+
+*** 1. introduction to Economics
+
+[[https://www.youtube.com/watch?v=j9ooSSqsB9M&list=PLybg94GvOJ9HEzpCcK6AywSowO7BvvZD_&index=1
+][video 1]]
+=============================================
+introduction to Economics
+
+society => complex
+bartering in cultual centers => global economy
+
+needing
+handling & transfer of currency
+in non-physical & physical transactions
+
+economics
+the manner in wealth is distributed
+
+personal & relative
+> wages
+> taxes
+
+large scale (macroecoomics)
+> recessions
+> gross demestic product (GDP)
+> stoc kmarket
+=============================================
+types of economics
+
+() Macroeconomics
+how economics affect
+national and global economies
+
+() Microeconomics
+how economics affect
+individual decision making
+
+() personal economics
+how to use economic foundations
+to guide our lives
+includes
+> budgeting
+> bank accounts
+> credit cards
+
+=============================================
+economics => about choice
+choices can be influence
+
+choices comes from multiple avaliable options
+
+=============================================
+economics
+the study of how we make choices
+based on scarcity
+
+scarcity
+> based endless wants and needs
+> limited on resources to fill
+  those wants and needs
+
+resource
+is anything that is useful
+---------------------------
+include
+> natural resources
+> people
+> information
+---------------------------
+all resources
+> have limits
+
+limits exist <> economics exist
+weighing
+wants <> needs // due to scarcity
+---------------------------
+limited resources includes
+> time
+> money
+> energy
+---------------------------
+time <> affect ability to do things with a time
+money <> affect ability to do things with a cost
+energy <> affect ability to do things
+
+=============================================
+satisfy these wants needs
+> goods
+> services
+
+goods - physical objects
+> food
+> clothing
+> devices
+
+services - action/activites
+> delivering of food
+> dry cleaning clothing
+> fixing devices
+
+scarcy
+goods => material
+services => time
+
+=============================================
+scarcity ≠ shortage
+
+shortage
+when consumer want more good/service
+than producers
+not willing or able produce at certain price
+it is
+> circumstantial
+
+scarcity
+humans and resources are not infinite
+it is
+> always exist
+
+---------------------------------------------
+scarcity <> economics
+always exist
+
+
+*** 2. Scarcity, Trade-offs, and Cost/Benefit Analysis
+
+[[https://m.youtube.com/watch?v=gg_qfPRd-mo&list=PLybg94GvOJ9HEzpCcK6AywSowO7BvvZD_&index=4
+][video]]
+=============================================
+Scarcity, Trade-offs, and Cost/Benefit Analysis
+=============================================
+basics
+
+what do we want and need?
+
+needs
+> food
+> water
+> shelter
+
+wants
+> wealth
+> adventure
+> entertainment
+
+wants/needs are boundless
+
+everything runs out
+> food get eaten
+> money runs out
+> entertainment ends
+
+the things that fill wants needs and need
+are finite
+this is scaricity
+
+when wants/needs are boundless and
+the things that fill wants and need are finite
+
+scacity drives economics
+=============================================
+the types choice we make
+personal
+business
+collective
+
+all choices are different
+but based on scarcity
+---------------------------------------------
+cause we can't do/have everything
+
+we must choice between
+option 1 or option 2
+based on the situation
+
+=============================================
+all choices have trade-offs
+
+trade-off
+the act to give one's benefit
+for greater potential benefit
+
+the decision to watch video over 
+the other known possible outcomes
+due to the decision
+out-weigh the things that benefit you
+like
+> watching different video
+> reading a book
+> learn something else
+
+resturant pay their servers higher wages
+in the price of
+> adverisement
+> buying new applices
+> other employees
+
+the government spend on military
+in the price
+> education
+> healthcare
+> public service
+
+=============================================
+when decision is made
+there is opportunity cost
+
+opportunity cost
+the best alternative option
+that is give up 
+
+
+when deciding to watch this video
+out of the options
+> watching different video
+> reading a book
+> learn something else
+---------------------------------------------
+the best option in preference
+1> watching different video
+3> reading a book
+2> learn something else
+---------------------------------------------
+the opportunity cost
+is watching a different video
+
+
+in the scenario of studying for a test
+for a test 
+---------------------------------------------
+the opportunity cost depends
+the options and
+prority between sleeping or studing
+---------------------------------------------
+you usually sleep for 8 hours
+but need to sacrafice some sleep to study
+---------------------------------------------
+your prority is study
+you decide to sleep for 5hrs
+and study for 3hrs
+---------------------------------------------
+the opportunity cost
+not deciding to sleep for 6hrs
+and study 2hrs
+to gain extra hr of sleep
+
+
+=============================================
+this lead ranking of options
+lead the idea of thinking in the margin
+
+thinking in the margin
+is decision making based on
+small changes of the allocations of resources
+
+deciding how mucb more/less
+to continue doing somthing
+
+the amount time to make money family
+over family and yourself
+while working
+
+the amount of time should spent
+on sleep over studying
+you would be thinking at margin
+thinking the balance between study vs sleep
+
+process is called cost/benefit analysis
+=============================================
+cost/benefit analysis
+the weighing of
+marginal cost over marginal benefits
+
+sleep vs studying
+marginal cost - being tired for next day
+marginal benefit - knowlege for the test
+
+this is done by rigidly quantify
+the cost/benefit of studying
+=============================================
+
+
+ideas of characters in hero shooter
+octo suit + any weapons [snake MSG4]
+ground explosive drones + mineplscement [new]
+map + barriers + artillery + recon drone [boss mode]
+air assualt drone + teleport [new]
+stealth turrents/drone + 
+
+*** 3. The Four Factors of Production
+
+[[https://m.youtube.com/watch?v=RSyvcANRaOE&list=PLybg94GvOJ9HEzpCcK6AywSowO7BvvZD_&index=3&pp=iAQB
+][video]]
+=============================================
+The Four Factors of Production
+
+key question
+scarce resources => goods/services
+
+Factors of Production
+
+---------------------------------------------
+
+() land - all natural resources on the planet
+> fertile land
+> water
+> oil
+> wood
+
+---------------------------------------------
+
+() labor - the physical effort put
+           into making goods/providing-services
+> taking care of a person
+> creating a painting
+> making repairs
+> making videos
+
+---------------------------------------------
+
+() capital - any human created resource used
+             to produce other goods or service
+
+types of capital
+> physical
+> human
+
+physical capital - physical human made resource
+                   that produce good/services
+> machinery
+> tools
+
+human capital - knowledge and skills from
+                education and experiece
+> farmer knowing to plow a field
+
+---------------------------------------------
+
+entrepreneurship - the process of launching and
+                   running a business
+                   to make money
+entrepreneur - someone that take risk
+> to makes a profit
+> make new ideas
+> new industries
+> new markets
+
+they are people that manage
+other factors of production
+as good business knows how to manage 
+> land
+> labor
+> capital
+
+=============================================
+how these resources are used
+
+Artisanal Coffee Shop
+
+() Entrpreneurship
+> 1 or more entrepeneurs need to
+  get the idea of sell high quality coffee
+
+() land
+> the place the coffee shop located
+resouces
+> water
+> coffee beans (most important)
+
+() labor
+> construction
+> preparation
+> operation
+
+() capital
+human capital
+> constumer service
+> coffee making
+physical capital
+> coffee bean grinder
+> coffee makers
+> expresso machine
+> ovens
+> cups, plates, silverware
+
+4 factor => produce coffee shop
+=============================================
+factors of production 
+the resources we need to produce
+all goods and services
+
+these resources need destributed
+by trade
+so goods and service to reach
+the maximum # people
+

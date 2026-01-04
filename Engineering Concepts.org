@@ -1,0 +1,6818 @@
+* applications
+** terminal apps
+*** apache2
+
+https://httpd.apache.org/docs/2.4/programs/apachectl.html
+https://linuxcommandlibrary.com/man/apachectl
+
+apachectl []
+> start
+    Start the Apache httpd daemon. Gives an error if it is already running. 
+() apachectl -k start.
+
+> stop
+    Stops the Apache httpd daemon.
+() apachectl -k stop.
+
+> restart
+    Restarts the Apache httpd daemon. If the daemon is not running, it is started. This command automatically checks the configuration files as in configtest before initiating the restart to make sure the daemon doesn't die. 
+() apachectl -k restart.
+
+> fullstatus
+    Displays a full status report from mod_status. 
+:: you need to have mod_status enabled on your server and a text-based browser such as lynx available on your system. 
+// The URL used to access the status report can be set by editing the STATUSURL variable in the script.
+
+> status
+    Displays a brief status report. Similar to the fullstatus option, except that the list of requests currently being served is omitted.
+
+> graceful
+    Gracefully restarts the Apache httpd daemon. If the daemon is not running, it is started. This differs from a normal restart in that currently open connections are not aborted. A side effect is that old log files will not be closed immediately. This means that if used in a log rotation script, a substantial delay may be necessary to ensure that the old log files are closed before processing them. This command automatically checks the configuration files as in configtest before initiating the restart to make sure Apache doesn't die. () apachectl -k graceful.
+
+> graceful-stop
+    Gracefully stops the Apache httpd daemon. This differs from a normal stop in that currently open connections are not aborted. A side effect is that old log files will not be closed immediately. 
+() apachectl -k graceful-stop.
+
+> configtest
+    Run a configuration file syntax test. It parses the configuration files and either reports Syntax Ok or detailed information about the particular syntax error. 
+() apachectl -t.
+
+> startssl (removed)
+    To start httpd with SSL support, you should edit your configuration file to include the relevant directives and then use the normal apachectl start. 
+
+test
+http://localhost:8080
+
+https://www.easymux.in/how-to-install-apache2-on-android-and-configure-termux/
+
+*** Silly Tavern (Android)
+
+https://docs.sillytavern.app/installation/android-(termux)/
+===========================================================
+Silly Tavern (Android)
+
+download termux
+> fdroid
+> https://github.com/termux/termux-app/releases
+
+termux cmd
+1. upgrade termux
+ > pkg update && pkg upgrade
+2. install essential files
+ > pkg install git nodejs-lts nano
+3. Installing SillyTavern
+ > release: git clone https://github.com/SillyTavern/SillyTavern -b release
+ > staging: git clone https://github.com/SillyTavern/SillyTavern -b staging
+
+Running SillyTavern
+1> cd ~/SillyTavern
+2> bash start.sh
+
+update SillyTavern
+1> cd ~/SillyTavern
+2> git pull --rebase --autostash
+==========================================================
+Common Errors
+
+android arm LEtime-web
+1> pkg install esbuild
+
+peformance modification:
+1> go to ~/SillyTavern/config.yaml
+2> modify
+performance:
+  # Avoid loading all character data until needed
+  lazyLoadCharacters: true // false
+  # Disable disk caching to reduce storage usage
+  useDiskCache: false // true
+backups:
+  chat:
+    # Optional: Disable automatic chat backups to save storage
+    enabled: false // true
+
+==========================================================
+
+*** output for coding
+**** python3/python
+
+python 3  [ file/code ] - execute in python 3
+python  [ file/code ] - execute in python
+
+code
+⌀ :!python3 print("Hello, world!")
+⌀ python3 - execution code in python3
+⌀ print("Hello, world!") - python code
+
+file
+⌀ python <file>.py
+
+**** clang (C & C++)
+
+C++
+clang++ <file> -o <nfile name>
+
+C
+clang <file> -o <nfile name>
+
+**** nodejs (javascipt)
+
+Javascript
+node <file>
+
+** termux
+*** info
+
+() wiki
+termux wiki
+*>https://wiki.termux.com/wiki/
+termux app wiki
+*>https://github.com/termux/termux-app/wiki
+termux package wiki
+*>https://github.com/termux/termux-packages/wiki
+
+() community
+all
+>*https://wiki.termux.com/wiki/Community
+social media
+>*https://reddit.com/r/termux
+>*https://matrix.to/#/#termux_termux:gitter.im
+>*https://twitter.com/termuxdevs
+email
+>* support@termux.dev
+
+() termux packages
+package
+>*https://github.com/termux/termux-packages
+manager
+>*https://github.com/termux/termux-packages/wiki/Package-Management
+
+() app & plugins
+termux
+>*https://github.com/termux/termux-app
+api
+>*https://github.com/termux/termux-api
+boot
+>*https://github.com/termux/termux-boot
+styling
+>*https://github.com/termux/termux-styling
+tasker
+>*https://github.com/termux/termux-tasker
+widget
+>*https://github.com/termux/termux-widget
+
+() others
+>*https://wiki.termux.com/wiki/FAQ
+>*https://github.com/termux/termux-packages/wiki/Termux-file-system-layout
+>*https://wiki.termux.com/wiki/Differences_from_Linux
+>*https://wiki.termux.com/wiki/Package_Management
+>*https://wiki.termux.com/wiki/Remote_Access
+>*https://wiki.termux.com/wiki/Backing_up_Termux
+>*https://wiki.termux.com/wiki/Terminal_Settings
+>*https://wiki.termux.com/wiki/Touch_Keyboard
+>*https://wiki.termux.com/wiki/Termux:API
+>*https://github.com/termux/termux-packages/issues/6348
+>*https://github.com/termux/termux-app/wiki/RUN_COMMAND-Intent
+>*https://github.com/termux/termux-packages/wiki/Termux-and-Android-10
+
+*** termux api
+
+() Github
+termux:
+*>https://github.com/termux/termux-app
+termux api:
+*>https://github.com/termux/termux-api
+termux api package:
+*>https://github.com/termux/termux-api-package
+
+
+() android || battery optimization
+*>https://developer.android.com/about/versions/oreo/background
+*>https://developer.android.com/guide/components/foreground-services#background-start-restrictions
+() specific vendor app killer
+*>https://dontkillmyapp.com
+
+() android || draw over other apps
+*>https://developer.android.com/guide/components/activities/background-starts
+
+() setup
+within the termux app
+*> Termux app settings  ->  Termux:API  ->  Open App
+command
+*>am start com.termux.api/com.termux.api.activities.TermuxAPIMainActivity
+
+*** vim websites
+
+plugins:
+https://vimawesome.com/
+
+help:
+https://vim.fandom.com/wiki/Vim_Tips_Wiki
+
+tips:
+https://vi.stackexchange.com/
+https://stackoverflow.com/questions/tagged/vim
+https://www.reddit.com/r/vim/
+
+** Vim // code editor
+*** execution
+**** bang command
+
+:!   [ program ] [file] [ optional commands ]
+> :! - bang command
+
+program
+g++ - c++
+python/python3 - python
+javac/java - java
+
+file
+⌀ % - current file
+⌀ <fille> - file name
+
+other commands
+:!ls - execute file listing program
+:!wc % - execute word counting program
+:silent ! - execute without display
+
+**** ./vimrc
+**** plugins
+
+installable programs that work with vim
+> adds 
+⌀ commands
+⌀ displays
+
+parallel process
+> Tmux - provider another terminal pane
+
+**** examples
+***** python
+
+:!python % - runs the current python file
+
+
+./vimrc
+nmap <F4> <Esc>:w<CR>:! clear;python %<CR>
+
+> nmap <F4> <Esc>
+⌀ nmap - creating response
+⌀ <F4> - reaction to F4 key in normal mode
+⌀ <Esc> - escape/exit insert mode
+
+> :w<CR> - save the current file
+⌀ :w - saves
+⌀ <CR> -carry file
+
+> :! clear;python %<CR>
+⌀ :! - execute
+⌀ clear; - clear terminal
+⌀ python - code name
+⌀ % - current file
+⌀ <CR> - carry file
+
+plugins
+> vim-slime 
+
+other methods
+> \\b - save & execute file
+> \\bb - execute file
+
+***** C++
+
+:!g++ % -o %< && ./%<
+> !g++ % // execute current c++ file
+> -o         // g++ to operate   [g++]
+> %<       // g++ current file  [g++]
+> &&          // and                    [g++]
+> ./%<       // g++ output       [g++]
+
+***** Java
+
+methods
+!javac <file.java> - execute compilation java code
+!java <file> - execute compiled java code
+
+combination
+:!javac <file.java> && !java <file>
+:!javac <file>; java <file><CR>
+
+*** modes
+**** normal
+**** insertion
+**** visual
+**** command
+*** commands
+*** ./vimrc
+**** modifications
+
+tab shift
+" Set shift width to 4 spaces.   set shiftwidth=4
+" Set tab width to 4 columns."   set tabstop=4
+" Use <space> instead of tabs."  set expandtab
+
+" Do not save backup files."     set nobackup
+
+" Do not let scroll < N line."   set scrolloff=10
+" Do not wrap lines in limits"   set nowrap
+
+" highlight matched characters   set incsearch
+  in search
+" Ignore capital letters         set ignorecase
+  in search.
+" Use capital letters            set smartcase
+  in search
+
+" Show matching words            set showmatch
+  during search.
+" Use highlighting               set hlsearch
+  during search.
+
+" Show partial command you type  set showcmd
+  on the last line.
+" Show the mode you are          set showmode
+  on the last line.
+
+" Set the # commands             set history=1000
+  in history
+  (default #: 20)
+
+**** mapping
+**** plugins
+**** functions
+*** intro .vimrc
+
+https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/
+
+**** Basic settings
+
+" Disable vim compatibility      set nocompatible
+  which can cause unexpected issues.
+
+" Enable file type detection     filetype on
+  for the detected file type
+" Enable and load plugins        filetype plugin on
+  for the detected file type
+" Load an indent file            filetype indent on
+  for the detected file type.
+
+" Turn syntax highlighting on    syntax on
+
+" assign line of code #          set number
+  on the left-hand side.
+
+" Highlight cursor line          set cursorline
+  underneath the cursor horizontally.
+" Highlight cursor line          set cursorcolumn
+  underneath the cursor vertically.
+
+" Set shift width to 4 spaces.   set shiftwidth=4
+
+" Set tab width to 4 columns."   set tabstop=4
+" Use <space> instead of tabs."  set expandtab
+
+" Do not save backup files."     set nobackup
+
+" Do not let scroll < N line."   set scrolloff=10
+" Do not wrap lines in limits"   set nowrap
+
+" highlight matched characters   set incsearch
+  in search
+" Ignore capital letters         set ignorecase
+  in search.
+" Use capital letters            set smartcase
+  in search
+
+" Show matching words            set showmatch
+  during search.
+" Use highlighting               set hlsearch
+  during search.
+
+" Show partial command you type  set showcmd
+  on the last line.
+" Show the mode you are          set showmode
+  on the last line.
+
+" Set the # commands             set history=1000
+  in history (d#: 20)
+
+" Enable auto completion menu    set wildmenu
+  after pressing TAB.
+" Make wildmenu behave           set wildmode=list:longest
+  similar to Bash completion.
+" Wildmenu ignore filetypes.     set wildignore=*.docx,*.xlsx
+  not wanted to edit.            
+   [*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx]
+
+commands to get help            :help <command>
+
+**** How to Fold Long Files in Vim
+
+setup
+" PLUGINS -------------------------------------------------- {{{
+
+" Plugin code goes here.
+
+" }}}
+
+
+" MAPPINGS ------------------------------------------------- {{{
+
+" Mappings code goes here.
+
+" }}}
+
+
+" VIMSCRIPT ------------------------------------------------ {{{
+
+" This will enable code folding.
+" Use the marker method of folding.
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+
+" More Vimscripts code goes here.
+
+" }}}
+
+
+" STATUS LINE ---------------------------------------------- {{{
+
+" Status bar code goes here.
+
+" }}}
+
+open  single fold       zo
+close single fold       zc
+open  all folds         zR
+close all folds         zM
+
+command for help        :help folding
+
+**** How to Add Plugins to Vim
+
+install vim-plug manager
+website: https://github.com/junegunn/vim-plug
+
+1. install
+(linux & Macos)
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+https://raw.githubusercontent.com
+/junegunn/vim-plug/master/plug.vim
+(windows & powershell)
+iwr -useb https://raw.githubusercontent.com
+/junegunn/vim-plug/master/plug.vim |`
+ni $HOME/vimfiles/autoload/plug.vim -Force
+
+2. add call plug#begin('~/.vim/plugged') & call plug#end()
+" PLUGINS ------------------------------------------------ {{{
+
+call plug#begin('~/.vim/plugged')
+
+
+
+
+call plug#end()
+
+" }}}
+
+3. add plugins
+format: Plug 'username/plugin-name
+
+" PLUGINS ----------------------------------------------- {{{
+
+call plug#begin('~/.vim/plugged')
+
+
+Plug 'dense-analysis/ale'       "add ale
+
+Plug 'preservim/nerdtree'       "add nerdtree
+
+
+call plug#end()
+
+" }}}
+
+4. install plugins             :PlugInstall
+
+**** How to Map Keyboard Shortcuts in Vim
+
+syntax map_mode <what_you_type> <what_is_executed>
+
+map in normal mode             nnoremap
+map in insert mode             inoremap
+map in visual mode             vnoremap
+
+jj => excape                   inoremap jj <esc> 
+map in insert mode
+
+How to Use Mapleader in Vim
+
+unused key                     <leader>
+(default)                      ,
+
+let mapleader = "\"            , => \
+nnoremap <leader>\             // => no highlight search
+:nohlsearch<CR>
+
+common mapping
+
+" MAPPINGS ------------------------------------------- {{{
+
+leader key | , => [               let mapleader = "\"
+
+" \\ => ''                         nnoremap <leader>\ ``
+' go to last cursor position       ''
+normal mode
+
+  \p => print the current file     nnoremap <silent> 
+  to the default printer           <leader>p :%w !lp<CR>
+  from a Linux operating system.
+  ' View available printers:       lpstat -v
+  ' Set default printer:           lpoptions -d <printer_name>
+  ' means do not display output    <silent>
+normal | nnoremap <silent> <leader>p :%w !lp<CR>
+
+
+" jj => escape                    inoremap jj <Esc>
+' enter normal mode               <Esc>
+insert
+
+" <space> => :                    nnoremap <space> :
+' enter command mode              :
+normal
+
+" o => o+escape |                 nnoremap o o<esc>
+' open create line below          o
+' escape to normal mode           <esc>
+normal
+
+" O => O+escape                   nnoremap O O<esc>
+' open create line above          O
+' escape to normal mode           <esc>
+normal
+
+" n => n + zz                     nnoremap n nzz
+' move next match word            n
+  in search      
+' Center the cursor vertically    zz
+normal
+
+" N => N + zz                     nnoremap N Nzz
+' move previous match word        N
+  in search
+' Center the cursor vertically    zz
+normal
+
+" y => y = $                      nnoremap Y y$
+' Yank                            y
+cursor -> line end                $
+
+
+" F5 => :w + :!clear + !python    nnoremap <f5> 
+' saves the current file          :w <CR>
+' runs external clear screen cmd  :!clear <CR>
+' executes current file w python3 :!python3 % <CR>
+' (carriage return)               <CR>
+  To press enter
+' Use external command            !
+' The name of current file        %
+normal | nnoremap <f5> :w <CR>:!clear <CR>:!python3 % <CR>
+
+  You can split the window in Vim by typing 
+" split horizontally              :split 
+" split verically                 :vsplit
+
+  Navigate the split view
+" ctrl-j => ctrl-w + j            nnoremap <c-j> <c-w>j
+' window                          ctrl-w
+' move down                       j
+normal
+" ctrl-k => ctrl-w + k            nnoremap <c-k> <c-w>k
+' window                          ctrl-w
+' move up                         k
+normal
+ctrl-h => ctrl-w + h              nnoremap <c-h> <c-w>h
+' window                          ctrl-w
+' move left                       h
+normal
+ctrl-l => ctrl-w + l              nnoremap <c-l> <c-w>l
+' window                          ctrl-w
+' move right                      l
+normal
+
+  Resize split windows using arrow keys by pressing:
+ctrl-↑ => ctrl-w + (+)            noremap <c-up> <c-w>+
+' window                          ctrl-w
+' shift up                        +
+ctrl-↓ => ctrl-w + (-)            noremap <c-down> <c-w>-
+' window                          ctrl-w
+' shift down                      -
+ctrl-→ => ctrl-w + (>)           noremap <c-left> <c-w>>
+' window                          ctrl-w
+' shift right                     >
+ctrl-← => ctrl-w + (<)           noremap <c-right> <c-w><
+' window                          ctrl-w
+' shift left                      <
+' F3 => :NERDTreeToggle           nnoremap <F3> :NERDTreeToggle<cr>
+' open/close NERDTree             :NERDTreeToggle<cr>
+
+
+" nerdtree ignore certain files    let 
+                       NERDTreeIgnore=['\.git$', '\.jpg$', 
+  and directories     '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', 
+                      '\.pyc$', '\.odt$', '\.png$', '\.gif$', 
+                      '\.db$']
+let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$','\.pyc$', '\.odt$', '\.png$', '\.gif$', '\.db$']
+
+" }}}
+
+
+** Netrw
+*** Netrw intro
+
+vim Netrw
+: https://vonheikemen.github.io/devlog/tools/using-netrw-vim-builtin-file-explorer/
+: vim's builtin file explorer
+= (plugin that comes bundled with vim)
+
+alternatives
++ NERDtree
+
+call
+> external
+º vim .
+...
+> internal
+º :Explore
+º :buffer #
+...
+outcomes || hidden is disabled (default)
++ saved changes
+^ make Netrw occupy the entire window
++ unsaved changes
+^ create a horizontal split and 
+  have Netrw in the upper window
++ :Explore! 
+^ create a verticle split and
+  have Netrw in the upper window
+...
+outcomes || hidden is enabled
++ all scenarios
+: Netrw will always occupy the whole window.
+...
+
+information in Netrw
++ Netrw
+^ name 
+^ version (v156)
+^ quick help for Netrw
++ sort
+^ sorting criteria (name)
+^ sorting sequence (symbols)
++ directory
+
+^ path of the current directory
+
+navigation
+...
++ simple
+^ Enter = Opens a directory or a file.
+^ -     = Go up to the parent directory.
+^ u     = Go back to the previous directory [history]
+^ gb    = Jump to the most recent directory [Bookmarks]
+...
++ complex
+^ mb    = To create a bookmark we use mb.
+...
+> sorting criteria
+: name
+: last update
+: size
+: extension of the file
+= (p) s
+...
+
+file operators
+...
+= common tasks
++ p      = Opens a preview window.
++ <C-w>z = Closes the preview window.
+º Ctrl + w and then z
++ gh     = Toggles the hidden files.
++ %      = "Creates a file" 
+º create optional file 
+º (using :write) to save/create the file
++ R      = Renames a file
++ D      = Deletes a file or an empty directory
+º vim will not let us delete a non-empty directory
+º there's bypass
++ d      = Creates a directory
+...
+= mark/target commands
++ mt     = Assign the "target directory" used 
+           by the move and copy commands.
++ mf     = Marks a file or directory. 
+º Any action can be performed on multiple files
+º marked files get the same action
++ mc     = Copy the marked files in the target directory
++ mm     = Move the marked files to the target directory
++ mx     = Runs an external command on the marked files
++ mu     = unmark the marked files
+...
+= complex
+
+
+key commands
+: HS => create horizontal split
+: VS => create verical split
+...
+:Explore
+= varients
++ :Hexplore
+> (*) HS Netrw in the lower window
+> (!) HS Netrw in the upper window
++ :Vexplore
+> (*) VS Netrw in the left window
+> (!) VS Netrw in the right window
++ :Sexplore
+> (*) HS Netrw in the upper window
+> (!) VS Netrw in the left window
++ :Texplore
+> create a new tabpage for Netrw
++ :Lexplore
+> (*) VS Netrw in the left window
+> (!) VS Netrw in the right window
+º open file in the coding window
+...
+
+Netrw limitations
+...
+moving files back to parent directory
+: linux
+: macOS
+^ (Error) **error** (netrw) tried using g:netrw_localmovecmd<mv>; 
+it doesn't work!
+= solution
++ to set g:netrw_keepdir to zero
+^ (code) let g:netrw_keepdir = 0
+...
+When performing an action on marked files
++ file limited to current buffer
+> cannot modify hidden files "mini-plugins"
+º provide constant view on files
+...
+Netrw can't delete non-empty directories using D
+= solution
++ mx for external commands
+: mark files[mf] => [mx] => command[rm -r]
+
+customization:
+...
+= recommend
++ avoid file errors
+^ (code) let g:netrw_keepdir = 0
++ Change the size of the Netrw window to 30%
+^ (code) let g:netrw_winsize = 30
++ hide banner
+^ (code) let g:netrw_banner = 0
+º test by using I in Netrw
++ hide dotfilws
+^ (code) let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
++ Change the copy command to [mc => cp -r]
+^ let g:netrw_localcopydircmd = 'cp -r'
++ Highlight marked files same to search matches
+^ hi! link netrwMarkFile Search
+º to change color :highlight command
+...
+
+keymaps
+= better call methods
++ :Lexplore shortcuts
+> (code) nnoremap <leader>dd :Lexplore %:p:h<CR>
+         nnoremap <Leader>da :Lexplore<CR>
+º Leader dd = Will open Netrw in the directory 
+               of the current file
+º Leader da = Will open Netrw in the current working 
+               directory
+
+navigational customs
+: keymaps cannot direct assign in Netrw
+ª it can be apply but requires a few steps
+= solution
++ Netrw is a plugin that defines its own filetype [netrw]
+  (we can this)
++ formate...
+  nmap <buffer> FF :call NetrwRemoveRecursive()<CR>
+...
+
+place our keymaps => function () 
+> (code)...
+function! NetrwMapping()
+  //keymaps//
+endfunction
+
+augroup netrw_mapping
+ autocmd!
+ autocmd filetype netrw call NetrwMapping() //1
+augroup END
+...
+º (1) create an autocommand => everytime vim opens netrw
+      filetype: netrw
+
++ where can add key maps in NetrwMapping
+> (code)...
+function! NetrwMapping()
+nmap <buffer> H u                           //1
+nmap <buffer> h -^                          //2
+nmap <buffer> l <CR>                        //3
+
+nmap <buffer> . gh                          //4
+nmap <buffer> P <C-w>z                      //5
+
+nmap <buffer> L <CR>:Lexplore<CR>           //6
+nmap <buffer> <Leader>dd :Lexplore<CR>      //7
+endfunction
+...
+º (1) H         = go back in history 
+      (u)
+º (2) h         = Will "go up" a directory 
+      (-)
+º (3) l         = Will open a directory or a file 
+      (Enter)     <CR>
+º (4) .         = Will toggle the dotfiles 
+      (gh)
+º (5) P         = Will close the preview window 
+      (ctrl W & z)
+º (6) L         = Will open a file and close Netrw 
+      (Enter & :Lexplore & Enter)
+º (7) Leader dd = Will just close Netrw 
+      (:Lexplore & Enter)
+
+Marks
+> (code)...
+nmap <buffer> <TAB> mf         //1
+nmap <buffer> <S-TAB> mF       //2
+nmap <buffer> <Leader><TAB> mu //3
+...
+º (1) Tab        = Toggles the mark on a file or directory.
+      (mf)
+º (2) Shift Tab  = Will unmark all the files in the current buffer.
+      (mF)
+º (3) Leader Tab = Will remove all the marks on all files.
+      (mu)
+
+file managing
+> (code)...
+nmap <buffer> ff %:w<CR>:buffer #<CR>  //1
+nmap <buffer> fe R                     //2
+nmap <buffer> fc mc                    //3
+nmap <buffer> fC mtmc                  //4
+nmap <buffer> fx mm                    //5
+nmap <buffer> fX mtmm                  //6
+nmap <buffer> f; mx                    //7
+...
+º (1) ff = create a file (save without enter)
+      %             - create optional file
+      :w<CR>        - to save current file 
+      :buffer #<CR> - to Netrw.
+º (2) fe = Will rename a file.
+      R
+º (3) fc = Will copy the marked files.
+      mc
+º (4) fC = mark target and copy mark files into target 
+      mt            - mark target directory
+      mc            - copy marked files
+º (5) fx = Will move marked files
+      mm
+º (6) fX = Same thing as fC but for moving files.
+      mt            - mark target directory
+      mm            - move marked filed
+º (7) f; = Will be for running external commands on the marked files
+      mx
+
+others
+> (code)...
+nmap <buffer> fl :echo join(netrw#Expose("netrwmarkfilelist"), "\n")<CR> //1
+nmap <buffer> fq :echo 'Target:' . netrw#Expose("netrwmftgt")<CR>        //2
+nmap <buffer> fd mtfq                                                    //3
+...
+º (1) fl = list marked files           
+º :echo join(netrw#Expose("netrwmarkfilelist"), "\n")
+
+º (2) fq = Show target directory
+     :echo 'Target:' . netrw#Expose("netrwmftgt")
+
+º (3) fd = target and "show directory" [fd]
+      mt - mark target directory
+     *fq - show target directory
+
+bookmarks
+> (code)...
+nmap <buffer> bb mb  //1
+nmap <buffer> bd mB  //2
+nmap <buffer> bl gb  //3
+...
+º (1) bb = To create a bookmark
+      mb
+º (2) bd = To remove the most recent bookmark
+      mB
+º (3) bl = To jump to the most recent bookmark
+      gb
+
+removing files recursively
+: needs a function
+> (code)...
+function! NetrwRemoveRecursive()
+ if &filetype ==# 'netrw'          //1
+  cnoremap <buffer> <CR> rm -r<CR> //2
+  normal mu                        //3
+  normal mf                        //4
+
+  try                              //5
+   normal mx
+  catch
+   echo "Canceled"
+  endtry
+
+  cunmap <buffer> <CR>             //6
+ endif
+endfunction
+...
+function 
+> (1) check if we are in a buffer controlled by Netrw
+> (2) prepare the remove command
+ º vim  => command mode 
+ º create a keymap (<CR>) => write the command
+> (3) use normal mu => clear all the marks, 
+ º 'cause we don't want to remove anything by accident
+> (4) normal mf => mark directory 
+ º for cursor
+> (5) normal mx => accept/refuse
+ º abort the process using ctrl + c 
+ º press Enter which will trigger the command rm -r. 
+> (6) cunmap <buffer> <CR> => remove the keymap we created
+ º because it will be terrible to have it permanently.
+
+11/30: 03:13
+10:26 => 11:44 () 01:18
+13:13 => 15:07 () 01:55
+
+12/01: 00:28 => 03:41
+12:19 => 12:47 () 00:28
+
+
+*** Netrw Reference Manuel
+
+Netrw vim reference manual
+https://vimhelp.org/pi_netrw.txt.html#netrw-contents
+
+**** 1. contents
+
+1. Contents.....................................netrw-contents
+
+2. Starting With Netrw.............................netrw-start
+ 
+3. Netrw Reference...................................netrw-ref 
+EXTERNAL APPLICATIONS AND PROTOCOLS............netrw-externapp 
+READING.............................................netrw-read WRITING............................................netrw-write SOURCING..........................................netrw-source DIRECTORY LISTING................................netrw-dirlist 
+CHANGING THE USERID AND PASSWORD...................netrw-chgup 
+VARIABLES AND SETTINGS.........................netrw-variables 
+PATHS...............................................netrw-path 
+
+4. Network-Oriented File Transfer...................netrw-xfer 
+NETRC..............................................netrw-netrc 
+PASSWORD..........................................netrw-passwd 
+
+5. Activation...................................netrw-activate 
+
+6. Transparent Remote File Editing...........netrw-transparent 
+
+7. Ex Commands........................................netrw-ex 
+
+8. Variables and Options.......................netrw-variables 
+
+9. Browsing.......................................netrw-browse 
+Introduction To Browsing....................netrw-intro-browse 
+Quick Reference: Maps........................netrw-browse-maps 
+Quick Reference: Commands....................netrw-browse-cmds 
+Banner Display......................................netrw-I 
+Bookmarking A Directory.............................netrw-mb 
+Browsing............................................netrw-cr 
+Squeezing the Current Tree-Listing Directory........netrw-s-cr 
+Browsing With A Horizontally Split Window...........netrw-o 
+Browsing With A New Tab.............................netrw-t 
+Browsing With A Vertically Split Window.............netrw-v 
+Change Listing Style (thin wide long tree)..........netrw-i 
+Changing To A Bookmarked Directory..................netrw-gb 
+Quick hide/unhide of dot-files......................netrw-gh 
+Changing local-only File Permission.................netrw-gp 
+Changing To A Predecessor Directory.................netrw-u 
+Changing To A Successor Directory...................netrw-U 
+Deleting Bookmarks..................................netrw-mB 
+Deleting Files Or Directories.......................netrw-D 
+Directory Exploring Commands.....................netrw-explore 
+Exploring With Stars and Patterns...................netrw-star 
+Displaying Information About File...................netrw-qf 
+Edit File Or Directory Hiding List................netrw-ctrl-h 
+Editing The Sorting Sequence........................netrw-S 
+Forcing treatment as a file or directory............netrw-gd 
+netrw-gf Going Up...................................netrw-- 
+Hiding Files Or Directories.........................netrw-a 
+Improving Browsing..............................netrw-ssh-hack 
+Listing Bookmarks And History.......................netrw-qb 
+Making A New Directory..............................netrw-d 
+Making The Browsing Directory The Current Directory.netrw-cd 
+Marking Files.......................................netrw-mf 
+Unmarking Files.....................................netrw-mF 
+Marking Files By Location List......................netrw-qL 
+Marking Files By QuickFix List......................netrw-qF 
+Marking Files By Regular Expression.................netrw-mr 
+Marked Files: Arbitrary Shell Command...............netrw-mx 
+Marked Files: Arbitrary Shell Command, En Bloc......netrw-mX 
+Marked Files: Arbitrary Vim Command.................netrw-mv 
+Marked Files: Argument List.................netrw-ma netrw-mA 
+Marked Files: Buffer List...................netrw-cb netrw-cB 
+Marked Files: Compression And Decompression.........netrw-mz 
+Marked Files: Copying...............................netrw-mc 
+Marked Files: Diff..................................netrw-md 
+Marked Files: Editing...............................netrw-me 
+Marked Files: Grep..................................netrw-mg 
+Marked Files: Hiding and Unhiding by Suffix.........netrw-mh 
+Marked Files: Moving................................netrw-mm 
+Marked Files: Sourcing..............................netrw-ms 
+Marked Files: Setting the Target Directory..........netrw-mt 
+Marked Files: Tagging...............................netrw-mT 
+Marked Files: Target Directory Using Bookmarks......netrw-Tb 
+Marked Files: Target Directory Using History........netrw-Th 
+Marked Files: Unmarking.............................netrw-mu 
+Netrw Browser Variables......................netrw-browser-var 
+Netrw Browsing And Option Incompatibilities.netrw-incompatible 
+Obtaining A File....................................netrw-O 
+Preview Window......................................netrw-p 
+Previous Window.....................................netrw-P 
+Refreshing The Listing..........................netrw-ctrl-l 
+Reversing Sorting Order.............................netrw-r 
+Renaming Files Or Directories.......................netrw-R 
+Selecting Sorting Style.............................netrw-s 
+Setting Editing Window..............................netrw-C 
+
+10. Problems and Fixes.........................netrw-problems 
+
+11. Credits......................................netrw-credits
+
+**** 2. Starting With Netrw
+
+2. Starting With Netrw...........................netrw-start
+
+enable plugins
+> code ===
+set nocp " 'compatible' is not set
+filetype plugin on " plugins are enabled
+==========.
+
+"transparent" editing
+º support other machines <= using urls
+º easy transfer of different formats
+> examples
+^ shh/scp 
+º vim scp://hostname/path/to/file
+^ ftp
+º vim ftp://hostname/path/to/file
+
+ftp simpfication
+1...
+check ftp supports a file <.netrc>
+º in your home directory (default)
+º has read/write permissions for only the user to read
+||
+º file formate ===
+machine HOSTNAME login USERID password "PASSWORD"
+machine HOSTNAME login USERID password "PASSWORD"
+...
+default login USERID password "PASSWORD"
+==================.
+||
+> problems
+º window </> <.netrc>
+.../
+
+2...
+solution
+||
+...
+set .netrc => .vimrc
+code ===
+let g:netrw_ftp_cmd= 'c:\Windows\System32\ftp -s:C:\Users\MyUserName\MACHINE'
+========
+º make Netrw from the URL || host's machine name => "MACHINE"
+...
+||
+...
+using c:\Users\MyUserName\MachineName
++ set variables
+= userid
+= password
+.../
+
+browsing
+º look around before editing a file
+
+|..
+browsing on current host 
+º just "edit" a director
++ vim .
++ vim /home/userid/path
+...
+browsing on a remote host
+º "edit" a directory (followed by a "/")
++ vim scp://hostname/
++ vim ftp://hostname/path/to/dir/
+|..
+
+stopping Netrw
+code ===
+:let g:loaded_netrw = 1
+:let g:loaded_netrwPlugin = 1
+========.
+º avoid loading both the plugin and 
+º autoload portions of netrw
+
+12/01: 0:39
+21:43 => 22:22
+
+
+**** 3. Netrw Reference
+
+3. Netrw Reference.....................netrw-ref
+https://vimhelp.org/pi_netrw.txt.html#netrw-ref
+
+supported protocals
++ scp/ssh
++ ftp
++ dav
++ fetch
++ http
++ (more)
+|...
+= Each protocol 
++ associating variable 
+^ holds the default command supporting that protocol
+
+EXTERNAL APPLICATIONS AND PROTOCOLS...netrw-externapp
+
+protocal/variables/commands
+===
+dav: --= g:netrw_dav_cmd ---‌--º "cadaver" 
+if cadaver is executable
+dav: --= g:netrw_dav_cmd -----º "curl -o" 
+elseif curl is available
+fetch: = g:netrw_fetch_cmd ---º "fetch -o" 
+if fetch is available
+ftp: --= g:netrw_ftp_cmd -----‌º "ftp"
+http: -= g:netrw_http_cmd ----º "elinks" 
+if elinks is available
+http: -= g:netrw_http_cmd ----º "links" 
+elseif links is available
+http: -= g:netrw_http_cmd ----º "curl" 
+elseif curl is available
+http: -= g:netrw_http_cmd ----º "wget" 
+elseif wget is available
+http: -= g:netrw_http_cmd ----º "fetch" 
+elseif fetch is available
+http: -= g:netrw_http_put_cmd º "curl -T"
+rcp: --= g:netrw_rcp_cmd -----º "rcp"
+rsync: = g:netrw_rsync_cmd ---º "rsync" 
+(see g:netrw_rsync_sep)
+scp: --= g:netrw_scp_cmd -----º "scp -q"
+sftp: -= g:netrw_sftp_cmd ----º "sftp"
+file: -= g:netrw_file_cmd ----º "elinks" or "links"
+===.
+
+|...
+http://... protocols
+= variable: g:netrw_http_xcmd 
++ protocals <=> this variable 
+º may be independently overridden
+|
+= option arguments for http-handling commands ===
+elinks : "-source >"
+links -: "-dump >"
+curl º : "-L -o"
+wget º : "-q -O"
+fetch -: "-o"
+===.
+|
+command example
+> page using an attempt at rendering the text
+º let g:netrw_http_xcmd= "-dump >"  
+> g:netrw_http_put_cmd
+º specifies both the executable and
+º any needed options
+
+READING..........................................netrw-read
+
+> using url notation
+~ :e ftp://[user@]machine/path
+
+> using Nread command
+Nread commands ===
+:Nread ? ----------------------------------º = give help
+:Nread "machine:path" ---------------------º = uses rcp
+:Nread "machine path" ---------------------º = uses ftp 
+w/ <.netrc>
+:Nread "machine id password path" ---------º = uses ftp
+:Nread "dav://machine[:port]/path" --------º = uses cadaver-
+:Nread "fetch://[user@]machine/path" ------º = uses fetch
+:Nread "ftp://[user@]machine[[:#]port]/path" = uses ftp 
+w/ <.netrc>
+:Nread "http://[user@]machine/path" -------º = uses http 
+uses wget
+:Nread "rcp://[user@]machine/path" --------º = uses rcp
+:Nread "rsync://[user@]machine[:port]/path" -= uses rsync
+:Nread "scp://[user@]machine[[:#]port]/path" = uses scp
+:Nread "sftp://[user@]machine/path" -------º = uses sftp
+= = =.
+
+WRITING..........................................netrw-write
+
+> using url notation
+~ :w ftp://[user@]machine/path
+
+> using Nwrite commands ===
+:Nwrite ? ------------------------------------‌º give help
+:Nwrite "machine:path" -----------------------º uses rcp
+:Nwrite "machine path" -----------------------º uses ftp   -
+w/ <.netrc>
+:Nwrite "machine id password path" -----------º uses ftp
+:Nwrite "dav://machine[:port]/path" ----------º uses cadaver
+:Nwrite "ftp://[user@]machine[[:#]port]/path" ‌º uses ftp 
+w/ <.netrc>
+:Nwrite "rcp://[user@]machine/path" ----------º uses rcp
+:Nwrite "rsync://[user@]machine[:port]/path" -º uses rsync
+:Nwrite "scp://[user@]machine[[:#]port]/path" º uses scp
+:Nwrite "sftp://[user@]machine/path" ---------º uses sft   -
+
+http: not supported!
+= = =.
+
+SOURCING........................................netrw-source
+
+> using url notation
+~ :so ftp://[user@]machine/path
+
+> using Nsource commands ===
+:Nsource ? ------------------------------------º give help
+:Nsource "dav://machine[:port]/path" ----------º 
+(uses cadaver)
+:Nsource "fetch://[user@]machine/path" --------º uses fetch
+:Nsource "ftp://[user@]machine[[:#]port]/path" º uses ftp 
+(w/ <.netrc>)
+:Nsource "http://[user@]machine/path" ---------º uses http
+(w/ wget)
+:Nsource "rcp://[user@]machine/path" ----------º uses rcp
+:Nsource "rsync://[user@]machine[:port]/path" -º uses rsync
+:Nsource "scp://[user@]machine[[:#]port]/path" º uses scp
+:Nsource "sftp://[user@]machine/path" ---------º uses sftp
+= = =.
+
+DIRECTORY LISTING..............................netrw-dirlist
+
+> by simply attempting to edit the directory ===
+:e scp://[user]@hostname/path/
+:e ftp://[user]@hostname/path/
+= = =.
+: remote directory listings (using scp or ftp)
++ the path needs a following "/"
+º tells netrw to treat the argument as a directory to browse
+º instead of as a file to download
+
+by nread commmand ===
+:Nread [protocol]://[user]@hostname/path/
+= = =.
++ the following "/" does the same
+
+CHANGING THE USERID AND PASSWORD.................netrw-chgup
+
+(ftp) user-id and a password
+^ saved in global variables 
+> g:netrw_uid 
+> s:netrw_passwd
+º ftp will re-use those two strings
+
+^ (ftp) other user id and/or password
+1 > you'll want to call NetUserPass() first. 
+2 > check if your ftp have <.netrc> 
+3 > To see netrw-passwd
+
+^ (ssh/scp)
+> look at netrw-ssh-hack
+
+VARIABLES AND SETTINGS.......................netrw-variables
+^ info
+> look at netrw-variables
+...
+netrw-browser-var ----: netrw browser option variables (ov)
+netrw-protocol -------: file transfer protocol ov
+netrw-settings -------: additional file transfer options
+netrw-browser-options : options affect browsing directories
+...
+
+^ costumization
+> netrw-browser-options
+> netrw-externapp
+
+cmds:
+b:netrw_lastfile - last file in Network-read/written 
+> retained on a per-buffer basis 
+º supports plain :Nw 
+g:netrw_bufsettings - the settings on netrw buffers
+> default: noma nomod nonu nowrap ro nobl
+
+g:netrw_chgwin - specifies a window number
+> only for windows where subsequent file edits happebs.  
+> look at also see netrw-C
+> default: -1
+
+g:Netrw_funcref - specifies a function (or functions) 
+                  to be called when netrw edits a file.
+---
+The file is first edited => 
+() Funcref is called
+---
+> This variable can hold a list of function references
+> default: not defined. 
+º g:Netrw... => holds a function reference
+º function needs to be in .vimrc 
+º affects all file opening
+...
+fun! MyFuncRef()
+endfun
+let g:Netrw_funcref= function("MyFuncRef")
+...
+
+g:Netrw_UserMaps - specifies a functions list for 
+                   user-specified maps and functionality.
+> info: See netrw-usermaps
+
+g:netrw_ftp - alternate ftp support by netrw 
+^ values
+=0 use default ftp            (uid password)
+=1 use alternate ftp method   (user uid password)
+
+g:netrw_ftp_options = options
+> to interactive prompting on/off 
+> to restrain ftp
+ftp
+> To stop attempting auto-login upon connection
+º not all ftp implementations support this (ex. ncftp)
+‌> choosen by default
+values
+="-i -n"
+
+g:netrw_ftpextracmd - commands for ftp client by string
+value:
+= doesn't exist (default )
+="passive" / ...
+
+ g:netrw_ftpmode      
+values
+="binary" (default)
+="ascii"
+
+g:netrw_ignorenetrc - ignore <.netrc>
+values
+=0 (default for linux, cygwin)
+=1 (default for Windows + cmd.exe)
+
+g:netrw_menu - To show netrw menu
+value
+=0 disable netrw's menu
+=1 (default) netrw's menu enabled
+
+g:netrw_uid    - (ftp) user-id,   stays per-vim-session basis
+s:netrw_passwd - (ftp) password,  stays per-vim-session basis
+
+g:netrw_preview
+value
+=0 (default) preview window in a horizontally split window
+=1 preview window in a vertically split window.
+affects 
+> the "previous window" (see netrw-P)
+     
+g:netrw_alto - To additional splitting control
+results...
+g:netrw_preview g:netrw_alto 
+        0             0      :aboveleft
+        0             1      :belowright
+        1             0      :topleft
+        1             1      :botright
+
+g:netrw_winsize - To provide preview window size
+
+g:netrw_scpport - set port for scp
+value
+= "-P" : use option
+g:netrw_sshport - set port for ssh
+value
+= "-p" : use option
+
+g:netrw_sepchr - seperate filnames names by characters
+value
+=\0xff
+=\0x01 for enc == euc-jp
+info
+<netrw-p12.>
+
+g:netrw_silent - silent transfer
+=0 : transfers done normally
+=1 : transfers done silently
+
+g:netrw_cygwin - uses cygwin options
+To use ls | time/size sorting
+value
+=1 (default > windows) scp by cygwin
+=0 scp by default
+windows
+> accepts windows-style paths
+> Network browsing uses dir instead of ls
+unix
+> doesn't change
+
+g:netrw_use_nt_rcp - To use WinNT rcp
+includes
++Win2000 
++WinXP
+value
+=0 don't use the rcp
+=1 use rcp in binary mode (default)
+
+
+PATHS.............................................netrw-path
+relative (rele path)
+example: vim scp://user@host/somefile
+example: vim scp://user@host/subdir1/subdir2/somefile
+
+root relative paths (full path)
+example: vim scp://user@host//somefile
+example: vim scp://user@host//subdir1/subdir2/somefile
+------------------------------------------------------------
+2025
+
+12/01: 1:00
+01:00 => 02:00
+
+12/02 03:52 => 4:52
+12:47 => 14:00 () 01:13
+14:18 => 16:31 () 02:13
+21:51 => 22:17 () 00:26
+
+12/03 00:21 5:13
+14:54 => 15:15 () 00:21
+
+12/05 03:22 8:35
+17:46 - 22:24 + 03:22
+...
+
+**** 5. Activation
+
+5. Activation.................................netrw-activate
+activation
++ network-oriented file transfers (a) by default
+^ whenever Vim's 'nocompatible' mode is enabled. 
++ Netrw files avalible
+^ system's plugin
+^ autoload
+^ syntax directories
+|..
+Files
++ plugin/netrwPlugin.vim script
+^ sourced automatically when vim is bring up              -
++ autoload/netrw.vim
+^ main file
+^ only loaded when you actually use netrw                 -
+|..
+
+|..
+.vimrc
+= code ^**
+set nocp
+if version >= 600
+filetype plugin indent on
+endif
+^**
+º minimum for activation
+|..
+optional .vimrc
+> code ===
+" Augroup VimStartup:
+augroup VimStartup
+au!
+au VimEnter * if expand("%") == "" | e . | endif          -
+augroup END
+= = =.
+º netrw activates || [g]vim without any filenames         -
+º shows current directory
+|..
+...
+
+** orgzly
+
+[[https://www.orgzlyrevived.com/docs#links][documentation]]
+
+https://www.orgzlyrevived.com
+mailto:support@orgzlyrevived.com 
+
+[[link][name]]
+[[https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.7RKWihG3THGnlR_YiNfqhwHaHa%3Fpid%3DApi%26ucfimg%3D1&f=1&ipt=e1721620d313b25b04b170f28ea273d93b9b858f46cb024f822e09693920624a&ipo=images][duckduckgo]]
+
+[[link]]
+[[file:]]
+
+* ideas/concepts
+** coding basics
+*** Devices
+**** Input devices
+
+Devices that send information
+> keyboard
+> mouse
+> touchpad
+> scanner
+> microphone
+
+**** output devices
+
+devices that react to information
+> display screen
+> speaker
+> earphone
+> printer/scanner-combo
+
+**** CPU
+
+translates information
+> cache memory
+  ⌀ allow access of provided information
+  § on the CPU ship
+
+> main-memory/random-access-memory (RAM)
+  ⌀ Temporary storage
+  ⌀ Erase on turn off
+  § Access by the CPU
+
+> secondary storage (hard-disk)
+  ⌀ permeant storage
+  ⌀ hard to erase
+  § internal-hard-drives/external-hard-drives/CDs/USBs/DVDs
+
+Control Unit
+> manages the operation of the CPU
+> bytecode decoder // bytecode -> machine instructions
+> controls the flow of data
+> part of Jon Von Neumann Architecture
+> unchanged purpose since introduction 
+
+**** Memeory
+
+main properties
+> Low Access Time - easy accessibility
+> Low Cost - low cost & easy to get
+> High Capacity - store alot information
+
+secondary properties
+> Volatility - likelyhood info getting lost/distorted
+
+memory for CPUs
+> cache memory
+  ⌀ high cost
+  ⌀ low access time
+  ⌀ high volatility
+  § located in the CPU
+
+> main memory
+  ⌀ avg access time
+  ⌀ avg cost
+  ⌀ avg capacity
+  ⌀ avg volatility
+  § stores current info
+
+> secondary storage
+  ⌀ Low cost
+  ⌀ high capacity
+  ⌀ long access time
+  ⌀ Low volatility
+  § stores in internal/external hard drives  // CDs/Floppy-disk/DVDs/USBs
+
+memory hierarchy
+> Cache -> main -> secondary
+§ based on access time 
+
+OS
+> manage data movement
+
+
+**** Operating system (OS)
+
+manages software and hardware
+> CPU
+> memory
+> input/output devices
+
+ex
+> microsoft window
+> linux
+> unix
+> macOS
+
+**** Central Processing Unit (CPU)
+
+CPU - A unit to perform rapid computations
+> follow instructions 
+§ reads Binary (1s and 0s)
+
+Programming language
+> People -interact> CPU
+§ provides syntax & rules to be followed exactly
+ð if not -> errors
+
+translate code -> binary (machine language)
+> compilers - translate code all at once
+> interpreters - translate code from line to line
+
+
+
+*** digital communication
+**** char sets
+***** UTF-8
+
+https://www.charset.org/utf-8
+---------------------------------------
+UTF-8 - Unicode Transformation Format-8
+> encoding system for unicode chars
+> chars size: 1-4 bytes
+> >100,000 char
+
+changes
+> control char 128-159 are obsolete 
+
+not implamented
+> windows 1252 codepage
+
+includes
+> €
+----------------------------------
+encoding
+
+() html
+format
+&#[decnumber];
+&#966 => φ
+
+() url 
+format
+%[hexadecimal]
+%40 => @
+
+***** ISO/IEC 8859-n
+****** ISO-8859-1 code page
+
+https://www.charset.org/charsets/iso-8859-1
+-------------------------------------------
+ISO-8859-1 code page - ISO Latin 1
+> 8 bit 1 bytes char set
+
+contains
+char UTF-8/UTF-16 (0-127)
+control char (0000-001F - 007F-00A0)
+
+included ctrl char
+> LF: Line feed
+> CR: Carriage Return
+> HT: Tab character
+> NUL: NULL character
+
+changed
+many ctrl char are obsolete 
+purpose => telegraphs
+
+****** ISO/IEC 8859 wikipedia
+
+https://en.wikipedia.org/wiki/ISO/IEC_8859
+=======================================================
+ISO/IEC 8858
+> series of standards for 8-bit character encodings
+> containing 16 parts
+
+changes
+the abandonment ISO/IEC 8859-12
+iso working group is disbanded
+
+usage
+ISO 8859 1/2/3/4 => Erma internation standard (ERMA-94)
+=======================================================
+introduction
+-------------
+ASCII
+> used to exchange information in english
+problem
+> ASCII doesn't latin letters
+result
+> ASCII is not capable to exchange in other languages
+-----------------------------------------------------
+ISO/IEC 8859
+
+try solve this problem
+() Utilizing 8 bit byte format
+> To add 96 extra printable characters
+due
+() 7 bit restriction
+> by data transmittion protocals
+
+problem got bigger
+> more characters need than what is capable
+leading
+> To develope multiple mappings
+resulting
+> 10< mappings for the latin alphabet
+-------------------------------------
+contains
+print chars 
+> (0x00-1F)
+> (0x7F-9F)
+ctrl chars
+> ISO/IEC 4873
+ctrl function
+> ISO 6429 
+> ISO 6630
+C0 set (0-31)
+> ISO 646
+C1 set (128-159)
+> ISO 6429
+-------------------------------------
+Multipurpose Internet Mail Extensions
+MIME name
+> ISO/IEC 8859-n
+> ISO-8859-n
+======================================
+char
+--------------------------------------
+ISO/IEC 8859
+> realiable exc info in dif lang
+> doesn't have relaible a typography
+
+include
+> optional ligatures
+> curly quotation marks
+> dashes...
+
+dev
+high-quality typesetting systems 
+> proprietary or idiosyncratic extensions for
+  ASCII and ISO/IEC 8859 standards
+the use of Unicode
+
+
+****** the list ISO-1859 char sets
+
+8-bit single-byte coded character set.
+
+ISO-8859-2 (Central Europe)
+https://www.charset.org/charsets/iso-8859-2
+ISO-8859-3 (Southern Europe)
+https://www.charset.org/charsets/iso-8859-3
+ISO-8859-4 (Baltic)
+https://www.charset.org/charsets/iso-8859-4
+ISO-8859-5 (Cyrillic)
+https://www.charset.org/charsets/iso-8859-5
+ISO-8859-6 (Arabic) 
+https://www.charset.org/charsets/iso-8859-6
+ISO-8859-7 (Greek)
+https://www.charset.org/charsets/iso-8859-7
+ISO-8859-8 (Hebrew)
+https://www.charset.org/charsets/iso-8859-8
+ISO-8859-9 (Turkish)
+https://www.charset.org/charsets/iso-8859-9
+ISO-8859-15 (Latin 9) 
+https://www.charset.org/charsets/iso-8859-15
+
+***** ASCII
+
+ASCII Values Alphabets ( A-Z, a-z & Special Character Table )
+>https://www.geeksforgeeks.org/dsa/ascii-table/
+
+ASCII
+> standard character encoding system
+> 7 bit code based
+> define upto 128 characters
+
+history
+published: 1967
+
+visions history
+ANSI X3.4-1968 (published)
+ANSI X3.4-1977
+ANSI X3.4-1986 
+
+printable char
+A-Z (26s) U-letters
+a-z (26s) u-letters
+1-9 (10s) numerals
+*-* (33s) special symbols
+> math symbols
+> punctation symbols
+> space characters
+
+others
+> functions (?)
+> other symbols (?)
+
+ASCII control characters   (000-031)(127)
+ASCII printable characters (032-126)
+Extended ASCII characters  (128-255)
+
+what it do
+> assigns  | # => symbols
+> machines | work <> symbols
+> symbol <?> binary code
+
+file:/storage/emulated/0/Download/ASCII-Table.png
+
+difference between ASCII & unicode
+ASCII
+1> represent text
+2> 7 bit binary based
+3> assign 128 char
+
+unicode
+1> exchange, process, & store text
+2> 16 bit binary
+3> assign 65,000 char
+
+12/06+00:10+00:10
+00:46 00:56 00:10
+
+**** Control Characters
+
+https://www.geeksforgeeks.org/computer-organization-architecture/control-characters/
+-----------------------------------------
+Control Chars - character control actions
+
+being
+> cannot be print & displayed
+> execute actions
+using
+> in-band signaling
+
+printable
+being
+> be print & displayed
+> cannot execute action
+displaying
+> Letters
+> symbols
+> numbers
+> alphanumeric characters
+
+History of Control Characters
+usage
+> communication & control devices (teletypes)
+---------------------------------------------
+baudot code (1870)
+bring
+> NUL (nul)
+> DEL (delete)
+
+Murray code (1901)
+bring
+> CR (carriage return)
+> LF (line feed)
+> BEL (bell char)
+used
+> proper text formating
+> managing outut
+> bell signal for important message or alert
+
+Use Cases of Control Characters
+----------------------------------
+Text Files
+> formatting
+> organizing data
+> indicating special operations
+usage
+> seperate lines
+[CR LF
+> identation & colum alignment
+[TAB
+> padding & destroy strings
+[NUL
+> To end text
+[ETX (end of text)
+programming & data format
+> help maintain the structure
+> readability of text files 
+----------------------------------------
+In Networking Protocols 
+> ensure the smooth transmission of data
+> to mark s/e of transmission
+> manage communication flow
+> indicate errors
+
+HTTP/FTP protocals
+> mark the end headers & split messages
+[CR LF
+> end transmition
+[EOT(end of transmition)
+> mark the start of header files
+[SOH(start of header)
+purpose
+> ensure network protocols correctly parse 
+> deliver messages in structured formats
+--------------------------------------------
+In Programming Languages 
+> handle special operations
+> string manipulations
+> manage input/output
+
+C
+> string handling
+[\n (New Line) \t (Tab)
+> file i/o
+[\0 (Null Termination)
+
+Python
+> control output formatting 
+[\n \t
+> manipulate strings in text processing
+[\r
+
+JS
+> new lines
+[\n
+console outputs and text areas
+> to format text output 
+> handle string data in web development
+[\t
+
+overall in programing
+> help format 
+> manage text efficiently
+-----------------------------------------
+in BFID
+> to mark s/e of RFID tag data streams
+> providing structure 
+> allowing RFID readers to identify 
+  & interpret transmitted data
+
+in barcode system
+> to represent instructions 
+  or delimiters within data. 
+> allow barcode scanners to properly interpret 
+  and obtain information from barcodes
+usage
+> error-checking 
+> formatting the data for output.
+..............................................
+ASCII control characters
+> C0 set (0-31)
+> extras (32 & 137)
+used
+> printers
+Confrol Characters
+> form-feed/new-page - go to header of following page
+> formal effectors - regulate plain text
+> transmittion control - transmittion protocal
+> device control - control auxilery devices
+> infomation seperator - control/seperate bits of infomation
+> extras - handling errors
+         - to mark the end text/code/file/script
+         - creating caution
+overall purpose ASCII
+> text layout
+> commuincation
+> device control
+----------------------------------------------------------
+C1 control characters
+> ASCII code (128-159)
+used
+> displays
+> printers
+contains
+> ASCI escape sequence
+> VT100
+history
+> introduce: 1970
+componet of use
+> C0 set
+Control Characters
+> formal effectors - control verical and horizontal shift
+> presentation effectors - display line breaks & new lines
+> area definition - controling structure & form feeding
+-----------------------------------------------------------
+ISO 8859 unique characters
+
+ISO 8859
+> collection 8bit char sets
+characters
+> lating
+> cryllic
+> greek
+> arabic
+> hebrew
+> thai
+based
+> identified by window char sets (ANSI codepages
+
+char similar ctrl chars
+> non breaking space - NBSP
+> soft hyphen - SHY
+traits
+> similar attributes to ctrl char
+> not considered to be ctrl char
+----------------------------------------------
+
+01:02 01:10 +00:08
+03:35 04:23 +00:58 €01:06
+12/10: 01:06
+
+
+13:41 13:50 () 00:09
+20:08 20:12 () 00:04 +00:13
+12/11: 01:19
+
+
+**** Printable chars
+** coding language
+*** bash
+**** shortcut
+
+file name: ~/.bashrc
+
+allias "commands"
+
+# Update Termux packages 
+  alias pkgup="pkg update && pkg upgrade" 
+# Start SillyTavern 
+  alias st='cd ~/SillyTavern && bash start.sh' 
+# Update SillyTavern 
+  alias stup='cd ~/SillyTavern && git pull --rebase --autostash'
+
+implemntation
+source ~/.bashrc
+
+
+
+** science
+*** Biology
+**** sharks
+
+Nurse/Lemon
+> plastoid-scale/Dermal-denticals
+
+**** Humans
+
+Early European Modern Humans (EEMH)
+> globular braine case
+> upright posture
+> flat face
+> 
+
+**** snakes
+
+Titanoboa 
+Madtsoiidae
+> constrictors // bodily weapon
+> cannot swallow
+
+**** extinction events
+***** permian/great-dying
+
+cause by
+> volcanic equption
+
+leading to
+> ocean acidification
+> mass wild fire
+> huge lava terraformization
+> large radiation exposure
+
+*** chemistry
+*** physics
+* C/C++
+** commands
+*** first code
+
+......
+// Necessary header files for input output functions
+#include <iostream>
+using namespace std;
+
+// main() function: where the execution of
+// C++ program begins
+int main() {
+
+// This statement prints "Hello World"
+cout << "Hello World";
+
+return 0;
+}
+
+//////
+"Hello World"
+......
+
+*** preprocess directives
+
+preprocessor directive - direction for preprossor (before code execution)
+major types:
+> Macros
+> File Inclusion
+> Conditional Compilation
+> Other directives|| #undef, #pragma, etc.
+
+main focus: to replace a given section of C code with another C code.
+> #define PI 3.14 => PI <=> 3.14
+
+code execution process
+1. source-file
+2. preprocessor => processed file(.i)
+3. compilation => assembly file(.s)
+4. linker => execution code
+
+website:
+https://www.geeksforgeeks.org/c/cc-preprocessors/
+
+**** Macros
+
+Macros - To add/remove constants
+key functions
+- #define
+- #undef
+
+(add a constant)
+#define (macro template) (macro expansion)
+
+(remove a constant)
+#undef _constant_
+
+predefined Macros
+> _LINE_ - # of lines of code written
+> _FILE_ - the file name of the currently executing program in the computer.
+> _DATE_ - the date when source code => object code (finish compilation)
+https://www.geeksforgeeks.org/c/predefined-macros-in-c-with-examples/
+
+***** Types of macros
+
+Type of macros
+> object like macros
+> chain macros
+> multiline macros
+> function-like macros
+
+macro general syntax
+#define MACRO_NAME value
+
+object like macros
+> contains define value or expression
+...
+#define DATE 30
+...
+
+chain macros
+> group of macros connected to each other
+...
+#define INSTAGRAM FOLLOWERS
+#define FOLLOWERS 138
+...
+
+multiline macro
+> macro contain multiple values
+> values seperated by \
+...
+#define ELE 1, \
+            2, \
+            3
+...
+
+function-like macros
+> macros that behaves as a function
+> ? return
+> : condition
+...
+#define min(a, b) (((a) < (b)) ? (a) : (b))
+{{}}
+a < b (true)
+return a
+a < b (false)
+return b
+...
+
+***** examples
+****** To make a constant
+
+#include <stdio.h>
+
+// Macro Definition
+#define LIMIT 5 
+//Limit is now Macro template
+//connect value 5 is now Macro expansion
+
+int main(){
+for (int i = 0; i < LIMIT; i++) {
+printf("%d \n", i);
+}
+return 0;
+}
+//////
+0
+1
+2
+3
+4
+
+****** removing a constant
+
+......
+#include <stdio.h>
+
+// Macro Definition
+#define LIMIT 5
+//Limit is defined with the value of 5
+
+// Undefine macro
+#undef LIMIT  //value of 5 is removed
+
+int main(){
+for (int i = 0; i < LIMIT; i++) {
+printf("%d \n", i);
+}
+return 0;
+}
+////
+./Solution.c: In function 'main':
+./Solution.c:10:25: error: 'LIMIT' undeclared (first use in this function)
+10 | for (int i = 0; i < LIMIT; i++) {
+   |                     ^~~~~
+./Solution.c:10:25: note: each undeclared identifier 
+is reported only once for each function it appears in
+problem:
+LIMIT is undefined 
+there undeclare constant at line 10 (this shown in code editors)
+......
+
+****** making function (Macros with arguements)
+
+
+......
+#include <stdio.h>
+
+// macro with parameter
+#define AREA(l, b) (l * b) // declares function AREA base on paremeter l & b
+
+int main(){
+int a = 10, b = 5;
+
+// Finding area using above macro
+printf("%d", AREA(a, b));
+return 0;
+}
+//////
+50
+......
+
+**** File Inclusion
+
+File Inclusion - adds external files into the current program. 
+types
+> header files
+> libraries
+> more
+key commands
+#include (<file_name>/"file name")
+<> - search in standard directory
+"" - search in source file's directory
+
+***** examples
+****** adding standard I/O Library
+
+......
+// Includes the standard I/O library
+#include <stdio.h> 
+
+int main() {
+printf("Hello World");
+
+return 0;
+}
+......
+
+**** Conditional Compilation
+
+Conditional Compilation 
+- include or exclude parts of the code depending on certain conditions.
+- place within main()
+//This is useful for creating platform-specific code or for debugging. 
+
+key function:
+start{
+#if 
+#if defined(BEED) - check if BEED is defined
+#ifndef BEED - check if BEED is not defined
+}
+middle{
+#elif
+#else (middle last condition)
+}
+end{
+#endif (end)
+}
+
+***** example
+
+......
+#include <stdio.h>
+
+// Defining a macro for PI & SQUARE
+// #define PI 3.14
+// #define SQUARE 3.14
+
+int main(){
+
+// Check if PI is defined using #ifdef
+#ifdef PI
+printf("PI is defined\n");
+
+// If PI is not defined, check if SQUARE is defined
+//#else defined(SQUARE)
+// printf("Square is defined\n");
+
+// If neither PI nor SQUARE is defined, trigger an error
+#else
+#error "Neither PI nor SQUARE is defined"
+#endif
+
+// Check if SQUARE is not defined using #ifndef
+#ifndef SQUARE
+printf("Square is not defined");
+
+// If SQUARE is defined, print that it is defined
+#else
+printf("Square is defined");
+#endif
+
+return 0;
+}
+
+
+//////
+(PI & SQUARE) defined
+PI is defined
+Square is defined
+
+(!PI & SQUARE) defined
+Square is defined
+Square is defined
+
+(PI & !SQUARE) defined
+PI is defined
+Square is not defined
+
+(!PI & !SQUARE) defined
+./Solution.c: In function 'main':
+./Solution.c:19:6: error: #error "Neither PI nor SQUARE is defined"
+19 | #error "Neither PI nor SQUARE is defined"
+   | ^~~~~
+**error: from line 19 => #error
+**#error states => Neither PI nor SQUARE is defined
+......
+
+**** OTHER DIRECTIVES
+
+OTHER DIRECTIVES - Apart from the primary preprocessor directives
+// directives for managing compiler behaviour
+// directives for debugging.
+
+ex directive
+#pragma directive
+commands{
+pragma startup
+- starts functions before main()
+pragma exit
+- start functions after main()
+}
+_attribute_ directives
+commands{
+void __attribute__((constructor));
+- start function before main()
+void __attribute__((destructor));
+- start functions after main()
+}
+
+***** example
+****** usuage #pragma
+
+usuage #pragma
+......
+#include <stdio.h>
+void func1();
+void func2();
+
+// specifying funct1 to execute at start
+#pragma startup func1
+
+// specifying funct2 to execute before end
+#pragma exit func2
+
+void func1() { printf("Inside func1()\n"); }
+void func2() { printf("Inside func2()\n"); }
+int main(){
+void func1();
+void func2();
+printf("Inside main()\n");
+
+return 0;
+}
+//////
+Inside func1()
+Inside main()
+Inside func2()
+
+(GCC compilers)
+Inside main()
+......
+
+****** usage _attribute_
+
+......
+#include <stdio.h>
+
+void func1();
+void func2();
+
+//_attribute_ start function out of main()
+//((constructor)) => before main()
+//((destructor)) => after main()
+void __attribute__((constructor)) func1();
+void __attribute__((destructor)) func2();
+
+void func1()
+{
+printf("Inside func1()\n");
+}
+
+void func2()
+{
+printf("Inside func2()\n");
+}
+
+int main()
+{
+printf("Inside main()\n");
+
+return 0;
+}
+......
+
+**** examples
+
+#define - to define the macros and symbolic constants
+#include - to include the contents of a specified file 
+into the source code before compilation.
+external libraries or header files {
+0 functions, 
+0 constants
+0 variables 
+}
+syntax{
+#include <file_name>
+#include "filename"
+}
+#if, #ifdef, #else, #elif, #endif
+- to compile a specific portion of the program 
+- skip compilation of some specific part of the program 
+0 based on some conditions
+#line - to specify a line number and filename to be used by the compiler
+
+website:
+https://www.geeksforgeeks.org/cpp/cpp-preprocessor-directives-set-2/
+
+
+*** time
+
+time
+Nov 15: 0:36
+10:19 => 10:51
+11:53 => 11:56
+
+** header files
+*** <stdio.h>
+*** <math.h>
+** functions
+*** input/output
+**** scanf() in C
+
+https://www.geeksforgeeks.org/c/scanf-in-c/
+===========================================
+scanf in C
+standard input function to read 
+formatted data from the standard 
+input stream (stdin)
+
+what it do
+scans the input to format specifers
+
+defined
+by <stdio.h> header file
+
+ex
+scanf("%d", &n);
+scanf() - search a value in keyboard
+%d - specifies input is interger
+%n - stores value in variable n
+
+Syntax
+scanf("format", address_of_args... );
+format - string that contain format
+ specifers
+address_of_args - variables to store 
+ the input
+
+return values
+>0 - # variables converted & assigned
+=0 - no value assigned
+<0 - failed to assign 
+     by error or end of file
+
+tools
+& operator - to find the address
+ of the variables
+format specifier - recognize 
+ which type of data to be store
+
+examples of format specifiers for scanf()
+%d   - integers.
+%ld  - long integers
+%lld - long long integers
+%f   - real number (float point)
+%c   - character types (char)
+%s   - string
+===========================================
+Examples of scanf
+
+scanf("%f", &f); 
+> float point value for f
+
+scanf("%d %d", &a, &b); 
+> int v => a
+> int v => b
+
+scanf("%s", name);
+> string => char name
+> name[50] => name //#name
+
+scanset characters
+scanf("%[^\n]", name);
+> %[^\n] - scanset that tells scanf to 
+read all characters except newline (\n)
+ * tell scanf() to stopping when the user 
+presses Enter
+> %[^\n] v => name
+
+===========================================
+06:44 07:44 + 01:00
+16:00 16:09 + 00:09 01:09
+12/12 + 01:09
+
+**** gets() is risky to use!
+
+https://www.geeksforgeeks.org/c/gets-is-risky-to-use/
+=====================================================
+gets() is risky to use!
+due
+buffer over flow
+
+input
+void read()
+{
+   char str[20];
+   gets(str);
+   printf("%s", str);
+   return;
+}
+output
+[error]
+
+due to
+gets() doesn't do any array bound testing
+
+from
+gets() keeps on reading until it sees 
+a newline character
+-----------------------------------------------------
+recommend to use
+fgets()
+
+due 
+fgets() makes sure that not more than 
+MAX_LIMIT characters are read
+
+fgets() 
+stores the '\n' character if it is read
+this can 
+remove explicitly by the programmer
+
+advised 
+str can store at least (MAX_LIMIT + 1) characters 
+if your intention is to keep the newline character
+so
+there is enough space for the 
+null terminating character '\0' 
+to be added at the end of the string
+
+=====================================================
+23:21 23:31 + 00:10
+12/12
+
+**** fgets() in C
+
+https://www.geeksforgeeks.org/c/fgets-function-in-c/
+====================================================
+fgets()
+a built-in function in <stdio.h>
+
+used 
+to read a line of text from input
+stores the input into a character array
+
+stops reading when it reaches 
+newline character (\n)
+the specified number of characters
+end-of-file (EOF)
+
+prevents buffer overflow by 
+limiting the number of characters read
+
+We can use it to read a full line 
+includes whitespace from input
+====================================================
+#include <stdio.h>
+main(){
+  char buff[100]; 
+  int n = 10;
+  fgets(buff, n, stdin);
+}
+
+/* fgets() reads will 
+read up to 9 characters or reaches \n 
+from the standard input (stdin) 
+stores them in the array buff assign it buff
+*\
+===================================================
+syntax
+fgets(buff, n, stream);
+
+buff   - pointer to the string buffer
+       // char buff[100]
+n      - max chars to read with the null terminator
+       // int n = 10 
+       ## 9 chars + null tern
+stream - The input stream
+       // stdin
+
+===================================================
+Return Value:
+" " if return the pointer into the variable
+NUL if error occors
+
+===================================================
+usage
+---------------------------------------------------
+// Reading from a File
+#include <stdio.h>
+int main() {
+    FILE *fptr = fopen("in.txt", "r");
+    
+    char buff[30];
+    fgets(buff, sizeof(buff), fptr);
+
+    printf("%s", buff);
+    fclose(fptr);
+    return 0;
+}
+
+/* steps
+1. grabs content in.text & store variable ftpr
+2. use fgets store value into buff
+3. buff get print as file & main() is closed
+*/
+
+/* roles
+char buff[30] - char variable that stores 30 char
+                30 bytes
+
+FILE *fptr = fopen("in.txt", "r"); open in.txt
+fclose(fptr); close in.txt
+
+fgets(buff, sizeof(buff), fptr);
+sizeof(buff) - # char in fgets array to buff
+buff - variable that stores array
+fptr - file to be input stream
+
+printf("%s", buff); // prints buff
+*/
+
+===================================================
+// Reading from Keyboard ( User Input ) 
+#include <stdio.h>
+#include <string.h>
+int main() {
+    printf("Enter your name: \n");
+    
+    char name[20];
+    fgets(name, sizeof(name), stdin);
+    printf("Hello, %s", name);
+    return 0;
+}
+/* steps
+1. instruct the user
+2. get value of user 
+   put it into name 
+   and print nane
+*/
+/* roles
+stdin - keyboard input to be input stream
+*/
+
+===================================================
+14/12
+23:43 24:00 + 00:17
+15/12
+00:00 02:39 + 02:39 02:56
+
+
+**** printf() in C
+
+https://www.geeksforgeeks.org/c/printf-in-c/
+============================================
+printf in C
+used to print formatted output to the 
+standard output (stdout) 
+which generalley the console screen
+
+function is defined inside 
+<stdio.h> header file.
+============================================
+#include <stdio.h>
+
+int main() {
+    // Using printf to print the text "Hi!"
+    printf("Hi!");
+    return 0;
+}
+/* output
+"Hi!"
+*/
+/* what happened
+printf function print the text "Hi!" 
+on the console screen.
+*/
+============================================
+Syntax of printf
+printf("format_string", args...);
+/////////////////////////////////////////
+formated_string - a string that specifies 
+                  the data to be printed
++ format specifier - placeholder 
+                 to print the value of 
+                 any variable or value
+////////////////////////////////////////
+args... - variable/values corresponding 
+          to the format specifier
+============================================
+Return Value:
+#chars-printed if execution successful
+-# if error occur
+
+===========================================
+Format Specifier in printf
+special symbols used to specify 
+the type of data
+to ensures the correct interpretation of 
+variable values 
+during input/output operations.
+
+Different specifiers
+%d for integers
+%f for floats
+%c for characters
+%s for strings
+
+============================================
+// Print a Variable
+#include <stdio.h>
+int main() {
+    int a = 99;
+    int b = 1;
+    printf("Sum of %d and %d is %d", a, b,
+           a + b);
+    return 0;
+}
+/* output
+Sum of 99 and 1 is 100
+*/
+what happened
+/*
+a => b => (a+b)
+*/
+--------------------------------------------
+// Print a Literal
+printf("Sum of %d and %d is %d", 99, 1,
+99 + 1);
+
+/* what happened
+99 == a
+1 == b
+99+1 == (a+b)
+*/
+--------------------------------------------
+// Right Align the Output
+char s[] = "GfG!";
+printf("%40s", s);
+
+/*output
+...GfG
+   40|
+*/
+/* what happened
+[<space> <= GfG]
+[] width => 40 chars
+*/
+--------------------------------------------
+// Left Align Output with Specified Width
+char s[] = "Welcome to GfG!";
+ printf("%-20s", s);
+ printf("Geeks");
+
+/* output
+Welcome to GfG!     Geeks
+[ Welcome to Gfg =>] Geeks
+[]w => 20
+*/
+--------------------------------------------
+// Add Leading Zeroes to Integer
+#include <stdio.h>
+
+int main() {
+    int n = 2451;
+    printf("%.10d\n", n);
+    return 0;
+}
+/* output
+0000002451
+[0 <= 2451]
+[]w = 10
+*/
+--------------------------------------------
+// Limit Digits After Point in Float
+#include <stdio.h>
+
+int main() {
+    float f = 2.451;
+
+    // Precision for float data
+    printf("%.2f", f);
+    return 0;
+}
+/* output
+2.45
+2.[45]1
+[]w = 2
+*/
+--------------------------------------------
+// Limit Number of Characters in a String
+#include <stdio.h>
+
+int main() {
+    char s[] = "Welcome to GfG!";
+    printf("%.7s", s);  
+    return 0;
+}
+/* output
+Welcome
+[Welcome] to GfG!
+[]w = 7
+*/
+============================================
+12/15
+02:45 04:03 + 01:18
+15:32 15:43 + 00:11 01:29
+
+*** math
+**** pow() in C
+
+https://www.geeksforgeeks.org/c/power-function-c-cpp/
+=====================================================
+Power Function in C
++ defined function in the <math.h> 
+
+used to calculate 
+the exponent value of 
+in (xŷ)
+=====================================================
+// examples
+#include <stdio.h>
+#include <math.h> 
+
+int main() {
+ double base = 5, exponent = 3, result;
+ result = pow(base, exponent);
+
+ printf("%.0f raised to the power of %.0f is %.0f\n", 
+base, 
+exponent, 
+result);
+
+ return 0;
+}
+
+/* output
+5 raised to the power of 3 is 125
+*/
+
+/* roles
+#include - apply header file
+<math.h> - the file contains pow() function
+*/
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+bases - x
+exponent - ŷ
+result - placeholder
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+pow() - place value in result for xŷ
+printf() - print x, ŷ, and result
+*/
+
+=====================================================
+pow() in C
+include the <math.h> in our C program
+takes a float both input and output
+
+syntax
+// float
+float pow(float base, float exponent);
+
+// double (double percision float)
+double pow(double base, double exponent);
+
+// long double (extended double)
+long double pow(ld base, ld exponent);
+=====================================================
+Parameters
+pow(x,y)
+x - base
+y - exponent
+=====================================================
+Return Value
+# - successful
+error - failure
+=====================================================
+pow() Function with Integers
+does not always work properly for integers
+due return of a float value
+
+pow(int 5, int 2) => 
+24.9999999 => 24 (int pow())
+25.0000000001 => 25 (int pow())
+
+solve by adding || int pow() => 25
+1e-9
+round(pow())
+
+=====================================================
+12/15
+15:48 16:31 + 00:43
+
+** C++ basics
+*** C++ Char Data Types
+
+> https://www.geeksforgeeks.org/dsa/ascii-table/
+
+char - single character
+> prefix: '[]'
+range
+> ASCII values - American Standard Code for 
+                 Information Interchange
+ASCII
+# => symbols
+ASCII Range of 'a' to 'z' = 97-122
+ASCII Range of 'A' to 'Z' = 65-90
+ASCII Range of '0' to '9' = 48-57
+
+convert | symbols <?> ASCII values
+char => int 
+int(charVARIABLE)
+int => char
+char(intVARIABLE)
+
+escape sequences
+\n new line
+\\ \
+\t d- tab
+\v d| tab
+\0 null char
+
+
+*** C++ Escape Sequences
+
+> https://www.geeksforgeeks.org/cpp/cpp-escape-sequences/
+
+\\ \
+\' '
+\" "
+\? ?
+\a alert(bell)
+\b backspace
+\f form feed
+\n new line
+\r carriage return
+\t d- tab
+\v d| tab
+\0 null char 
+\ooo octal #
+\xhh hexadecimal #
+
+\b
+cout << "Hello \b\b\b\b\b\bHi Geeks";
+{{{
+Hi Geeks
+
+\n
+cout << "Hello\n";
+cout << "GeeksforGeeks";
+{{{
+Hello
+GeeksforGeeks
+
+\t
+cout << "Hello \t GFG";
+{{{
+Hello (tab) GFG
+
+\v
+cout << "Hello friends\v";
+cout << "Welcome to GFG";
+{{{
+Hello friends
+/n           | (tab) Welcome to GFG
+
+\r
+cout << "Hello Geeks \rGeeksfor";
+{{{
+GeeksforGeeks
+
+\\ & \' & \" & \?
+cout << "Hello\\GFG";
+cout << "\' Hello Geeks\n";
+cout << "\" Hello Geeks";
+cout << "\?\?!\n";
+{{{
+Hello\GFG
+' Hello Geeks
+" Hello Geeks
+??!
+
+\ooo
+char* s = "A\072\065";
+cout << s;
+{{{
+A:5
+
+\xhh
+char* s = "B\x4a";
+cout << s;
+{{{
+BJ
+
+
+
+*** C++ Type Modifiers
+
+https://www.geeksforgeeks.org/cpp/cpp-type-modifiers/
+=====================================================
+C++ Type Modifiers
+> keywords used to change or give extra meaning
+  to already existing data types
+
+changing
+> size 
+> range
+
+modifiers
+signed
+unsigned
+short
+long
+-------------------------------------------------
+signed Modifier
+> make variables store 
+  both positive and negative values
+
+syntax
+signed datatype;
+
+only used in
+> char
+> int
+
+affect
+x size
+v range
+v negative values
+
+default
+int
+------------------------------------------------
+unsigned Modifier
+> make variables store 
+  only non-negative integer values
+
+syntax
+unsigned type name;
+
+only be used 
+> integer (int)
+> character (char)
+
+change
+x size
+v range
+v negative values
+
+negative values - complement
+4294967296 (-value)
+2^32 (-value) // 32 => # bits in 4 bytes
+-0001 => 1110
+-1011 => 0100
+-------------------------------------------------
+short Modifier
+makes variable to decreases the size 
+of the datatype in the memory
+
+syntax
+short type name;
+
+only be used
+> int
+
+changing
+v size
+v range
+x negative values
+
+short int => short
+-------------------------------------------------
+long Modifier
+makes variable to increase the size 
+of the data type in memory
+
+only be used
+int (twice)
+double
+
+syntax
+long type name;
+
+changing
+v size
+v range
+x negative values
+
+long int => long
+=================================================
+06:21 06:34 () 00:13
+12/12 00:13
+
+*** C Preprocessors
+
+https://www.geeksforgeeks.org/c/cc-preprocessors/
+=================================================
+C Preprocessors
+programs that process the source code 
+before the actual compilation begins
+
+They are not part of 
+the compilation process 
+
+operate separately
+to allowing programmers 
+to modify the code before compilation. 
+
+preprocessors is
+first step that the C source code goes through 
+
+Main types of Preprocessor Directives are 
+Macros, 
+File Inclusion, 
+Conditional Compilation 
+Other directives 
+
+used to 
+replace a given section of C code 
+with another C code
+
+#define PI 3.14
+PI => 3.14 //within code
+=================================================
+// process
+
+source code
+v 
+preprocessor
+v preprocessed file (.i file)
+compiler
+v assembly code (.s file)
+assembler
+v object code (.o file)
+linker
+v executable file (?)
+
+=================================================
+Types of C Preprocessors
+Macros, 
+File Inclusion, 
+Conditional Compilation 
+Other directives 
+=================================================
+Macros
+used to define constants 
+or create functions 
+that are substituted by the preprocessor
+
+two preprocessors 
+#define - create macros
+#undef - remove macros
+
+syntax
+#define token value
+#undef token
+
+token - macro template
+value - macro expansion
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+// token expanded to value in the program
+#include <stdio.h>
+#define LIMIT 5
+
+int main(){
+    for (int i = 0; i < LIMIT; i++) {
+    printf("%d \n", i);
+    }
+    return 0;
+}
+/* output
+0 
+1 
+2 
+3 
+4 
+*/
+
+/* roles
+# define - to define LIMIT
+LIMIT - placeholder for the val 5
+
+for () - Loop
+printf() - to print # 0-4
+
+return 0 - ends function
+*/
++++++++++++++++++++++++++++++++++++++++++++++++++
+// defined macro get undefined using #undef
+#include <stdio.h>
+
+// Macro Definition
+#define LIMIT 5
+
+// Undefine macro
+#undef LIMIT
+
+int main(){
+    for (int i = 0; i < LIMIT; i++) {
+        printf("%d \n", i);
+    }
+    return 0;
+}
+/* output
+./Solution.c: In function 'main':
+./Solution.c:10:25: error: 'LIMIT' undeclared 
+(first use in this function)
+   10 |     for (int i = 0; i < LIMIT; i++) {
+      |                         ^~~~~
+./Solution.c:10:25: note: each undeclared 
+identifier is reported only once for each 
+function it appears in
+*/
+
+/* roles
+#define - to define LIMIT
+#undef - undo #define
+*/
+
+/* what happened
+#undef undo #define
+LIMIT is not assigned
+
+leading a error in the code
+for (int i = 0; i < LIMIT; i++) {
+*/
+-------------------------------------------------
+(pt2) Macros With Arguments
+macros that work similar to functions
+
+syntax
+#define function(para...) program
+function() - name of function
+para       - parameters (optional)
+program    - cmd with parameters
+
+examples
+#define foo(a, b) a + b
+#define func(r) r * r
++++++++++++++++++++++++++++++++++++++++++++++++++
+#include <stdio.h>
+#define AREA(l, b) (l * b)
+int main(){
+    int a = 10, b = 5;
+    printf("%d", AREA(a, b));
+    return 0;
+}
+/*
+50 // Area(10,5) => 5*10
+*/
+
+=================================================
+file inclusion
+allows you to include external files 
+into the current program
+
+this include
+header files
+libraries...
+
+preprocessor directives
+#include
+
+syntax
+#include <file_name> - standard directory files
+#include "filename"  - source directory files
+
+header files
+<stdio.h> - the standard I/O library
+
+=================================================
+Conditional Compilation
+allows you to include or exclude 
+parts of the code depending on certain conditions
+
+use for 
+creating platform-specific code 
+debugging
+
+preprocessor directives
+#if
+#ifdef
+#ifndef
+#else
+#elif
+#endif
+
+syntax
+#if
+ // some code
+#elif
+ // some more code
+#else
+ // Some more code
+#endif
+
+#endif directive is used to close off 
+#if, #ifdef, and #ifndef opening directives.
+=================================================
+Other Directives
+directives to manage 
+compiler behaviour and debugging
+/////////////////////////////////////////////////
+#pragma
+Provides specific instructions to the compiler 
+to control its behaviour.
+
+used to disable 
+warnings
+set alignment...
+
+syntax
+#pragma directive
+
+directives
++ startup
+to specify the functions that are needed to 
+run before program startup 
++ exit
+to specify the functions that are needed to 
+run just before the program exit 
+
+incompatable 
+GCC compiler
+
+alternative
+// pragma startup
+void __attribute__((constructor)) func(); 
+// pragma exit
+void __attribute__((destructor)) func();
+
+=================================================
+12/15
+17:38 18:28 + 00:50
+21:00 21:39 + 00:39 01:29
+
+*** formatted string
+**** Format Specifiers in C
+
+https://www.geeksforgeeks.org/c/format-specifiers-in-c/
+=======================================================
+tabel of content
+intro
+printing %[] chars
+i/o operations
+examples
+ 1. Integer Format Specifier (signed) - %d in C
+ 2. Unsigned Integer Format Specifier - %u in C
+ 3. Floating-point format specifier   - %f in C
+ 4. Unsigned Octal number for integer - %o in C
+ 5. Unsigned Hexadecimal for integer  - %x in C
+ 6. String Format Specifier           - %s in C
+ 7. Address Format Specifier          - %p in C
+Input and Output Formatting
+======================================================
+1. intro
+
+Format Specifiers in C 
+a string that tells the compiler about 
+the type of data to be printed or scanned 
+in input and output operations
+
+what format specifers is used for
+> formatted input
+> formatted output
+
+format
+"%[]"
+
+examples
+"%i"
+"%c"
+
+i/o operations
+printf()
+scanf()
+sprintf()...
+
+
+-----------------------------------------------------
+printing %[] chars
+gives access to write format specifers as raw text in
+a string
+
+format
+%%[]
+
+examples
+%%i => %i
+%%c => %c
+%n  => "" // complement
+
+
+--------------------------------------------------------
+i/o operations
+
+model
+input() => output() 
+     variable
+
+example
+scanf() <= get input by user
+v
+var = holds scanf() output
+v
+print() => print output from scanf()
+
+common functions
+scanf() - input op
+scans input from user 
+that meets the format specifer
+
+printf() - output op
+print a string
+by using format specifer
+to print variable's outputs
+
+=======================================================
+examples
+-------------------------------------------------------
+1. Character Format Specifier - %c in C
+> format specifier for the char data type
+
+ex function()
+input
+scanf("%c", &var);
+
+ouput
+printf("%c", 'c'); // c
+
+-------------------------------------------------------
+2. Integer Format Specifier (signed) - %d in C
+> format specifier signed integer format specifier
+
+alt
+%i
+%li/ld    - long int (64 bit)
+%lli/%lld - long long int (64 bit)
+
+
+
+ex function()
+input
+scanf("%d", &var);
+scanf("%i", &var);
+
+ouput
+printf("%d", -10); // -10
+ printf("%i", 10);  //  10
+
+-------------------------------------------------------
+3. Unsigned Integer Format Specifier - %u in C
+> format specifier for the unsigned integer
+
+alt
+%llu - Unsigned long long int
+%lu  - Unsigned long int
+
+-values => complement (32 bits / 4 bytes) max val: 2^32
+-0001 => 1110         (4 bits)
+-1010 => 0101
+
+-10 => 4294967286
+00000000 00000000 00000000 00001010 || 10
+11111111 11111111 11111111 11110101 || 4294967286
+
+ex function()
+input
+scanf("%u", &var);
+
+output
+ printf("%u", 10);  // 10
+ printf("%u", -10); // 4294967286
+
+-------------------------------------------------------
+4. Floating-point format specifier - %f in C
+format specifier for floating-point
+
+alt
+%e/%E - floating point => exponetial form
+%g/%G - floating point => current precision
+%lf   - (double)
+%Lf   - (long double)
+
+
+
+ex 
+input
+scanf("%f", &var);
+scanf("%e", &var);
+scanf("%E", &var);
+
+output
+printf("%f", 40.1); // 40.1
+ printf("%e", 40.1); // 4.01e+01
+ printf("%E", 40.1); // 4.01e+01
+
+-------------------------------------------------------
+5. Unsigned Octal number for integer - %o in C
+format for unsigned octal integer number
+
+based 8# system [0-7]
+
+decimal => octal
+  8 => 10
+  1 => 01
+
+ 10 => 12
+-10 => 4294967286 => 37777777766
+
+binary => octal
+00000000 00000000 00000000 00001010 || 12 
+11111111 11111111 11111111 11110101 || 37777777766
+
+ex functions
+input
+scanf("%o", &var);
+
+output
+printf("%o", 71); // 107
+printf("%o", -10) // 8^32 -10 37777777766 
+
+-------------------------------------------------------
+6. Unsigned Hexadecimal for integer - %x in C
+format specifer for unsigned hexadecimal integers
+
+based 16# [0-9 & a-f]
+
+
+decimal => hexadecimal
+ 16 => 10
+ 15 =>  F
+  1 =>  1
+
+ 10 => A
+-10 => 4294967286 => fffffff6
+
+binary => hexadecimal
+00000000 00000000 00000000 00001010 || A
+11111111 11111111 11111111 11110101 || fffffff6
+
+ex function()
+input
+scanf("%o", &var);
+
+output
+printf("%o", 71); // 107
+printf("%o", -10) // 8^32 -10 37777777766 
+
+-------------------------------------------------------
+7. String Format Specifier - %s in C
+format specifer for strings
+
+ex function()
+input
+scanf("%s", str);
+
+output
+ printf("Entered String: %s", str);
+
+-------------------------------------------------------
+8. Address Format Specifier - %p in C
+format specifier for memory address/pointers
+
+ex function()
+input
+scanf("%p", &a);
+
+output
+printf("%p", &a);
+
+=======================================================
+Input and Output Formatting
+
+tools
+to format the input and output
+
+syntax
+"%[]{specifer}"
+
+
+- => left alignment
+# => specifies the minimum field width to be printed
+     - if the characters are less 
+      > the size of the width the remaining space 
+        is filled with space 
+     - if it is greater
+      > it is printed as it is without truncation
+. => separates field width with max # of chars 
+     (percision)
+
+percision
+tells the minimum ints for the maximum number 
+of characters in a string, after the decimal
+
+format
+.#s
+
+examples (.#s)
+.52
+.5
+
+examples ("%[]{specifer}")
+printf("%20s", str);
+ printf("%-20s", str);
+ printf("%20.5s", str);
+ printf("%-20.5s", str);
+
+outputs
+       geeksforgeeks
+geeksforgeeks       
+               geeks
+geeks               
+
+
+=======================================================
+time 2025
+
+12/12
+16:13 17:44 + 01:29
+
+12/13
+05:25 06:21 + 00:56
+07:25 08:01 + 00:36 01:32
+12:20 13:41 + 01:21 02:53
+
+
+**** Scansets in C
+
+https://www.geeksforgeeks.org/c/scansets-in-c/
+==============================================
+Scansets in C
+
+scanset specifiers 
+ %[]
+
+it is
+ case sensitive
+ 
+supported by
+ scanf family of functions
+
+used to specify 
+ single character 
+ range of characters
+
+==============================================
+modifiers
+^[] => ^o // stop reading from s => 0
+
+replacing
+gets() <=> scanf("%[^\n]s", str);
++ gets() => fgets()
+
+get() X
+- impossible to predict how 
+  many characters gets() will read
+- continue to store characters past 
+  the end of the buffer
+==============================================
+13:48 13:59 + 00:11
+
+
+** geeks for geeks c++ course
+*** history & usage
+
+C++
+> developed by Bjarne Stroustrup at Bell Labs in 1979
+> add object-oriented paradigm for C 
+> middle-level language combines features of
+  high-level language
+  low-level languages
+
+high level features
+> lobject oriented programming, 
+> exception handling and templates
+low-level features
+> direct memory manipulation
+> system-level programming
+usage
+> embedded systems
+> game engines
+> web browsers
+> compilers
+> operating systems
+keying features
+> simple
+> machine independent - use by any machine
+> low level access - apllication in coding
+> fast execution speed
+> object orientated - large scale applicationz
+publicity
+> wide & deep applications
+> easy to switch
+origins
+> original name - C with classes // |=>1873 C++
+> evolved through standards 
+  C++98
+  C++11
+  C++17
+  C++20
+  C++23   the latest
+
+*** first code
+
+...
+// Necessary header files for input output functions
+#include <iostream>
+using namespace std;
+
+// main() function: where the execution of
+// C++ program begins
+int main() {
+
+// This statement prints "Hello World"
+cout << "Hello World";
+
+return 0;
+}
+...
+
+§ Preprocessor Directives - commands before main()
+// #[command]
+
+#include <iostream>
+#include - To include external files
+
+
+
+§ header files - external files
+
+includes
+- functions,
+- global variables
+- and macros, etc
+
+#include <iostream>
+<iostream> - input-output library => To get all C++'s 
+             input/output library functions
+
+// header file without .h extension
+#include <iostream> * modern
+
+// header file with .h extension
+#include<string.h>  * old
+
+
+
+§ Namespace - Container to hold a group entities
+
+# includes
+- functions
+- variables, ect
+
+# To prevent name conflict
+
+§ namespace
+using namespace std 
+using namespace        - switch name space to
+std                    - container name
+
+# import the entity namespace into the current namespace
+# std namespace for all the inbuilt features of C++ are declared.
+  For example, std::cout
+
+
+
+§ main function
+ # entry point of every C++ program when the program is executed 
+ # main() is executed first
+
+int main() 
+{ //begin main()
+  //Program code
+} //end   main()
+
+§ comments - displays of additional info
+ # skipped by compiller
+ # holds no logic
+
+// C++ program to print "Hello World"
+
+
+
+§ output statements - display outputs in console
+
+cout << "Hello World";
+ # followed by the character << 
+ # outputs in double quotes " " is displayed on the output screen
+ # ; to end statement
+
+§ return statement - return a value from a function
+
+# indicates the end of a function
+
+return 0
+
+# exits main function
+
+
+
+§ indents - to mark code
+ # To code readable
+ # help documentation and program maintenance
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a = 10, b = 20;
+    if (a > b) {
+        cout << "a is greater than b";
+    }
+    else {
+        cout << "b is greater than a";
+    }
+    return 0;
+}
+
+...
+#include <iostream>
+
+// <iostream> - header file - input/output stream
+
+// # - initiate a preprocessor directive
+// preprocessor   - device that does pre-processing
+//                - c++ code => another c++ code
+//                - processes the code with #
+// pre-processing - first step of compilation 
+
+// purpose  - copy declarations of iostream header file
+//          - c++ code program => another c++ code program
+//            that has declaration in <iostream>
+
+using namespace std;
+
+// namespaces - program & project into logic groups
+// std        - namespace contains standard 
+//              libraries & objects
+
+// purpose    - code in namespace avaliable 
+//              to original progran
+
+
+int main()
+
+// main()   - point of execution
+//          - the function that executed first
+// function - start/end {}
+//          - creates function of code
+// similar  - if/else statements
+//          - loops
+
+// int      - alternative to void
+            - returns interger
+            - make 0 the exit status
+// void     - intitation of a function
+              but not standardize
+            - returns no values
+{
+  cout << "GeeksForGeeks"
+
+  // declared by - iostream
+  // prints      - To on standard outputs (monitor)
+  // find        - in <iostream>
+  // includes    - variables
+                 - strings
+
+  // cout - part of std (object)
+  //      - requires the use of std
+
+  // std::cout - cout
+  //           - does not need std
+  //           - better in practice
+  // std (-)   - conflict namespaces
+  //             by common features
+
+  return 0
+  
+  // return - return a value for a function
+  // 0      - the value that gets return
+  //        - exit status of the function
+}
+// extra
+
+// indents - 4 spaces to represent a block
+           - not mandatory
+// :       - To end statement
+//         - entry mistake to forget
+// exclude - preprocessor directives (#[])
+           - declaring functions
+           - {}
+// include - blocks
+
+------------------------------------
+output:  
+"GeeksForGeeks"
+
+*** Setting up C++ Development Environment
+
+supported platforms
+> Windows
+> Linux
+> Unix
+> Mac, etc.
+
+online IDEs (integrated development environment)
+> software application | programmer => write software
+
+setting up local enviorment
+> equipment
+ = c++ compiler
+ = text editor
+
+conpiler - computer program | high-level language => 
+           machine-understandable low-level language
+         - source code => machine language
+
+GNU GCC (linux)
+(1) install GCC compiler
+sudo apt-get update
+sudo apt-get install gcc
+sudo apt-get install g++
+(2) install libraries to compile and run a C++ program
+sudo apt-get install build-essential
+(3) check GCC
+g++ --version
+(4) write program
+<filename>.cpp
+(5) compile code => executable file
+g++ <path>/<filename.cpp> -o any-name
+' g++            - g++ compiler
+' <path>         - directory
+' <filename.cpp> - program name
+' any-name       - name of executable file
+(6) run executble file
+./hello
+' ./    - execute
+' hello - ex file name
+
+Text Editor
+' .txt    - text file extension
+' .cpp/.c - text file with c++ program
+' .CPP/.C - source code files with c++ program
+
+popular editoe
+' VS Code 
+' Code::Block
+
+Code::Block
+(1) select the setup package based on your OS
+    https://www.codeblocks.org/downloads/binaries/
+(2) open the package and follow the instruction to install
+(3) go to File menu -> Select New and create an Empty file.
+(4) Now write your C++ program in the empty file 
+    and save the file with a '.cpp'
+(5) go to the Build menu and choose the Build and Run option.
+
+XCode (Mac OS X)
+(1) visit apple website/store
+    follow instruction - https://developer.apple.com/xcode/
+(2) open the Xcode application. 
+(3) To create a new project. 
+    1> Go to File menu 
+    2> select New 
+    3> select Project
+(4) To choose a C++ (template)
+    1> go to Application under the OS X section left sidebar
+    2> choose command-line tools from available options
+    3> hit the Next button
+(3) select language
+    1> choose the language as C++ within options
+    2? press next
+(4) open main.cpp
+    1> Choose the location to save
+    2> go to directory list on the left sidebar
+    3> choose the main.cpp file
+(5) write code
+(6) run program 
+    1> go to the Product menu
+    2> choose the Run option from the dropdown.
+
+visual studio code (windows)
+(1) install MinGW
+    1> go to https://sourceforge.net/projects/mingw/
+    2> press download
+(2) 3> Check all the Packages
+    4> Right Click -> package to mark installation
+    5> press Apply Changes to install
+(3) copy path || This PC -> C Drive -> MinGW -> Bin
+(4) configure MinGW
+    1> go to "This PC" -> 
+    2> Properties -> 
+    3> Advanced System Setting -> 
+    4> Environment variables -> 
+    5> (Select PATH in System variables) -> 
+    6> Edit -> 
+    7> New -> 
+    8> Paste the copied path
+(5) go to visual studio code
+(6) install extension
+    () c++ 
+    () code runner
+(7) check code runner
+    1> Go to Setting -> 
+    2> Settings -> 
+    3> Search for Terminal -> 
+    4> Go to the end of this page -> 
+    5> Check [ Code-runner: Run In Terminal ]
+
+VS Code (Mac OS)
+(1) install
+    1> go to https://code.visualstudio.com/download
+    2> pick options under apple logo
+(2) install honeybrew
+    1> go to terminal (cmd + <space>)
+    2> arch -x86_64 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install)" < /dev/null 2> /dev/null
+(3) install the MinGW
+    1> arch -x86_64 brew install MinGW-w64
+(4) install extensions
+    () c/c++
+    () code runner
+
+how c++ programs run
+(1) write code in text editor
+-   c++ is high level language || cpu </> understand
+-   needs to converted || cpu <=> understand
+-   the use of libraries/code from other people
+    > to print something on the screen <iostream>
+    > to get something from the user
+    > to do other task
+    Labraries provide
+    > function
+    > codes
+
+the 2 ways to run a program
+(1) text editor & compile
+    process
+    1> pick a editor
+    2> write your program
+    3> save as [file].cpp
+    4> compile code by command line
+    gcc/g++ 
+    () g++ <file.cpp?>
+    #> window - [].exe
+    #> linux  - [].out
+
+(2) IDEs
+    examples
+    > Code::Blocks
+    > Dev C++
+    > Visual Studio Code
+    > X code
+    > ide.geeksfoegeeks.org (online)
+    provide
+    > editor
+    > syntax highlights
+    > run programs
+    > visual output
+    process
+    1> write source code
+    2> compile
+    // run button
+    3> generate object code
+    // code for libraries/code
+    4> code goes to linker
+    // link code to libraries
+    5> generate executable file
+    // can run by machine's cpu
+    // cpu can understands
+    key process
+    1> compilation
+    // preprocessing
+    // syntax checking
+    2> linking
+    // link libraries to code
+    diffence in runing process
+    (jave & python) 
+    1> source code => bytecode/machine-independent-code
+    2> virtual machines runs bytecode
+    (platform independent)
+    (c++)
+    1> do not use machine-independent-code
+     > generates object-code + executable file
+    (machine specific)
+    > compilers
+    > object-code + executable file
+                    
+
+*** datatypes
+
+Differnt types of data
+
+basic
+> int
+> float
+> double
+> char
+> bool
+> void
+
+Derived
+> array
+> pointer
+> reference
+> function
+
+user defined
+> class
+> structure
+> union
+> typedef
+> using
+------------------------------------------------
+() Basic
+int - #
+} size : 4 byte (64 bit)
+} types:
+^ binary      0b0101  0-1  0x2²  + 0x2¹  + 0x2°
+^ octal       0000    0-7  0x8²  + 0x8¹  + 0x8°
+^ decimal     000     0-9  0x10² + 0x10¹ + 0x10°
+^ hexadecimal 0x15    0-F  0x18² + 0x18¹ + 0x18°
+
+float - #.##
+} size : 4 bytes (64 bit sys)
+} range: 1.2e-38 <=> 3.4e+38
+
+double - percise #
+} syntax: double-precision floating-point numbers
+} size  : 8 bytes (64 bit sys)
+} range : 1.7e-308 <=> 1.7e+308
+
+char - single character
+} formate: '[]'
+} '123'  > 3
+} size   : 1 byte (64 bit sys)
+} storage: 256 char
+} range  : -2,147,483,648 <=> 2,147,483,647
+
+bool - true/false
+} values:
+^ true    [1]
+^ false   [0]
+} size  : 1 byte (64 bit sys)
+
+> void - value doesn't exist
+} used:
+x variables
+^ function
+^ pointers
+
+ * they define object -
+int var1 = 10       //variable
+char var2 = 'C'
+
+void function() {}  //function
+int function() {}
+
+ * convert objects
+cout << (int)var2 << endl; // 3
+
+ * make logical statements
+int sum = var1 + var2 // 13
+
+ * use in logical statement
+cout << sizeof(int) << endl;   // 4 bytes
+cout << sizeof(char) << endl;  // 1 bytes
+cout << sizeof(float) << endl; // 4 bytes
+cout << sizeof(bool) << endl;  // 1 bytes
+cout << sizeof(double);        // 8 bytes
+
+ * To be modified
+int var      // 4 bytes
+long int var // 8 bytes
+
+() modifiers
+> signed | store <-/+> values
+} used   - int, char, double, & float
+} size   - same
+
+> unsigned | store only <-> values
+} used     - int, char, double, & float
+} values-  - 4294967296 <-values>
+} 
+} size     - same
+
+> short | decrease data size
+} range - =><=
+} used  - int, double, & float
+} size  - 1/2 memory
+
+> long  | increase data size
+} range - <==>
+} used  - int, double, & float
+} size  - 2   memory
+
+() variable modification
+char dis   1b -128 <=> 127
+      us   1b    0 <=> 255
+
+int  dis 4b -2,147,483,648 <=> 
+             2,147,483,647
+      us 4b  0 <=> 
+             4,294,967,295
+  sh  is 2b -32,768 <=> 
+             32,767
+      us 2b  0 <=>
+             65,535
+  lo  is 8b -9,223,372,036,854,775,808 <=>
+             9,223,372,036,854,775,807
+      us 8b  0 <=> 
+             18,446,744,073,709,551,615
+
+video - variables & data types
+program
+> contain instructions
+> data
+program => memory
+
+memory
+> contains array of bytes
+
+bytes
+function
+> f addressed
+> f accessed
+contains
+> address
+
+variable
+> associate name <=> memory location
+> program <access/modify> data
+names contain
+> u/U letters
+> _
+> # * cannot be first char
+
+datatypes
+> all variables <=> datatype
+> datatypes specifies to their types data
+types
+> char
+> int
+> long int
+> long long int
+> unassigned int
+> unassigned char
+> float
+> double 
+> bool
+
+c++ standard datatypes
+> doesn't restrict data size
+
+check datasize
+> sizeof(datatype)
+
+types variables
+> local  -  in functions
+} access - by assigned function
+} default - any value
+
+> global  - out functions
+} access  - by any function
+} default - 0
+
+scope of variables
+> area between {}
+{
+// scope
+}
+when accessing variables
+1> scanning of closest scope
+} uses that value
+} let creation same variable per scope
+
+static <variable>
+> variable that last to the end 
+  of program/function
+local  - last to the entire scope
+ } n/s | same
+ } d#  | 0
+global - last to the entire program
+ } n/s | 
+
+const - constant value
+> simplies complex values 
+  and make programs readable
+
+macros - simple search replace
+> limites the use of certain letters
+} there's no type checking
+} r: const <= macros
+
+
+** C basics
+** github
+*** To get started
+
+HTTPS https://github.com/znz-unix/ideas-files-orgzly.git
+SSH git@github.com:znz-unix/ideas-files-orgzly.git
+
+To create repository command lines
+echo "# ideas-files-orgzly" >> README.md git init git add README.md git commit -m "first commit" git branch -M main git remote add origin git@github.com:znz-unix/ideas-files-orgzly.git git push -u origin main
+
+To pusb repository
+git remote add origin git@github.com:znz-unix/ideas-files-orgzly.git
+git branch -M main
+git push -u origin main
+
+* professor dave pharmacology
+
+[[https://m.youtube.com/playlist?list=PLybg94GvOJ9HXK4wzEIrLCc4gYxq-gUhX][playlist]]
+
+** introduction to pharmacology
+
+[[https://m.youtube.com/watch?v=r95HUvHa4VM&list=PLybg94GvOJ9HXK4wzEIrLCc4gYxq-gUhX&index=1&pp=iAQB][video]]
+==========================================
+science 20-21st cent
+> huge advances
+
+includes
+vehericals
+homes
+internet
+==========================================
+medicine (~100yrs)
+
+from advancements
+biology
+biochemistry
+chemistey
+
+change into
+causes of disease 
+ nothing => very percise
+=========================================
+model
+all disease has molecular basis
+
+including
+gentic
+pathogenic
+other causes
+
+achievements
+> sequence the human genome
+> catagorize 1000s bacteria/viruses
+biochemistry for
+> cells
+> organs
+> bodily processes
+==========================================
+drugs
+------------------------------------------
+cause disease => microrgansim
+
+biochemistry of bacteria
+=> strategy
+
+drug 
+=> introduce molecule
+
+molecule (inhibition)
+=> bind active site bacteria's essential
+   enzymes
+=> To prevent enzyme to do its function
+=> death of bacteria
+==========================================
+cause disease => inbalance signaling 
+molecules
+
+include
+neurotransmitters
+horomones
+
+biochemistry
+=> strategy
+
+biochemistry of a person =>
+strategy
+
+strategy
+to develope molecule for
+regulation on bodily activity
+
+drug 
+=> molecule
+molecule
+=> perform it task
+
+by interacting
+> proteins
+> other stragies
+==========================================
+drug - molecule with theraputic effect
+     - any substance with physiological 
+       effect when introduced
+
+frequently ingusted drugs
+caffine 
+alcohol
+
+drugs 
+natural product // within nature
+synthetic product // manmade
+
+biomacromolecule // very big molecule
+(biologics)
+> anti bodies
+==========================================
+understanding
+
+there
+1000s drugs
+
+key questions
+what drug do to the body
+how it function molecularly
+application of the drug
+conditions for safety
+
+pharmacology
+branch of medicine concern with drug's
+use, 
+effect,
+
+mechanism of action
+==========================================
+To learn how drugs effect the body
+
+knoweledge of molecules
+> general chemistry
+> organic chemistry
+
+learn large biomolecules that drug interact
+- proteins
+- nucliec acid
+> biochemistry
+
+cell structure and activity
+> biology
+
+structure & function of human body
+> anatomy & physiology
+
+knoweldge of microrganisms (pathogens)
+> microbiology
+
+General Chemistry Tutorials: http://bit.ly/ProfDave...
+Organic Chemistry Tutorials: http://bit.ly/ProfDave... 
+Biochemistry Tutorials: http://bit.ly/ProfDave... 
+Biology/Genetics Tutorials: http://bit.ly/ProfDaveBio 
+Anatomy & Physiology Tutorials: http://bit.ly/ProfDave...
+Biopsychology Tutorials: http://bit.ly/ProfDave...
+Microbiology/Infectious Diseases Tutorials: http://bit.ly/ProfDave... 
+History of Drugs Videos: http://bit.ly/ProfDave... 
+Immunology Tutorials: http://bit.ly/ProfDave...
+
+==========================================
+13:16 13:58 00:42
+
+* general chemistry (p dave)
+
+[[https://m.youtube.com/playlist?list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm][playlist]] 83 videos
+
+** simple concepts
+*** 1: Introduction to Chemistry
+
+https://m.youtube.com/watch?v=ZuWa827qAao&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm
+===========================================
+Introduction to Chemistry
+> the study what matter is made of
+  and matter changes
+
+it is central science connects with
+> biology
+> biochemistry
+> physics
+> astronomy
+> plant science
+> enviormental science
+> geology
+> medicine
+
+prove science
+> mathmatics
+
+[[file:/storage/emulated/0/Pictures/Screenshots/Screenshot_2025-12-16-20-32-01-602.jpg]]
+
+
+
+*** 2: types of matter
+
+[[https://m.youtube.com/watch?v=dggHWvFJ8Xs&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=7][video]]
+
+types of matter
+Elements
+Compound
+Mixtures
+
+matter is something
+> mass
+> occupy space
+
+phases of matter
+> solid
+> liquid
+> gas
+
+solid is mass
+> fix shape
+> fix volume
+the particles 
+> touching 
+> don't move
+
+liquid
+> unfix shape
+> fix volume
+the particles
+> touching
+> moving
+
+gas
+> unfix shape
+> unfix volume
+the particles
+> distanced
+> moving
+
+matter will change form
+
+heart of chemistry
+describing these changes 
+=====================================
+types changes in chemistry
+physical
+chemical
+-------------------------------------
+() physical change
+a change where chemical composition 
+stays the same
+
+ice -> water
+change in molecule arrangement
+
+() chemical change
+a change where chemical composition
+changes
+
+chemical bonds between atoms
+break
+form
+
+formation of new substances
+
+hydrogen gas + oxygen gas => water
+-------------------------------------
+change
+phases // physical
+forming new substance // chemical
+=====================================
+types of matter
+> pure substance
+> mixtures
+-------------------------------------
+() pure substance
+substance cannot be seperated into
+different material
+
+water
+
+types pure substances
+> elements
+> compound
+
+(1)element
+a type of atom
+
+oxygen // element
+hydrogen //element
+
+
+(1) compond
+molecule with 2 or more elements
+
+oxygen + hydrogen => water
+-------------------------------------
+() mixture
+combination 2 substances
+that can change by physical processes
+
+salt water (boiling)> salt + water
+types mixtures
+homogenous
+heterogenous
+
+(1)homogenous
+substances distributed evenly
+
+sugar + water
+
+(1)heterogenous
+substances is not destributed evenly
+
+oil + water
+
+=====================================
+molecules()
+connect group of atoms
+
+
+*** 3: Measurement and Significant Figures
+
+https://m.youtube.com/watch?v=Gn97hpEkTiM&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=3&pp=iAQB
+================================================
+Measurement and Significant Figures
+
+units of measurement
+Tools to communicate experience
+
+include
+> distance
+> time
+> repeation
+
+correlates to natural phonemoan
+day
+year
+
+abribitary
+> length
+> mass
+================================================
+importance sig figs
+prevent answers to be more percise than
+what is measurable
+
+we go only a digit more percise 
+than our instruments allow
+
+ruler
+2.3-2.4cm
+v 2.33/2.34
+x 2.33334/2.39999999
+
+rules to determine sig figs
+any # except 0
+except when
+0 between sig figs 
+ v 102
+ x .00001
+ x 1000
+ z (102)0000
+ z .000(2069)
+0 for accracy
+ v .10000
+ x 0.00001
+ z 0.000(100)
+================================================
+application
+10,000 (1 sig figs)
+= 10,000
+¢ 10,000
+
+limitations
+10,000 + 1 ⌿ 10,001
+due to estimating to 1 sig fig
+9,500-10.499 => 10,000
+
+rules of calculating with sig figs
+
+()addition/subtracting
+ans (.) match (.) of # who has least (.)
+
+10.1 + 2.02 => 12.1
+
+()multipling/dividing
+ans (sf) match (sf) of # who has least (sf)
+
+11.201 x 1.0 => 11
+================================================
+[[file:/storage/emulated/0/Pictures/Screenshots/Screenshot_2025-12-16-23-53-01-134.jpg]]
+================================================
+12/16
+23:08 23:54 + 00:46
+
+*** 4: Scientific Notation and Dimensional Analysis
+
+[[https://m.youtube.com/watch?v=AGxOWIuaBP8&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=4&pp=iAQB][video]]
+==============================================
+Scientific Notation and Dimensional Analysis
+
+counting
+based 10 <= 10 fingers
+
+scientific notation
+a way to write large and small #s
+
+[#.###] x {10^x}
+[] - # of sf
+{} - magnitude
+
+2.14 x 10^2 
+ 2.14 x 100 
+ 214    // 2.14 to the right 2x
+
+4.19 x 10^-2
+ 4.19 x 0.01
+ 0.0419 // 4.19 to the left 2x
+
+useful
+ remove need of multiple measurements
+ you use only 1 unit
+
+length - meters
+time - seconds
+==============================================
+unit modifers
+E  exa   10^+18
+P  peta  10^+15
+G  tera  10^+12
+T  giga  10^+9
+M  mega  10^+6
+k  kilo  10^+3
+h  hecto 10^+2
+da deka  10^+1
+
+d deci   10^-1
+c centi  10^-2
+m milli  10^-3
+µ micro  10^-6
+n nano   10^-9
+p pico   10^-12
+f fernto 10^-15
+a alto   10^-18
+
+[[file:/storage/emulated/0/Pictures/Screenshots/unit_modifers.jpg]]
+==============================================
+unit conversion
+m =: nm
+7.43 m x 10^9nm/1m => 7.43 x 10^9 nm
+
+based # x (1/1)
+ gives same val
+ easily translate val types
+
+exclusion (second in a yr)
+
+yr * 365dy/yr * 24hr/dy * 60mn/hr * 60se/mn
+
+1*365*24*60*60 => 31536000se/yr
+3.15 x 10^7
+==============================================
+5160000
+.00019
+8.88 x 10^9
+4.50 x 10^-7
+
+100 km/hr => m/sec
+100 km/hr * 1000m/km * hr/3600s => 2.78 x 10^1
+
+[[file:/storage/emulated/0/Pictures/Screenshots/ProDChem1.jpg]]
+==============================================
+
+** The Atom
+*** 5: History of Atomic Theory
+
+https://m.youtube.com/watch?v=9B3DDY27ZtE&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=5
+=============================================
+History of Atomic Theory
+
+() democratis [460-370 BC]
+who
+>greek philosopher
+>the first to support the idea of matter
+ made by foundamental 
+ indivsiable particles "atomos"
+>there foundation or supporting evidence
+
+() John Dalton [1766-1844 CE]
+> the first to provide empirical evidence 
+  that atoms exist
+insisting
+> compound have atoms in whole # ratios
+> chemical reaction is rearragement of atoms
+  to form new arragement/compounds
+
+water => hydrogen + oxygen
+1/9m hydrogen
+8/9m oxygen
+
+proving aromic theory
+> scale 
+> consistancy
+
+used
+> To explain how elements form 
+  different compounds
+
+1g C + 1.3333g O
+1g C + 2.6667g O
+
+tells
+carbon is binding to 1 or 2 oxygen atoms
+
+() J.J. Thompson [1856-1940 CE]
+> the first to prove that atoms made 
+  by smaller particles
+> shows atom being divisiable
+
+discovering the election
+> his cathod ray experiement
+
+displays
+> neutral atoms attrated to
+  positive charge plate
+= neutral atoms have multiple different 
+  positive and negative charge particles
+
+without knoweldge
+> charge of distrobution
+
+developes
+the plum pudding model
+
+() Ernest Rutherford [1871-1937]
+> who further develope the model
+  by his gold foil experiement
+
+gold foil experiement
+> alpha particles getting shoot at 
+  by (α) particles
+
+discovering
+> most of particles pass through the foil
+> few particles spread wildly (1/8000)
+
+develope
+> nucleus model
+= nucleus highly contrated +c of the atom
+= electrons is far away from center
+= atom 99.95% empty space
+
+=============================================
+
+*** 6: Nuclide Symbols:
+
+[[https://m.youtube.com/watch?v=5PyVoMnRTlQ&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=6&pp=iAQB][video]]
+=============================================
+Nuclide Symbols: Atomic Number, Mass Number, Ions, and Isotopes
+
+atom contains
+nucleus
+ protons
+ neutrons
+surrounding
+ electrons
+
+# that catorgize elements
+ proton {atomic #}
+ nucleus mass (protons + neutrons) {mass #}
+
+weight (atomic mass unit)
+ proton/neutron {1 amu}
+ electrons {~0 amu}
+
+proton # 6
+neutron # 6
+
+carbon-12
+12 $ mass #
+carbon $ 6 protons
+=============================================
+representing a atom
+
+24  +2
+  Mg
+12
+
+[M]{g} - nuclide symbol
+[] capitalization
+{} non cap
+
+12 - atomic # (optional)
+type of element <=> # protons
+
+24 - mass # 
+atom of same element has different mass #
+ difference in # neutrons (isotopes)
+
++2 - electrical charge (atom is a ion)
+
+difference neutral & ions
+neutral atom | protons = electrons
+ion          | protons ≠ electrons
+
+p-e = +1 => electrical charge +1
++p
++p    -e
++p    -e
+
+p-e = -1 => electrical charge -1
+      -e
++p    -e
++p    -e
+
+summmary 
+ð # protons - different elements
+ð # neutrons - isotopes
+ð # electrons - ions
+=============================================
+periodic table
+atomic # [1->100]
+
+element
+17
+   Cl
+ chlorine
+ 35.453
+
+17 - atomic #
+Cl - nuclide symbol
+chlorine - nuclide name
+35.453 - atomic mass
+
+atomic mass | atom -> atoms (all isotopes)
+reflect of natural abundance 
+
+chlorine
+   cl-35 cl-37 
+p# 17    17    //proton#
+n# 18    20    //neutrons#
+m# 35    37    //mass#
+
+as %75   %25   // abundance
+
+35(0.75) + 37(0.25) => 
+35.5           // avg all cl atoms
+                  rel abundance
+
+=============================================
+S       A   M   C   P   N   E
+10B     5   10  0   5   5   5
+14C     6   14  0   6   8   6
+112Sn4+ 50  112 +4  50  62  46
+39K     19  39  +1  19  20  18
+56Fe3+  26  56  +3  26  30  23
+30Mg1-  12  30  -1  12  18  13
+238U    92  238 0   92  146 92
+
+file:/storage/emulated/0/Pictures/Screenshots/
+
+=============================================
+12/18
+16:57 18:49 + 01:52
+
+*** 7: Balancing Chemical Equations
+
+[[https://m.youtube.com/watch?v=X7ckfeRjjvI&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=7&pp=iAQB][video]]
+=============================================
+Balancing Chemical Equations
+
+chemical equation
+expression of substance interact with
+ each other
+
+Na(metal) + Cl2(gas) => NaCl (table salt)
+
+(reactants) => (product)
+=> direction of reaction
+
+chemical reaction
+display substance involved
+
+balancing to make sure (accuracy)
+#atoms || reactants == products
+
+NaCl
+1 Na
+1 Cl
+
+Cl(2) => 2NaCl
+2 Cl
+
+2NaCl
+2 Na 2Na
+2 Cl x
+
+2:Na + Cl2 => 2NaCl
+
+coeffiecent - #molecule
+subscripts - atoms in a molecule
+=============================================
+H2 + O2 => H2O
+
+H2O
+2 H
+1 O
+
+02 > 2:H20
+2O   2O
+     4H 2:H2
+
+2H2 + O2 => 2H2O
+=============================================
+C3H8 + O2 => CO2 + H2O
+
+balacing one element at a time
+single elements: Last (O) // O2
+common elements: fist (C) // C3H8/CO2
+
+C3H8=>CO2
+c 3   1 >> 3:CO2
+
+C3H8 + O2 => 3:CO2 + H2O
+
+C3H8=>H20
+H 8   2 >> 4:H20
+
+C3H8 + O2 => 3:CO2 + 4:H2O
+
+3:C02 4:H20 <= 02
+O 6   4        2 << 5:O2
+
+C*3‍/H*8 + 5:0*2 => 3:C/O*2 + 4:H*2/0
+=============================================
+1) 4:P + 5:0*2 => P*4/O*10
+2) 2:Ag/F + Ca/Cl*2 => 2:Ag/Cl + Ca/F*2
+3) 4:Na + O*2 => 2:Na*2/0
+4) 2H*3/PO*4 + 6K/OH => 2K*3/PO*4 + 3H*2/O
+5) 2:Al*2/O*3 => 4:Al + 3:0*2
+6) 2:Fe + 3:Cl*2 => 2:Fe/Cl*3
+
+[[file:/storage/emulated/0/Pictures/Screenshots/Test3.jpg]]
+=============================================
+19:04 19:15 + 00:11
+
+*** 8: The Mole: Avogadro's Number and Stoichiometry
+
+[[https://m.youtube.com/watch?v=H3VKLRNAQuY&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=8&pp=iAQB][video]]
+=============================================
+The Mole: Avogadro's Number and Stoichiometry
+
+problem
+atoms is too small to see
+
+stoichiometry
+the proportion of atoms react to each other
+proportions ≮ mass
+proportion <=> # in balancing equations
+
+mole
+numerical way to explain molecules
+in a way to be visually scene
+
+similar
+dozen - 12
+score - 20
+
+mole - avogradro's #
+6.022 x 10^23 (~trillion trillion)
+
+#atoms -> [mass #]grams
+12-C   -> 12g
+C      -> 12.011g
+
+mole
+x amu -> xg
+
+logic
+A + B => AB
+100A + 100B => 100AB
+mole A + mole B => mole AB
+
+=============================================
+molar mass
+    x == x molecular mass
+grams    amu
+
+H*2/0 => 
+molecular mass: 18amu = 16(O) + 2(H*2)
+molar mass: 18grams/mole
+=============================================
+molar mass for vitamin C (C*6/H*8/O*6)
+C*6 12*6 72
+H*8 1*8 8 80
+O*6 16*6 96 (answer: 176)
+
+[[file:/storage/emulated/0/Pictures/Screenshots/Screenshot_2025-12-19-21-45-49-884.jpg]]
+=============================================
+stoichimetric calculation
+C*3/H*8 + 5:O*2 => 3:C/O*2 + 4:H*2/0
+
+C*3/H*8 // Propane
+
+C*3/H*8 36+8 || 44g/mole
+20g C*3/H*8 => 20/44 (0.455 moles C*3/H*8)
+
+4:H*2/O 4:2+16 4:18 || 72 H*2/O g/mole 
+2.2moles C*3/H*8 => 0.455*72 {32.8 H*2/O g}
+
+process
+mass -> moles -> moles -> mass
+=============================================
+grams O*2 for 20 grams propane(C*3/H*8)
+
+C*3/H*8 + 5:O*2 => 3:C/O*2 + 4:H*2/O
+
+molecular/molar mass
+C*3/H*8 36+8 44amu 44g/mole (1)
+5:O*2 5:32 160amu 160g/mole (2)
+
+process
+20g C*3/H*8
+ * (1m/44g) C*3/H*8
+ * (160g/m) O*2
+ => (72.7g) 0*2
+
+[[file:/storage/emulated/0/Pictures/Screenshots/Screenshot_2025-12-19-22-44-47-224.jpg]]
+=============================================
+
+*** 9: Limiting Reagents and Percent Yield
+
+[[https://m.youtube.com/watch?v=dodsvTfqWNc&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=9&pp=iAQB
+][video]]
+=============================================
+Limiting Reagents and Percent Yield
+
+when reacting substances
+it is impossible 
+To get exact # of substance
+for them to react completely
+
+types reagents
+reagent in excess
+limiting reagent (runs out first)
+
+process
+stoiciometry
+
+limiting reagent is't substance with fewest
+
+bologne + 2bread => sandwitch
+
+7 bologne => 7 sandwitch
+10 bread => 5 sandwitch
+
+bread > bologne
+Bread is limiting reagent
+
+=============================================
+example
+2:N/H*3 + C/O*2 => C/H*4/N*2/O + H*2/O
+
+C/H*4/N*2/O // urea
+---------------------------------------------
+finding Limiting reagent
+10g 2:N/H*3
+10g C/O*2
+
+2:N/H*3 2:14+3 2:17 34g/mole (answer)
+C/O*2 12+32 44g/mole
+
+x/34 > x/44
+/////////////////////////////////////////////
+10/34 // 0.294 equation
+10/44 // 0.227 equation
+
+0.294 > 0.227 (equation)
+/////////////////////////////////////////////
+10/17 // 0.588 N/H*3 => 0.294 C/H*4/N*2/O 
+10/44 // 0.227 C/0*2 => 0.227 C/H*4/N*2/O 
+
+0.294 > 0.227 (C/H*4/N*2/O)
+/////////////////////////////////////////////
+10/17 // 0.588 N/H*3 => 0.294 C/0*2
+
+0.294* > 0.227 (C/0*2)
+/////////////////////////////////////////////
+10/44 // 0.227 C/0*2 => 0.454 N/H*3
+
+0.454 < 0.588 (N/H*3)
+---------------------------------------------
+theoretical yield
+() calculating substance 
+C/H*4/N*2/O 12+4+28+16 16+44 60g/mole (urea)
+
+0.227 * 60g/mole => 13.6g urea
+
+() caculating excess (N/H*3)
+0.454 (N/H*3) what we have
+ 0.588 (N/H*3) 
+
+moles
+0.588 - 0.454 => 0.134mole 3f
+grams
+0.134mole x 34g/mole* => 4.56g 2f
+/////////////////////////////////////////////
+percent yield
+
+fractional yield x 100
+fraction yield = actual/theortical yield
+
+ty: 10
+ay: 8.4
+
+fy: 8.4/10 => 0.84
+py: 0.84 x 100 => 84%
+=============================================
+practice
+C/H*3/O/H + C/O  => C/H*3/C/O/O/H
+
+15g C/H*3/O/H react 10g C/O 
+return 19.1g C/H*3/C/O/O/H
+
+what is Limiting-reagent/theoretical-yield/
+percent-yield
+
+molecular/molar mass
+C/H*3/O/H 12+3+16+1 15+17 32amu 32g/mole
+C/O 12+16 28amu 28g/mole
+
+chemical moles
+C/H*2/O/H: 15/32 => 0.469
+C/O: 10/28 => 0.357
+
+() Limiting reagent: C/O
+
+() theoritical yield
+molar mass
+C/H*3/C/O/O/H 12+3+12+16+16+1 40+20 60g/mole
+moles
+0.357 mole C/H*2/O/H => 
+0.357 mole C/H*3/C/O/O/H
+grams
+0.357 x 60g/mole => (21.4g C/H*3/C/O/O/H)
+
+fractual yield
+19.1/21.4 => 0.893
+
+() percent yield
+0.659 x 100 => 89.3%
+
+answer sheet
+Limiting reagent: C/O
+theoretical yield: 21.4g C/H*3/C/O/O/H
+percent yield: 89.3
+
+[[file:/storage/emulated/0/Pictures/Screenshots/Screenshot_2025-12-20-15-13-44-811.jpg]]
+=============================================
+
+
+*** 10: Elemental Analysis: Empirical and Molecular Formulas
+
+[[https://m.youtube.com/watch?v=rZ3kdOIDsQU&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=10&pp=iAQB][video]]
+=============================================
+Elemental Analysis: Empirical and Molecular Formulas
+
+Hydrocarbon
+
+C*x/H*y
+
+Emperical formula is the lowest ratio for
+carbon:hydrogen atoms
+=============================================
+when buring hydrocarbon atoms in oxygen
+C*x/H*y + O*2 => C/O*2 + H*2/O
+
+C => C/O*2
+H => H*2/0
+
+    heat
+     v
+0=> === U  U ==
+     ^  ^  ^
+     1  2  3
+
+0= oxygen
+1= hydrocarbon
+2= substance absorbs C/O*2
+3= substance absorbs H*2/O
+
+gathered substance
+
+mass before(-)after experiment
+10g BE
+12g AE
+SC = 12-10 = 2.0
+=============================================
+Benzene (C*x/H*y) 0.342g
+
+collect
+1.156g C/0*2
+
+molecular/molar mass
+C/O*2 12+32 44g/mole
+C 12g/mole
+C=>C/0*2 || 12/44 (0.273)
+
+H*2/O 2+16 18g/mole
+H*2 2
+H*2/0 => H*2 || 2/18 (0.11)
+
+moles
+1.156/44 => 0.0263 co2 => 0.0263 C
+
+grams
+1.156 * 12/44 => 0.316g c (mass ratio)
+0.0263 * 12 => 0.316g c (moles)
+0.342 - 0.316 => 0.026g h (deduction)
+
+percent composition
+0.026/0.342 x 100 => 7.60%
+0.316/0.342 x 100 => 92.4%
+
+emperical formula
+
+100g C*X/H*Y =>
+92.4g C 
+7.6g H
+
+7.7 => 8 moles C
+7.6 => 8 moles H 
+
+ratio: 8/8 => 1/1
+emperical fomula: CH
+=============================================
+molecular formula
+
+molecular mass 
+Benzene: 78
+CH: 12+1 13
+
+ratio mass Benzene/emperical-formula
+78/13 = 6
+molecular formula
+CH x 6 => C6H6
+=============================================
+1.45g cXhY
+4.40g co2
+
+molecular mass
+cXhY 58 amu
+
+what percent composition, emperical formula,
+molecular formula
+
+molar mass
+co2 12+32 44
+c 12
+
+mass ratio
+12/44 (0.273)
+
+mass
+4.40 x 0.273 => 1.20g C
+1.45 - 1.20 => 0.25g H
+
+percent composition
+c: 1.20/1.45 => 82.8%
+h: 0.25/1.45 => 17.2%
+
+emperical formula 
+100g cXhY => 
+82.8g
+17.2g
+
+c: 6.9
+h: 17.2
+
+molecular ratio
+6.9/17.2 =>
+(0.4/1)/0.4 =>
+1/2.5 =>
+2/5
+
+ratio 2:5
+answer(c2h5)
+
+molecular formula
+
+molar
+c2h5: 24+5 29
+
+mass ratio
+58/29 => 2
+
+c2h5 * 2 => (c4h10)
+
+[[file:/storage/emulated/0/Pictures/Screenshots/Screenshot_2025-12-20-20-03-54-922.jpg]]
+=============================================
+
+
+*** 11: Kinetic Molecular Theory and the Ideal Gas Laws
+
+[[https://m.youtube.com/watch?v=robEY-idcLU&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=12[video]]
+=============================================
+Kinetic Molecular Theory 
+and the Ideal Gas Laws
+
+gas
+is a phase of matter where particles is
+freely motion fills their container
+
+assumption => predictions
+1) particles are points in random motion
+   identity of a gas is irrelavent
+2) particles don't intereact
+   execpt for elastic collisions
+
+defines: ideals gases
+
+not exactly true
+math accurate
+=============================================
+variables
+> pressure
+> tempature
+> volume
+> moles
+
+pressure (P)
++ the force the particles 
+exerting on its container
++ how much particles hitting the sides
+
+tempature (T)
++ the avalible heat energy
+this energy => kinetic energy (motion)
+               speed the particles move
+
+volume (V)
++ how big is the container
+
+moles (n)
++ how many particals in a container
+=============================================
+behavior
+/////////////////////////////////////////////
++- volume | -+ pressure
+p <> 1/v => 
+
+Boyle's law |
+p1v1 = p2v2
+1atm * L = 2atm * xL
+1/2 = x
+/////////////////////////////////////////////
++- Tempature | +- pressure
+               -+ volume 
+T <> V (constant pressure)
+
+Chales's law
+v1/t1 => v2/t2
+atm / k = 2atm / xk
+atm = 2atm / x
+x = 2
+
+atm / k = 2atm / 2k
+
+T (absolute scale) [Kelvin scale]
+magnitude
+1K == 1C
+initiation
+0k == absolute zero == -273c
+
+K <=> C
+K: C + 273
+C: K - 273
+/////////////////////////////////////////////
+combined gas law (Boyle's & Chales's law)
+p <> 1/v
+v <> t
+
+(p1v1)/t1 = (p2v2)/t2
+(atm * L)/2k = (2atm * 2L)/xk
+2 = 4/x
+2 = x
+/////////////////////////////////////////////
+avogadro's law 
+L <> n
+
+v1/n1 = v2/n2
+L / mole = 2L / x mole
+1 = 2 / x
+x = 2
+/////////////////////////////////////////////
+ideal gas law
+PV = nRT
+*use when looking all 4 variables at once*
+
+gas constant (R) 0.0821 L*atm / mole*k
+*multiple values*
+
+313 k T
+2.3 L P
+1.5 atm V
+
+2.3 * 1.5 = n * R(0.0821) * 313k
+3.45 = 25.7 n
+n = 0.134
+=============================================
+PV = nRT              // (3-4)/4 var
+(p1v1)/t1 = (p2v2)/t2 // (2-3)/4 var
+p1v1 = p2v2           // (1-2)/4
+v1/n1 = v2/n2         // (1-2)/4
+v1/t1 => v2/t2        // (1-2)/4
+
+=============================================
+5.15L ballon with pressure 1.35 atm
+ballon compress to 3.43L
+
+what is the pressure
+
+boyle's law
+p1v1 = p2v2
+
+1.35 atm * 5.15 L == x atm * 3.53 L
+6.953 == 3.43x
+x = 2.027
+
+0.785 moles of n2 fills a ballon
+to 1.5atm and 301k
+
+ideals gas law
+PV = nRT
+
+p(1.5) * v = n(0.785)R(0.0821)T(301k)
+1.5v = 19.40
+v = 12.9L
+
+[[file:/storage/emulated/0/Pictures/Screenshots/Screenshot_2025-12-21-12-58-08-617.jpg]]
+
+=============================================
+
+** Quantum Physics
+*** 12: Wave-Particle Duality and the Photoelectric Effect
+
+[[https://m.youtube.com/watch?v=MFPKwu5vugg&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=12][video]]
+=============================================
+Wave-Particle Duality and the Photoelectric Effect
+
+light
+behaves like electromagnetic wave
+called elecrromagnetic radiation
+
+contains
+λ wavelength (distance between peaks) v_v
+v frequency (the time passes a point)
+
+λ <> 1/v
++- wavelength || -+frequency
+
+c = λ * v
+
+c = 3.00 x 10^8 // speed of light 
+"speed limit of universe"
+
+=============================================
+electromagnetic spectrum
+display of light at different wavelength
+
+0.1     nm // gamma rays
+1       nm // x-rays
+100     nm // ultraviolet
+400-700 nm // visiable light
+10      µm // infared
+1       cm // microwaves
+1        m // radio/TV
+
+wave theory light 
+the theory that light travels in waves
+is useful cannot explain photoeletric effect
+=============================================
+photoeletric effect
+
+when light react with metal plate
+it cause release electron
+
+method of detection
+postive charge wire 
+postive charge plate sensor
+
+this depends
+Light | frequency > intensity
+
+intense low frequency light 
+cannot eject a electron
+
+faint high frequency light
+can eject electron
+
+it was problem 
+=============================================
+it solved by Albert Einstein (1879-1955)
+who expand a concept
+from Max Plank (1858-1947)
+
+Energy is quantized not continous
+all energy is multable of smallest unit:
+planck enery
+
+Quantum theory
+prove everything is quantized
+includes
+space 
+time
+
+where smallest unit is indivisable
+=============================================
+how Einstein use this concept
+
+Einsteins states that light is made of quanta:
+photons - the particles of light
+
+rationalize photoeletric effect
+photons depending energy it contains can
+eject or not eject a electron
+at the smallest scale
+
+intensity does not matter
+
+equation of the energy of a photon
+E = hv
+E "energy"
+h "planck constant" 6.626 x 10^-34 m^2*kg / s
+v "frequency"
+=============================================
+changes
+
+Light have
+wave-partical duality
+
+light behaves like
+wave 
+partical
+
+bringing quantum revolution =>
+change physics
+
+physics in micro scale become indepdent from 
+Sir Isaac Newton's laws of physics
+due
+Einstein
+his followers
+
+*** 13: Bohr Model of the Hydrogen Atom
+
+[[https://m.youtube.com/watch?v=au2HCVn9IJI&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=13&pp=iAQB][video]]
+=============================================
+Bohr Model of the Hydrogen Atom
+
+inspired by Einstein expansion of
+planck's quantiziation to
+electeomagnetic radiation (light)
+
+Niels Bohr [1885-1962]
+who face problems with the structure of the atom
+
+problems
+() stability of atom:
+To prevent protons and electrons
+going into each other
+
+() emition spectrum
++ what is beimg shown
++ what is in a element to cause light to emit 
+different colors
+=============================================
+Bohr extand the quantization
+To the potential energy of electron
+including the hydrogen atom
+
+Electron
++ can't have any inemaginable energy
++ it can only inhabit energy in energy levels
+which is a fix distance from the nucleus
+
+each type of atom
++ different distance in energy levels
+due to # of protons in the nucleus
+
+change position of a electron by 
+photon of a specific energy
++ absorbed {o|->|}
++ emmitied {o|<-|}
+
+energy of photon is
+difference between 2 energy levels
+
+o|n2<-|n3
+ðE(electron) == E(photon]
+E(n2-n3) == E(photon)
+
+E{emmited} == E{absorbed}
+=============================================
+energy in a Energy level of hydrogen atom
+depends on Rybenburg constant (R*h)
+
+R*h == 2.179 x 10^-18 J
+
+E == -(Rh/n^2)
+n2
+
+
+=============================================
+change of energy level
+
+E == -(R*h/n^2) =>
+ðE(electron) == -R*h( (1/n*f^2) - (1/n*i^2) )
+
+o|n2<-|n4
+đE = -R*h( 1/2^2 - 1/4^2 )
+  => -(2.179 x 10^-18 J) * ( (1/4 => 4/16) - (1/16) )
+  => -(2.179 x 10^-18 J) * (3/16)
+  => -4.09 x 10^-19 j
+
+E(photon) = |-4.09 x 10^-19 j|
+E(photon) = 4.09 x 10^-19 j (3f)
+=============================================
+Energy to frequency
+E == hv
+h "planck constant" 6.626 x 10^-34 m^2*kg / s
+v "wavelength"
+
+v => E/h
+v => (4.09 x 10^-19 j) / (6.626 x 10^-34 m^2*kg / s)
+v => 6.1727 x 10^14 js/(m^2*kg) (3f)
+---------------------------------------------
+frequency to wavelength
+c == vλ
+c speed of light (3.00 x 10^8)
+v frequency
+λwavelength
+
+λ == c/v
+λ => (3.00 x 10^8) / (6.173 x 10^14)
+λ => 4.860 x 10^-7 (3f)
+---------------------------------------------
+Energy to wavelength
+E == hv
+c == vλ => v == c/λ
+
+E == hc/λ
+E "energy"
+h planck constant (6.626 x 10^-34)
+c speed of light (3.00 x 10^8)
+λ wavelength
+
+λ == hc/E
+λ == (6.626 x 10^-34 * 3.00 x 10^8)/(4.09 x 10^-19)
+λ == 4.860 x 10^-7 (3f)
+=============================================
+Electron transition for a hydrogen atom
+
+n1 (Lyman series)
+<=n2
+<=n3
+<=n4
+<=n5
+<=n6
+<=n7
+
+n2 (Balmer series) produce visable light [considence]
+<=n3 665 nm
+<=n4 486 nm
+<=n5 434 nm
+<=n6 410 nm
+<=n7 
+
+n3 (Paschen series)
+<=n4
+<=n5
+<=n6
+<=n7
+
+n4 (Brackett series
+<=n5
+<=n6
+<=n7
+
+Energy Level gap decrease logrithmically
+n(infinity) => finite distance from the nucleus
+
+electron any further than n(infinity)
+considered ejected from the atom
+
+every element have different emission spectrum
+due to unique nucleus
+which used to identify elements
+=============================================
+what is wavelength of a photon emitted by electron
+from n=6 to 3 in  hydrogen atom
+
+E = -R*h((1/n:f^2) - (1/n:i^2))
+E = -(2.179 x 10^-18)( (1/9=>4/36 - 1/36) => 3/36 )
+E = -1.8158 x 10^-19 (4f)
+
+E(photon) = 1.8158 x 10^-19 (4f)
+
+E = hv
+h 6.626 x 10^-34
+
+v = E/h
+v = 1.8158x10^-19 / (6.626x10^-34)
+v = 2.7404x10^14 (4f)
+
+c = vλ
+c 3.00x10^8
+
+λ = c/v
+λ = 3.00x10^8 / 1.790x10^14
+λ = 1.095x10^-6 (3f) answer
+
+[[file:/storage/emulated/0/Pictures/Screenshots/Screenshot_2025-12-24-05-39-52-253.jpg]]
+
+*** 14: Quantum Mechanics of the Electron
+
+[[https://m.youtube.com/watch?v=t8mMN2X5_Vw&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=14&pp=iAQB][video]]
+=============================================
+Quantum Mechanics of the Electron
+
+first steps of quantum theory prove
+all energy is not continueous
+but quantized
+
+light particpate in wave partical duality
+
+next step
+developed: Louis de Broglie [1892-1987]
+
+waves behave like particles
+particles behave like waves
+
+=============================================
+Broglie relation to a particle
+
+λ = h/(mv)
+λ wavelength 
+h planck constant (6.626E-34)
+m mass (kg)
+v frequency (m/s)
+
+all matter have wavelength
+from micro(subatomic particles) to macro(stars)
+
+baseball's wavelength
+λ = 1.71E-34 (irrelavent)
+Electrons 
+λ = 2.43E-10 (both particle & wave due to size)
+
+wave-partical duality
+light -> matter
+
+=============================================
+Erwin Schrödinger [1887-1961]
+develope quantum mechanics
+to describe wave mechanics of the electron
+
+perception of atom the atom change
+from electrons revolving around nucleus
+---------------------------------------------
+like a planets to a sun
+---------------------------------------------
+To cloud of probabity density
+represent regions where the electron could be found
+
+=============================================
+Wernier Heisenburg [1901-1976]
+
+explain limitation on what know about a electron
+developed his uncertainty principal.
+
+(∇x)(∇p) ≥ h/(4π)
+
+x location
+p momentum
+
++- info position || -+ info momentum
++ more we know the location
+the less we know the momentum (what is doing)
++ more we know the momentum
+the less we know the location
+
+it not about limitation of measuring instruments.
+it is inheirent qualitu of electron.
+
+if we know exactly know
+both it's position and momentum
+with complete certainty
+----------------------------
+Electron will be partile (which is false)
+it is particle and wave
+
+how can this be true
+it defy common sense
+--------------------
+we have to accept
+common sense </> science
+natured <> mathmatical equations
+nuture <> how things should be
+
+math says
++ electron is a particle and wave
++ space curved around massive objects
++ time flow at different rates 
+for different observers
+-----------------------------------
+we have to accept 
+it is deeper tier of reality
+than what we percieve and comprehand
+
+it maybe common sense
+that sun goes around the earth
+which we believe for so long
+-----------------------------------------
+mathmatical calculations by astronomers
+force use to accept
+it is the earth revolve around the sun
+-----------------------------------------
+because their model 
+calculate the movement of celestial objects
+with more percision.
+althought we can't look at solar system 
+from afar
+the math is the evidence
+which surpase the human limits.
+=============================================
+
+
+*** 15: Quantum Numbers, Atomic Orbitals, and Electron Configurations
+
+[[https://m.youtube.com/watch?v=Aoi4j8es4gQ&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=15&pp=iAQB][video]]
+=============================================
+Quantum Numbers, Atomic Orbitals, and Electron Configurations
+
+Electron is 
+both particle and wave
+
+this change Electron arrangement is
+seen in a atom
+
+Energy and location of election
+is set by 4 quantum #s
+that describe different atomic orbitals
+
+=============================================
+atomic orbital
+is region of probabity in space
+where electron can be found
+
+types orbitals
+s
+d
+p
+f
+
+[[file:/storage/emulated/0/Pictures/Screenshots/Screenshot_2025-12-24-16-40-49-066.jpg]]
+
+each orbital
++ hold up to 2 electrons
++ #orbitals <> #electrons
+---------------------------------------------
+quantumn #s
+
+n = [+Int] (principal quantum #)
+represent the energy level of the electron
+#n <> distance from nucleus
+
+l = [0<=>(n-1)] (anguler momentum quantum #)
+n=3 => l = [0,1,2]
+represents the shape of the orbital
+l = 0 || s orbital 
+  shape: sphere 
+  there: 1 per energy level
+l = 1 || p orbital 
+  shape: 1a-g2lobes
+  there: 3 per energy level
+l = 2 || d orbitals
+  shape: 2a-g4lobes
+  there: 5 per energy level
+l = 3
+  shape: 1a-g6lobee
+  there: 7 per energy level
+
+m*l = [-l<=>l] (magnetic quantum #)
+l=2 => m*l = [-2,-1,0,1,2]
+represent # of orbitals of a type in a energy level
+l=0 m*l=[0] => 1 s orbitals
+l=1 m*l=[-1,0,1] => 3 p orbitals
+l=2 m*l=[-2,-1,0,1,2] => 5 d orbitals
+l=3 m*l=[-3,-2,-1,0,1,2,3] => 7 f orbitals
+
+[[file:/storage/emulated/0/Pictures/Screenshots/Screenshot_2025-12-24-20-11-27-051.jpg]]
+
+m*s = [-1/2 || 1/2] (spin quantum #)
+To make all electron in a atom
+ have unique quantum #s
+
+pauli exclusion principle
+no 2 electron in a atom
+have the same quabtum #s
+
+represents the 2 different values 
+for the 2 electrons in a orbital
+
+---------------------------------------------
+examples
+
+n=1 => (lowest orbital // filled first)
+l=0 => (1s orbital)
+m*l=[0] => (1-1s]
+m*s
++1/2: 1e
+-1/2: 1e
+
+n=2 =>
+l=[0,1] (2s & 2p orbital]
+m*0=[0] (1-2s)
+m*1=[-1,=0,+1] (3-2p)
+m*s
++1/2: 4e
+-1/2: 4e
+
+n=3 =>
+l=[0,1,2](3s,3p,3d)
+m*0=[0] (1-3s)
+m*1=[-1,0,1] (3-3p)
+m*2=[-2,-1,=0,+1,+2] (5-3d)
+m*s
++1/2: 9e
+-1/2: 8e
+
+n=4
+l=[0,1,2,3]
+m*0=[0] (1-4s)
+m*1=[-1,0,1] (3-4p)
+m*2=[-2,-1,=0,+1,+2] (5-4d)
+m*3=[-3,-2,-1,=0,+1,+2,+3] (7-4f)
+
+=============================================
+electron completion
+
+afbau principal
+1s
+2s 2p
+3s 3p 3d
+4s 4p 4d 4f
+5s 5p 5d 5f
+
+order competion (↙)
+1: 1s
+2: 2s
+3: 2p 3s
+4: 3p 4s
+5: 3d 4p 5s
+
+this is due to their relative energies
+in orbitals
+distance from nucleus <> potential energy
+[[file:/storage/emulated/0/Pictures/Screenshots/Screenshot_2025-12-25-00-35-16-971.jpg]]
+
+---------------------------------------------
+this can be used for
+Electron configuation of atoms
+
+Cl 17 electrons
+
+electron config
+1s2^2s2^2p6^3s2^3p5^
+1s2
+1 - n value
+5 - #electrons
+
+orbital diagram
+1s↑↓ 2s↑↓ 2p↑↓|↑↓|↑↓3s↑↓ 3p↑↓|↑↓|↑↓
+
+1st electron (↑ spin)
+hunds rule (↑|↑|↑ => ↑↓|↑|↑)
+
+---------------------------------------------
+orbitals in periodic table
+s block (left) 
+p block (right)
+d block (center)
+f block (b-center)
+
+---------------------------------------------
+other forms writing electron configuations
+1s2^2s2^2p6^3s2^3p5^ - cl
+[ne]3s2^3p5^ - cl
+
+[ne] - neon core
+[ne] => 1s2^2s2^2p6^ (ground state of neon)
+valence electrons - 3s2^3p5^
+
+
+---------------------------------------------
+orbital diagrams
+1s↑↓ 2s↑↓ 2p↑↓|↑↓|↑↓3s↑↓ 3p↑↓|↑↓|↑↓
+
+paramagnetic - atoms with incomplete orbitals
+due to them attracted to magnetic fields
+
+diamagnetic - atoms with complete orbitals
+due to them not attracted to magnetic fields
+
+=============================================
+in summary
+n = energy level
+l = orbitial type
+ml* = specific orbital
+ms* = spin
+
+all electrons within a atom have unique 
+quantum #s
+
+atom fill orbitals with electrons
+according to alpbau principal
+until electrons is placed
+
+=============================================
+n=1 (l=1) ml*==0 ms*=+1/2 // l=[0<=>n-1]
+n=2 l=1 ml*=-1 (ms*=+3/2) // ms*=[‌‌-1/2,+1/2]‌‌‌‌‌
+n=3 l=1 (ml*=+2) ms*=-1/2 // ml*=[-l <=> l]
+(n=0) l=0 ml*==0 ms*=+1/2 // n=[+int]
+
+ground state electron config calcium (ca)
+1s2^2s2^2p6^3s2^3p6^4s2^ =
+[ar]4s2^
+
+** Periodic table
+*** 16: The Periodic Table:
+
+[[https://m.youtube.com/watch?v=hePb00CqvP0&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=19
+][video]]
+=============================================
+The Periodic Table: Atomic Radius, Ionization Energy, and Electronegativity
+
+perodic table
+arrangement of substances in table
+
+history of periodic table
+
+1800s 
+scientist were forming multiple perodic tables
+
+the perodic table stayed 
+by Dmitri Mendeleev [1834-1907]
+
+[[file:/storage/emulated/0/Pictures/Screenshots/Screenshot_2025-12-25-03-12-16-938.jpg]]
+
+---------------------------------------------
+cause
+> correlation of data
+> predictive powers
+---------------------------------------------
+group element arrage 
+in row - periods
+in columns - groups
+
+elements similar behavior
+put into groups
+---------------------------------------------
+prodected elements
+> Technetium
+> Hafnium
+> Rhenium
+> Astatium
+
+it predicted their
+existance & properties
+
+he proven to be right
+when elements were discovered with
+expected properties
+---------------------------------------------
+nicely arranging
+> metals
+> metaloid
+> non-metals
+---------------------------------------------
+it will later discover
+groups <> # valence electrons
+
+=============================================
+periodic trends
+
+() atomic radius - the size of the atom
+↓ adds a shell (increase)
+→ adds a proton (decrease)
+---------------------------------------------
++-/-+ e-><p+
+←↓ greater atomic radius
+→↑ lesser- atomic radius
+
+
+
+() ionic radius - the size of a ion
++-/+- e-<>e-
+adding e- (increase)
+remove e- (decrease)
+---------------------------------------------
+ions with same electron config
+adding proton (decrease)
+remove proton (increase)
+---------------------------------------------
+Atomic# +-/+- e-><p+
+←↑ greater ionic radius
+→↓ lesser ionic radius
+
+
+
+()ionization energy - the energy to remove e-
+in outermost shell
+e-><+p +-/-+ e-||+p (atomic radius)
+←↓ lesser ionization energer
+→↑ greater ionization energer
+---------------------------------------------
+successive ion - the removal of multiple e-
++- IE/ +- #e- removed/ -+ atom stability
+1IE < 2IE < 3IE <<<
++- IE/ -+ #shells 
+Na 496 => 4,562
+---------------------------------------------
+exceptions
+[li=>ne] b, o
+[na=>ar] al, s
+
+orbital symmetry (N=>O)
+n 1↑↓ 2↑↓ ↑ |↑ |↑
+o 1↑↓ 2↑↓ ↑↓|↑ |↑
+symmetri electron 2p orbital
+cause special stability n
+---------------------------------------------
+similar to element with full outermost shell
+n re- => lose this stability
+o re- => gain this stability
+IE n > o
+---------------------------------------------
+despite o having a extra proton
+all exceptions caused by obital symmetry
+
+
+
+()Electron affinity 
+how much atom want to gain e-
+it is opposite Ionization energy 
+---------------------------------------------
+(ignore nobel gases)
+↓← lesser electron affinity
+↑→ greater electron affinity
+
+due to atoms => elctron config with
+orbital symmetry
+electron config
+> nobel gases
+> end/middle orbital block
+---------------------------------------------
+
+()Electro negativity 
+the ability for electron 
+hold onto e- tightly
+---------------------------------------------
+(ignoring the nobel gas)
+↓← lesser electron affinity
+↑→ greater electron affinity
+---------------------------------------------
+z*eff = effective nuclear charge or
+more protons for it's energy level
+
+=============================================
+summary
+←↓ +
+atomic 
+
+→↑ +
+ionization energy
+electron affinity
+electro negativity
+=============================================
+list atoms order of increasing atomic radius
+Si,Kr,Cl,K,Ca
+3  4  2  4 4
+16 18 17 1 2
+ans:[Cl Si Kr Ca K]
+
+what larger atom
+Br/(Br-)
+(Cl-)/Ar
+(K)/K+
+
+
+*** 17: The Chemical Bond
+
+[[https://m.youtube.com/watch?v=PoQjsnQmxok&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=17&pp=iAQB
+][video]]
+=============================================
+The Chemical Bond: Covalent vs. Ionic and Polar vs. Nonpolar
+
+A molecule
+group of atoms participating chemical bonds
+
+different types of chemical bonds
+due to difference of electroegativity between
+2 atoms participating in the bond
+=============================================
+∇ electronegativity > 2.0
+Na(0.9) Cl(3.0) ∇(2.1)
+Cl will steal e- from sodium
+due
+Cl wants gain e-
+Na wants loss e-
+result
+Na+ Cl-
+
+Ions of opposite charge attract each other
+due to their electrostatic attraction
+
+they attach each other 
+in ionic bond
+
+ionics bonds very strong attraction
+due it happening 
+between ion with formal charge
+=============================================
+∇ electronegativity < 1.7
+no electron stolen but 
+shared between 2 atoms
+
+between 2 atoms
+electron => nucleus of other atom
+they shared electron in
+a covelent bond
+
+covelent bonds can be
+polar
+non polar
+---------------------------------------------
+∇ electronegativity > 0.5 
+(polar covalent bond)
+
+H(2.1) Cl(3.0) ∇0.9
+Cl |o<= H
+Cl will hog the electron
+but not steal
+
+the electronegative atom 
+in a polar covelent bond
+pulls electron densith || H->Cl
+
+Cl slight electron excess
+making
+C δ- (partical negative charge)
+
+H slight electron defecient
+making
+H δ+ (partical positive charge)
+---------------------------------------------
+∇ electronegativity > 0.5 
+(non-polar covalent bond)
+electron shared almost or exactly evenly
+
+Cl(3.0) Cl(3.0) ∇0.0
+Electrons shared exactly evenly
+the atoms don't have δ charge
+=============================================
+other forms bonding
+metalic bonding
+
+main forms of bonds
+nonpolar covalent bond ∇ < 0.5
+polar covalent bond    ∇ [0.5-1.7]
+ionic bond             ∇ > 2.0
+
+you can predict the bond will be created
+by knowing atom's electronegativity
+
+
+*** 18. Naming Ionic Compounds
+
+[[https://m.youtube.com/watch?v=mKo72RnN37E&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=18&pp=iAQB
+][video]]
+=============================================
+Naming Ionic Compounds
+
+recap
+sometimes atom steal 
+electron from each other
+to form ions
+=============================================
+there many ionic substances
+
+ion form compounds in 
+the ratio to their charges
+
+cation + charged ion
+anion - charged ion
+(cation >< anion) => neutral compound
+in any combination nessassary
+=============================================
+we can learn the common ion of a element
+by looking periodic table
+
+cations
+group 1 => 1+ ion
+group 2 => 2+ ion
+
+anions
+group 7 => 1- ion (halogens)
+group 6 => 2- ion
+group 5 => 3- ion
+=============================================
+To learn how ions will bind
+add charges of cation/anion => 0
+
+Na+ + Cl- => NaCl
+
+Mg2+ + Cl- => Mg2Cl
++2 + -1x2  => 0
+
+Mg2+ + Na3- => 3Mg2Na
++2x3 + -3x2 => 0
+=============================================
+naming ionic compound
+<cation><anion>
+NaCl
+sodium chlor(ide) <= chlorine
+---------------------------------------------
+metal oxidations states (multiple common ions)
+Cu:
+Cu+  Cu(l)  c(o=>u)(pp=>p)er(ous) cuperous
+Cu2+ Cu(ll) c(o=>u)(pp=>p)er(ic) cuperic
+
+ous - less charge
+ic -  more charge
+=============================================
+polyatomic anion (ion with oxygen atoms)
+N:
+nºo3- nitr(gen => ate) nitrate
+nºo2- nitr(gen => ite) nitrite
+
+ate - more #o
+ite - less #o
+---------------------------------------------
+if more use
+per+ate more more #o
+hypo+ite less less #o
+C:
+cl/o^4- perchlorate
+cl/o^3- chlorate
+cl/o^2- chlorite
+cl/o- hypochlorite
+---------------------------------------------
+most important *need memorize*
+Cation
+N/H4+
+
+Anion
+C2ºH3ºO2- acetate ion
+Cº03-2 carbonate ion
+
+ClºO3- chlorate ion
+ClºO2- chlorite ion
+
+CrºO^4-2 chromate ion
+CºN- cyanide ion
+Cr2º0^7-2 dichromate ion
+
+HºCºO^3- hydrogen carbonate ion
+H/SºO^4- hydrogen sulfate ion
+
+OºH- hydroxide ion
+ClºO- hypochlorite ion
+
+NºO3- nitrate ion
+NºO2- nitrite ion
+
+ClºO^4- perchlorate ion
+MnºO^4- permanagate ion
+Pº0^4-3 phosphate ion
+
+Sº0^4-2 sulfate
+SºO^3-2 sulfite
+=============================================
+when naming Ion
+<cation><anion>
+NaCl sodium chloride
+
+transition metal (element from d block)
+Cr/SºO^4
+Cr/SºO^4 => 0∇p-e
+SO4 = SO4-2 => -2∇p-e
+Cr = ubknown
+
+∇p-e
+x + (-2) => 0
+x => 2
+
+chromium(ll) Sulfate
+---------------------------------------------
+name => formula
+<cation><anion>
+sodium chlorate => NaCl
+
+transition metal (element from d block)
+Iron(ll) Phosphate
+Iron(ll) Phosphate => 0∇p-e
+Iron(ll) = Fe+2 => 2∇p-e
+Phosphate = PO4-3 => -3∇p-e
+
+figuring ionic ratio
+2x + (-3)y = 0
+2x - 3y = 0
+2x = 3y
+2/3 = y/x
+
+y=2
+x=3
+
+Fe*3/PºO4*2
+---------------------------------------------
+reason to elment(x) 
+oxidation state apply in formula
+not the written name
+=============================================
+writing binary covalent compounds
+
+covenlent compounds
+with 2 elements
+
+prefix #atoms
+1 mono
+2 di
+3 tri
+4 tetra
+5 penta
+
+CO carbon (mon)ox(ide)
+C/02 carbon (di)ox(ide)
+p*5/s*3 (penta)phosphorus (tri)sulf(ide)
+=============================================
+Fe*2/CºO3*3 Iron(lll) carbonate
+K/ClºO potassiun perchlorate
+C/Cl*4 carbon tetrachloride
+
+boron trifloride B/F*3
+copper(ll) sulfate Cu/SºO4
+sodium hydroxide Na/OºH
+
+*** 19: Lewis Dot Structures
+
+[[https://m.youtube.com/watch?v=Sk7W2VgbhOg&list=PLybg94GvOJ9EbbO2RXPWTUNIIE0C7hSfm&index=19&pp=iAQB
+][video]]
+=============================================
+Lewis Dot Structures
+
+intro
+
+we learn how ions form bond
+we going to learn
+how atoms form networks of covalent bonds
+
+Lewis Dot Structures 
+represent these bond networks
+---------------------------------------------
+lewis dot structure of carbon (atom)
+
+1. chemical symbol
+C
+2. draw valence electron
+
+# valence electrons
+
+electron config
+1s2 (2s2^2p2) => 4 valence electron
+
+periodic group #
+g# [ 1, 2,13,14,15,16,17,18]
+ve-[ 1  2  3  4  5  6  7  8]
+carbon g# = 14 => 4 valence electrons
+
+placing electrons
+assimption:
+there is only 4 cordination sites for
+electrons and bonds
+this is due to how carbon will fill 
+its octet or outermost shell
+
+electron need to be equally place
+on each site
+
+C 1111
+
+atoms that have group # have similar
+lewis dot structures
+
+[[file:/storage/emulated/0/Pictures/Screenshots/Screenshot_2025-12-28-01-35-13-035.jpg]]
+
+---------------------------------------------
+covalent bonds
+
+lewis dot structure of molecule
+H/Cl
+
+1. draw atoms with valence electrons
+H 1
+Cl 2221
+
+2. form covalent bonds
+*unpaired electron (1) from atoms
+*form covalent bonds (:)
+
+H:Cl 222
+
+H Cl
+ Cl 222
+
+3. check for unpair electrons
+*good lewis structure 
+*will have all electrons 
+*in lone pairs (2) or covalent bonds (:)
+
+#ve- atoms have dictate the # bonds
+8 - #ve- => #possible bonds
+carbon = 4ve- => 4 possible bonds 0 lone pair
+nitrogen = 5ve- => 3 possible bonds 1 lone pair
+oxygen = 6ve- => 2 possible bonds 2 lone pair
+florine = 7ve- => 1 possible bonds 3 lone pair
+
+=============================================
+types of covalents
+
+() sigma (σ) bond - singular covalent bond
+between 2 atoms
+
+H-F
+
+() pi (π) bond - bond formed by
+left over electrons 
+
+:O=C=O:
+1 π bond
+1 σ bond
+
+:N≡N:
+2 π bonds
+1 σ bond
+=============================================
+bond length
+single > double > triple
+=============================================
+formal charge
+# electrons in a dot structure is different 
+to valence electrons
+
+Nitrogen N :... => 5 valence electrons
+
+Ammonia  N HHH: => 5 surround electrons 
+(netrual nitrogen atom)
+Ammonium ion N HHHH => 4 surronding electrons
+(positive nitrogen atom) => polyatomic ion
+
+C, N, O, F
+wants 8 electrons around them
+to fill n=2 shell
+
+H
+wants 2 electron around them
+to fill n=1 shell
+
+P, S
+accomodate 8> electrons around them
+
+=============================================
+H2~S
+S ::..
+H .
+H .
+
+S H-H-22
+ H S-
+ H S-
+--------------
+HCN
+H:
+C....
+N:...
+
+C N--- H-
+ N C--- :
+ H C-
+--------------
+BF3
+B...
+F:::.
+F:::.
+F:::.
+
+B FFF
+ F B-:::
+ F B-:::
+ F B-:::
+----------------
+S-O2
+S ::..
+O ::..
+O ::..
+
+S O- O- ::
+ O S- :::
+ O S- :::
+
+* Lynx terminal browser
